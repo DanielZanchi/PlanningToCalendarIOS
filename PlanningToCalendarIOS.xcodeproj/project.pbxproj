@@ -12,9 +12,14 @@
 		3011094C2276EC7D0055577B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011094A2276EC7D0055577B /* Main.storyboard */; };
 		3011094E2276EC7F0055577B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3011094D2276EC7F0055577B /* Assets.xcassets */; };
 		301109512276EC7F0055577B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011094F2276EC7F0055577B /* LaunchScreen.storyboard */; };
+		3011095A2276F0AE0055577B /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301109592276F0AE0055577B /* Converter.swift */; };
+		3011095C2276F1B10055577B /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011095B2276F1B10055577B /* MyFileManager.swift */; };
+		3011095E2276F1EF0055577B /* FTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011095D2276F1EF0055577B /* FTPUpload.swift */; };
+		4D48CFB8FC5E506F4841375A /* Pods_PlanningToCalendarIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A70525182C351553155EB0 /* Pods-PlanningToCalendarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanningToCalendarIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.release.xcconfig"; sourceTree = "<group>"; };
 		301109432276EC7D0055577B /* PlanningToCalendarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanningToCalendarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301109462276EC7D0055577B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		301109482276EC7D0055577B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,12 @@
 		3011094D2276EC7F0055577B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301109502276EC7F0055577B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301109522276EC7F0055577B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301109582276ED840055577B /* PlanningToCalendarIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlanningToCalendarIOS.entitlements; sourceTree = "<group>"; };
+		301109592276F0AE0055577B /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		3011095B2276F1B10055577B /* MyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileManager.swift; sourceTree = "<group>"; };
+		3011095D2276F1EF0055577B /* FTPUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPUpload.swift; sourceTree = "<group>"; };
+		6F4F0B1B9953474162A4B72E /* Pods-PlanningToCalendarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanningToCalendarIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanningToCalendarIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D48CFB8FC5E506F4841375A /* Pods_PlanningToCalendarIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DDB82AD19597CAF258E17F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F4F0B1B9953474162A4B72E /* Pods-PlanningToCalendarIOS.debug.xcconfig */,
+				04A70525182C351553155EB0 /* Pods-PlanningToCalendarIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3011093A2276EC7D0055577B = {
 			isa = PBXGroup;
 			children = (
 				301109452276EC7D0055577B /* PlanningToCalendarIOS */,
 				301109442276EC7D0055577B /* Products */,
+				13DDB82AD19597CAF258E17F /* Pods */,
+				9ED08DC1445173C153DA4F6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,26 @@
 		301109452276EC7D0055577B /* PlanningToCalendarIOS */ = {
 			isa = PBXGroup;
 			children = (
+				301109582276ED840055577B /* PlanningToCalendarIOS.entitlements */,
 				301109462276EC7D0055577B /* AppDelegate.swift */,
 				301109482276EC7D0055577B /* ViewController.swift */,
+				301109592276F0AE0055577B /* Converter.swift */,
+				3011095B2276F1B10055577B /* MyFileManager.swift */,
+				3011095D2276F1EF0055577B /* FTPUpload.swift */,
 				3011094A2276EC7D0055577B /* Main.storyboard */,
 				3011094D2276EC7F0055577B /* Assets.xcassets */,
 				3011094F2276EC7F0055577B /* LaunchScreen.storyboard */,
 				301109522276EC7F0055577B /* Info.plist */,
 			);
 			path = PlanningToCalendarIOS;
+			sourceTree = "<group>";
+		};
+		9ED08DC1445173C153DA4F6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 301109552276EC7F0055577B /* Build configuration list for PBXNativeTarget "PlanningToCalendarIOS" */;
 			buildPhases = (
+				0467524EBC9DE89319AE4D15 /* [CP] Check Pods Manifest.lock */,
 				3011093F2276EC7D0055577B /* Sources */,
 				301109402276EC7D0055577B /* Frameworks */,
 				301109412276EC7D0055577B /* Resources */,
+				D6F2EF35B0D08C169BB4140E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +133,14 @@
 				TargetAttributes = {
 					301109422276EC7D0055577B = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,13 +175,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0467524EBC9DE89319AE4D15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanningToCalendarIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F2EF35B0D08C169BB4140E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+				"${BUILT_PRODUCTS_DIR}/iCalKit/iCalKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCalKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3011093F2276EC7D0055577B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				301109492276EC7D0055577B /* ViewController.swift in Sources */,
+				3011095E2276F1EF0055577B /* FTPUpload.swift in Sources */,
+				3011095A2276F0AE0055577B /* Converter.swift in Sources */,
 				301109472276EC7D0055577B /* AppDelegate.swift in Sources */,
+				3011095C2276F1B10055577B /* MyFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +377,10 @@
 		};
 		301109562276EC7F0055577B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4F0B1B9953474162A4B72E /* Pods-PlanningToCalendarIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PlanningToCalendarIOS/PlanningToCalendarIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZAN22F267Y;
 				INFOPLIST_FILE = PlanningToCalendarIOS/Info.plist;
@@ -298,8 +397,10 @@
 		};
 		301109572276EC7F0055577B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A70525182C351553155EB0 /* Pods-PlanningToCalendarIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PlanningToCalendarIOS/PlanningToCalendarIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZAN22F267Y;
 				INFOPLIST_FILE = PlanningToCalendarIOS/Info.plist;
