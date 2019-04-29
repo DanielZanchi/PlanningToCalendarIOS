@@ -14,62 +14,72 @@ class Converter {
     
     static let shared = Converter()
     
+    var fileManager: MyFileManager!
+    
+    let monthDictionary: [String: String] = ["GIUGNO": "06", "LUGLIO": "07", "AGOSTO": "08", "SETTEMBRE": "09", "OTTOBRE": "10", "NOVEMBRE": "11", "DICEMBRE": "12", "GENNAIO": "01", "FEBBRAIO": "02", "MARZO": "03", "APRILE": "04", "MAGGIO": "05"]
+    let dayNames = ["D","M","ME","G","V","S"]
+    
+    var content: String!
+    var month: String!
+    var monthInNumber: Int!
+    var dayName: [String]!
+    var nameAndHours: [String]!
+    
+    var dept = ["servizi"]
+    
     init() {
     }
     
     func launchConverter(path: String) {
-        let fileManager = MyFileManager()
+        fileManager = MyFileManager()
         
         let fileString = fileManager.readFile(path: path)
         let CSVString = fileManager.replaceWithCommas(string: fileString)
         let csv = try! CSVReader(string: CSVString)
         
-        
-        
-        //parse CSV file
-        while let row = csv.next() {
-            let first = (row.first)?.uppercased()
-            if monthDictionary.keys.contains(first!) {
-                month = first
-                for m in monthDictionary {
-                    if m.key == month {
-                        monthInNumber = Int(m.value)
-                    }
-                }
-            }
-            else {
-                if row.count > 2 {
-                    let second = (row[1]).uppercased()
-                    let third = (row[2]).uppercased()
-                    if dayNames.contains(second) || dayNames.contains(third) {
-                        dayName = row
-                        dayName.removeFirst()
-                    }
-                }
-                if first != "" && first != "Casa gucci".capitalized {
-                    nameAndHours = row
-                    let events = createEventsForPerson(nameAndHours: nameAndHours)
-                    
-                    let dept = "servizi"
-                    fileManager.createOrUpdateFile(events: events, name: "\((nameAndHours.first)!)", department: "\(dept)", path: path)
-                }
-                
-                
-            }
-        }
-        let originalFileURL = URL(fileURLWithPath: path)
-        let pathWithoutLastComp = originalFileURL.deletingLastPathComponent()
-        if let fileURL = IndexCreator.shared.createIndex(inFolder: pathWithoutLastComp) {
-            let file = "index.html"
-            let data = try! Data(contentsOf: fileURL)
+        for department in dept {
             
-            //        MyFileUploader.shared.upload(fileURL: fileURL)
-            print(file)
-            let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: "")
-            uploadService.send(data: data, with: file) { (success) in
-                print(success)
-                NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
+            //parse CSV file
+            while let row = csv.next() {
+                let first = (row.first)?.uppercased()
+                if monthDictionary.keys.contains(first!) {
+                    month = first
+                    monthInNumber = getMonthInNumber(month: month)
+                }
+                else {
+                    if row.count > 2 {
+                        let second = (row[1]).uppercased()
+                        let third = (row[2]).uppercased()
+                        if dayNames.contains(second) || dayNames.contains(third) {
+                            dayName = row
+                            dayName.removeFirst()
+                        }
+                    }
+                    if first != "" && first != "Casa gucci".capitalized {
+                        nameAndHours = row
+                        let events = createEventsForPerson(nameAndHours: nameAndHours)
+                        
+                        let dept = "servizi"
+                        fileManager.createOrUpdateFile(events: events, name: "\((nameAndHours.first)!)", department: "\(dept)", path: path)
+                    }
+                    
+                    
+                }
+            }
+            let originalFileURL = URL(fileURLWithPath: path)
+            let pathWithoutLastComp = originalFileURL.deletingLastPathComponent()
+            if let fileURL = IndexCreator.shared.createIndex(inFolder: pathWithoutLastComp) {
+                let file = "index.html"
+                let data = try! Data(contentsOf: fileURL)
                 
+                //        MyFileUploader.shared.upload(fileURL: fileURL)
+                print(file)
+                let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: "")
+                uploadService.send(data: data, with: file) { (success) in
+                    print(success)
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
+                    
+                }
             }
         }
     }
@@ -227,6 +237,16 @@ class Converter {
         let calendar = Calendar.current
         let date = calendar.date(from: dateComponents)
         return date!
+    }
+    
+    func getMonthInNumber(month: String) -> Int {
+        for m in monthDictionary {
+            if m.key == month {
+                monthInNumber = Int(m.value)
+                return monthInNumber
+            }
+        }
+        return 0
     }
 }
 

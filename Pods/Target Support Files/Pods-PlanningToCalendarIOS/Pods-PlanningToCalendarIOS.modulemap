@@ -1,0 +1,6 @@
+framework module Pods_PlanningToCalendarIOS {
+  umbrella header "Pods-PlanningToCalendarIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

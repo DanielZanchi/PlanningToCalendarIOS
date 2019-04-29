@@ -19,20 +19,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQf-fE-Mnq">
-                                <rect key="frame" x="152.5" y="433" width="109" height="30"/>
-                                <state key="normal" title="Select Calendar"/>
+                                <rect key="frame" x="77" y="412" width="260" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <inset key="contentEdgeInsets" minX="38" minY="20" maxX="38" maxY="20"/>
+                                <state key="normal" title="Select Calendar">
+                                    <color key="titleColor" red="0.35805164090000002" green="0.53286522250000001" blue="0.70099696830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectCalendarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOd-aa-Ohm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.35805164091150088" green="0.53286522252540203" blue="0.70099696828358204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BQf-fE-Mnq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CUj-tq-2r5"/>
                             <constraint firstItem="BQf-fE-Mnq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mEo-Ur-Mmd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="selectCalendarButton" destination="BQf-fE-Mnq" id="Prk-ss-gBa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
