@@ -14,12 +14,11 @@ class MyFileManager  {
     init() {
     }
     
-    func createOrUpdateFile(events: [Event], name: String, department: String, path: String) {
+    func createOrUpdateFile(events: [Event], name: String, department: String) {
         let nameWithoutSpaces = name.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "'", with: "")
         let file = "\(nameWithoutSpaces).ics" //this is the file. we will write to and read from it
-        let originalFileURL = URL(fileURLWithPath: path)
-        let pathWithoutLastComp = originalFileURL.deletingLastPathComponent()
-        let dir = pathWithoutLastComp.appendingPathComponent(department)
+        let documentsDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let dir = documentsDir!.appendingPathComponent(department)
         
         let fileURL = dir.appendingPathComponent(file)
         
@@ -32,7 +31,7 @@ class MyFileManager  {
                     updateFile(events: events, name: nameWithoutSpaces, department: department, fileURL: fileURL)
                 } else {
                     // file .ics of that person didn't exists, going to create it
-                    createFile(events: events, name: nameWithoutSpaces, department: department, path: path)
+                    createFile(events: events, name: nameWithoutSpaces, department: department)
                 }
             } else {
                 //already exists, but it's a file
@@ -46,19 +45,18 @@ class MyFileManager  {
                 print("eror creating dir")
                 print(error)
             }
-            createFile(events: events, name: nameWithoutSpaces, department: department, path: path)
+            createFile(events: events, name: nameWithoutSpaces, department: department)
         }
     }
     
-    func createFile(events: [Event], name: String, department: String, path: String) {
+    func createFile(events: [Event], name: String, department: String) {
         let calendar = Calendar(withComponents: events)
         let content = calendar.toCal()
         
         let file = "\(name).ics" //this is the file. we will write to and read from it
         let text = content
-        let originalFileURL = URL(fileURLWithPath: path)
-        let pathWithoutLastComp = originalFileURL.deletingLastPathComponent()
-        let dir = pathWithoutLastComp.appendingPathComponent(department)
+        let documentsDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let dir = documentsDir!.appendingPathComponent(department)
         
         let fileURL = dir.appendingPathComponent(file)
         //writing
@@ -72,8 +70,7 @@ class MyFileManager  {
         let data = try! Data(contentsOf: fileURL)
         
         //        MyFileUploader.shared.upload(fileURL: fileURL)
-        print(file)
-        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: "servizi")
+        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
         uploadService.send(data: data, with: file) { (success) in
             print(success)
         }
@@ -114,7 +111,7 @@ class MyFileManager  {
         
         
         
-        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: "servizi")
+        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
         uploadService.send(data: data, with: file) { (success) in
             print(success)
         }
@@ -122,9 +119,7 @@ class MyFileManager  {
     }
     
     func readFile(path: String) -> String{
-        print(path)
         let fileURL = URL(fileURLWithPath: path)
-        print(fileURL)
         //reading
         do {
             let text2 = try String(contentsOf: (fileURL), encoding: .utf8)
@@ -137,6 +132,11 @@ class MyFileManager  {
     
     func replaceWithCommas(string: String) -> String {
         let s = string.replacingOccurrences(of: ";", with: ",", options: .literal, range: nil)
+        return s
+    }
+    
+    func replaceCommasWithDots(string: String) -> String {
+        let s = string.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil)
         return s
     }
 }

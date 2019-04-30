@@ -17,7 +17,7 @@ class Converter {
     var fileManager: MyFileManager!
     
     let monthDictionary: [String: String] = ["GIUGNO": "06", "LUGLIO": "07", "AGOSTO": "08", "SETTEMBRE": "09", "OTTOBRE": "10", "NOVEMBRE": "11", "DICEMBRE": "12", "GENNAIO": "01", "FEBBRAIO": "02", "MARZO": "03", "APRILE": "04", "MAGGIO": "05"]
-    let dayNames = ["D","M","ME","G","V","S"]
+    let dayNames = ["D","L","M","ME","G","V","S"]
     
     var content: String!
     var month: String!
@@ -25,7 +25,8 @@ class Converter {
     var dayName: [String]!
     var nameAndHours: [String]!
     
-    var dept = ["servizi"]
+    var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS", ]
+    var symbolsWithName = ["LSILK", "MSILK", "P(M)", "HB", "SHOES", "LUG", "LRTW", "MRTW"]
     
     init() {
     }
@@ -34,51 +35,57 @@ class Converter {
         fileManager = MyFileManager()
         
         let fileString = fileManager.readFile(path: path)
-        let CSVString = fileManager.replaceWithCommas(string: fileString)
-        let csv = try! CSVReader(string: CSVString)
+        let fileStringNoCommas = fileManager.replaceCommasWithDots(string: fileString)
+        let CSVString = fileManager.replaceWithCommas(string: fileStringNoCommas)
         
         for department in dept {
+            let csv = try! CSVReader(string: CSVString)
             
             //parse CSV file
             while let row = csv.next() {
-                let first = (row.first)?.uppercased()
-                if monthDictionary.keys.contains(first!) {
-                    month = first
+                let deptCellString = (row[0].uppercased())
+                let monthCellString = (row[4]).uppercased()
+                if monthDictionary.keys.contains(monthCellString) {
+                    month = monthCellString
                     monthInNumber = getMonthInNumber(month: month)
                 }
                 else {
                     if row.count > 2 {
-                        let second = (row[1]).uppercased()
-                        let third = (row[2]).uppercased()
-                        if dayNames.contains(second) || dayNames.contains(third) {
+                        let firstDay = (row[5]).uppercased()
+                        let secondDay = (row[6]).uppercased()
+                        if dayNames.contains(firstDay) && dayNames.contains(secondDay) && firstDay != secondDay {
                             dayName = row
-                            dayName.removeFirst()
+                            dayName.removeFirst(5)
                         }
                     }
-                    if first != "" && first != "Casa gucci".capitalized {
+                    if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
                         nameAndHours = row
                         let events = createEventsForPerson(nameAndHours: nameAndHours)
-                        
-                        let dept = "servizi"
-                        fileManager.createOrUpdateFile(events: events, name: "\((nameAndHours.first)!)", department: "\(dept)", path: path)
+                        if events.count > 0 {
+                            fileManager.createOrUpdateFile(events: events, name: "\((nameAndHours[4]))", department: department)
+                        }
                     }
                     
                     
                 }
             }
-            let originalFileURL = URL(fileURLWithPath: path)
-            let pathWithoutLastComp = originalFileURL.deletingLastPathComponent()
-            if let fileURL = IndexCreator.shared.createIndex(inFolder: pathWithoutLastComp) {
-                let file = "index.html"
-                let data = try! Data(contentsOf: fileURL)
-                
-                //        MyFileUploader.shared.upload(fileURL: fileURL)
-                print(file)
-                let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: "")
-                uploadService.send(data: data, with: file) { (success) in
-                    print(success)
-                    NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
-                    
+            
+            if let documentsFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                if let fileURL = IndexCreator.shared.createIndex(inFolder: documentsFolder.appendingPathComponent(department), department: department) {
+                    let file = "index.html"
+                    do {
+                        let data = try Data(contentsOf: fileURL)
+                        
+                        //        MyFileUploader.shared.upload(fileURL: fileURL)
+                        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
+                        uploadService.send(data: data, with: file) { (success) in
+                            print(success)
+                            NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
+                            
+                        }
+                    } catch {
+                        print(error)
+                    }
                 }
             }
         }
@@ -93,13 +100,17 @@ class Converter {
         let y = Date().getCurrentYear()
         var name: String!
         var NAH = nameAndHours
-        NAH.removeFirst()
+        NAH.removeFirst(5)
         var day = 0
         for symbol in NAH {
             day = day + 1
             h = 0
             min = 0
             
+            let todayName = dayName[day-1].uppercased()
+            if dayNames.contains(todayName) == false {
+                break
+            }
             switch symbol {
             case "a":
                 h = 9
@@ -114,20 +125,12 @@ class Converter {
                 min = 0
                 name = "Chiusura"
             case "":
-                if dayName[day-1].capitalized != "D" {
+                if todayName != "D" {
                     h = 10
                     min = 0
                     name = "Normale"
                 }
-            case "P":
-                h = 10
-                min = 0
-                name = "Normale"
-            case "10":
-                h = 10
-                min = 0
-                name = "Normale"
-            case "X":
+            case "P", "p", "10", "X":
                 h = 10
                 min = 0
                 name = "Normale"
@@ -153,34 +156,30 @@ class Converter {
                 h = 12
                 min = 0
                 name = "Mezzogiorno"
-            case "13":
+            case "13", "13X", "13x":
                 h = 13
                 min = 0
-                name = "Tredici"
+                name = "13"
             case "15":
                 h = 15
                 min = 0
-                name = "Quindici"
+                name = "15"
             case "16":
                 h = 16
                 min = 0
-                name = "Sedici"
+                name = "16"
             case "14":
                 h = 14
                 min = 0
-                name = "Quattordici"
+                name = "14"
             case "13$":
                 h = 13
                 min = 0
-                name = "Tredici $"
-            case "9.5":
+                name = "13 $"
+            case "9.5", "9.5X":
                 h = 9
                 min = 30
-                name = "Nove e mezzo"
-            case "9.5X":
-                h = 9
-                min = 30
-                name = "Nove e mezzo"
+                name = "9:30"
             case "15$":
                 h = 15
                 min = 0
@@ -197,6 +196,10 @@ class Converter {
                 h = 10
                 min = 0
                 name = "inventario"
+            case _ where symbolsWithName.contains(symbol):
+                h = 10
+                min = 0
+                name = symbol
             default:
                 h = 0
                 min = 0
