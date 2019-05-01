@@ -10,9 +10,20 @@ import Foundation
 import CSV
 import iCalKit
 
+protocol ProgressDelegate {
+    func progressChanged(progress: Float)
+}
+
 class Converter {
     
     static let shared = Converter()
+    
+    var delegate: ProgressDelegate?
+    var progress: Float = 0 {
+        didSet {
+            delegate?.progressChanged(progress: progress)
+        }
+    }
     
     var fileManager: MyFileManager!
     
@@ -38,31 +49,35 @@ class Converter {
         let fileStringNoCommas = fileManager.replaceCommasWithDots(string: fileString)
         let CSVString = fileManager.replaceWithCommas(string: fileStringNoCommas)
         
-        for department in dept {
+        let fraction: Float = 1.0 / Float(dept.count)
+        DispatchQueue.global().async {
+            
+            for department in self.dept {            
+            
             let csv = try! CSVReader(string: CSVString)
             
             //parse CSV file
             while let row = csv.next() {
                 let deptCellString = (row[0].uppercased())
                 let monthCellString = (row[4]).uppercased()
-                if monthDictionary.keys.contains(monthCellString) {
-                    month = monthCellString
-                    monthInNumber = getMonthInNumber(month: month)
+                if self.monthDictionary.keys.contains(monthCellString) {
+                    self.month = monthCellString
+                    self.monthInNumber = self.getMonthInNumber(month: self.month)
                 }
                 else {
                     if row.count > 2 {
                         let firstDay = (row[5]).uppercased()
                         let secondDay = (row[6]).uppercased()
-                        if dayNames.contains(firstDay) && dayNames.contains(secondDay) && firstDay != secondDay {
-                            dayName = row
-                            dayName.removeFirst(5)
+                        if self.dayNames.contains(firstDay) && self.dayNames.contains(secondDay) && firstDay != secondDay {
+                            self.dayName = row
+                            self.dayName.removeFirst(5)
                         }
                     }
                     if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
-                        nameAndHours = row
-                        let events = createEventsForPerson(nameAndHours: nameAndHours)
+                        self.nameAndHours = row
+                        let events = self.createEventsForPerson(nameAndHours: self.nameAndHours)
                         if events.count > 0 {
-                            fileManager.createOrUpdateFile(events: events, name: "\((nameAndHours[4]))", department: department)
+                            self.fileManager.createOrUpdateFile(events: events, name: "\((self.nameAndHours[4]))", department: department)
                         }
                     }
                     
@@ -82,12 +97,17 @@ class Converter {
                             print(success)
                             NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
                             
+                            DispatchQueue.main.async { () -> Void in  
+                                self.progress = self.progress + fraction 
+                            } 
+                            
                         }
                     } catch {
                         print(error)
                     }
                 }
             }
+        }
         }
     }
     

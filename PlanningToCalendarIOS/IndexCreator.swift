@@ -29,7 +29,7 @@ class IndexCreator {
             }
             
             
-            let htmlContent = "<html><head><title>Planning \(department)</title><body><h2>Planning \(department)</h2><br>\(htmlLink)</body></html>"
+            let htmlContent = "<html><head><title>Planning \(department)</title><meta name='viewport' content='width=device-width, initial-scale=1.0'><body><h2>Planning \(department)</h2><br>\(htmlLink)</body></html>"
             do {
                 try htmlContent.write(to: indexUrl, atomically: false, encoding: .utf8)
             } catch {
