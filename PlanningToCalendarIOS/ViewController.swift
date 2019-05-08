@@ -8,16 +8,19 @@
 
 import UIKit
 import MobileCoreServices
+//import CoreXLSXx
 
 class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationControllerDelegate, ProgressDelegate {
 
-    
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var completedLabel: UILabel!
     @IBOutlet weak var selectCalendarButton: UIButton!
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     
     var converter = Converter.shared
+    let types = [(kUTTypeCommaSeparatedText as String),
+                 (kUTTypeCompositeContent as String)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,10 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
         progressBar.clipsToBounds = true
         progressBar.layer.sublayers![1].cornerRadius = 10
         progressBar.subviews[1].clipsToBounds = true
+        
+        completedLabel.alpha = 0.0
+        
+        activityIndicator.alpha = 0.0
     }
     
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
@@ -51,9 +58,28 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
         if let url = urls.first {
             converter.delegate = self
             progressBar.isHidden = false
+            activityIndicator.alpha = 1.0
+            activityIndicator.startAnimating()
             converter.launchConverter(path: url.path)
             
-//            let url = CSVCreator.shared.create(path: url.path)
+            
+//            guard let file = XLSXFile(filepath: url.path) else {
+//                fatalError("xlsx file corrupted")
+//            }
+//            do {
+//                for path in try file.parseWorksheetPaths() {
+//                    let ws = try file.parseWorksheet(at: path)
+//                    for row in ws.data?.rows ?? [] {
+//                        for c in row.cells {
+//                            print(c)
+//                        }
+//                    }
+//                }
+//            } catch {
+//                print("error: ")
+//                print(error.localizedDescription)
+//                print(error)
+//            }
         }
     }
     
@@ -61,10 +87,22 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
     func progressChanged(progress: Float) {
         progressBar.setProgress(progress, animated: true)
         
+        if progress == 1.0 {
+            UIView.animate(withDuration: 0.8, delay: 1.0, options: .curveEaseInOut, animations: { 
+                self.progressBar.alpha = 0.0
+                self.completedLabel.alpha = 1.0
+                self.activityIndicator.alpha = 0.0
+                self.activityIndicator.stopAnimating()
+                self.view.layoutIfNeeded()
+            }) { (_) in
+                self.progressBar.isHidden = true
+                self.progressBar.alpha = 1.0
+            }
+        }
+        
     }
     
     @IBAction func selectCalendarTapped(_ sender: UIButton) {
-        let types: [String] = [(kUTTypeCommaSeparatedText as String), (kUTTypeCompositeContent as String)]
         let documentPicker = UIDocumentPickerViewController(documentTypes: types, in: .import)
         documentPicker.delegate = self
         documentPicker.modalPresentationStyle = .formSheet

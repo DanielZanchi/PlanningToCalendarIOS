@@ -8,6 +8,7 @@ target 'PlanningToCalendarIOS' do
     # Pods for PlanningToCalendarIOS
     pod 'iCalKit', :git => 'https://github.com/Danny182/iCalKit.git'
     pod 'CSV.swift', :git => 'https://github.com/yaslab/CSV.swift.git'
-    pod 'CoreXLSX', '~> 0.5.0'
+    pod 'CoreXLSX', '~> 0.6.0'
+#    pod 'XlsxReaderWriter'
     
 end

@@ -25,7 +25,7 @@ class IndexCreator {
             let sortedURLs = fileURLs.sorted {$0.lastPathComponent < $1.lastPathComponent}
             for file in sortedURLs where file.lastPathComponent != "index.html" {
                 print(file.lastPathComponent)
-                htmlLink = "\(htmlLink)<a href='webcal://planning.altervista.org/\(department.uppercased())/\(file.lastPathComponent)'>\(file.deletingPathExtension().lastPathComponent)</a><br>"
+                htmlLink = "\(htmlLink)<a href='webcal://planning.altervista.org/\(department)/\(file.lastPathComponent)'>\(file.deletingPathExtension().lastPathComponent)</a><br>"
             }
             
             

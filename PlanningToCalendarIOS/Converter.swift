@@ -53,61 +53,64 @@ class Converter {
         DispatchQueue.global().async {
             
             for department in self.dept {            
-            
-            let csv = try! CSVReader(string: CSVString)
-            
-            //parse CSV file
-            while let row = csv.next() {
-                let deptCellString = (row[0].uppercased())
-                let monthCellString = (row[4]).uppercased()
-                if self.monthDictionary.keys.contains(monthCellString) {
-                    self.month = monthCellString
-                    self.monthInNumber = self.getMonthInNumber(month: self.month)
+                var dep = department
+                if department == "SERVIZI" {
+                    dep = "servizi"
                 }
-                else {
-                    if row.count > 2 {
-                        let firstDay = (row[5]).uppercased()
-                        let secondDay = (row[6]).uppercased()
-                        if self.dayNames.contains(firstDay) && self.dayNames.contains(secondDay) && firstDay != secondDay {
-                            self.dayName = row
-                            self.dayName.removeFirst(5)
-                        }
+                let csv = try! CSVReader(string: CSVString)
+                
+                //parse CSV file
+                while let row = csv.next() {
+                    let deptCellString = (row[0].uppercased())
+                    let monthCellString = (row[4]).uppercased()
+                    if self.monthDictionary.keys.contains(monthCellString) {
+                        self.month = monthCellString
+                        self.monthInNumber = self.getMonthInNumber(month: self.month)
                     }
-                    if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
-                        self.nameAndHours = row
-                        let events = self.createEventsForPerson(nameAndHours: self.nameAndHours)
-                        if events.count > 0 {
-                            self.fileManager.createOrUpdateFile(events: events, name: "\((self.nameAndHours[4]))", department: department)
+                    else {
+                        if row.count > 2 {
+                            let firstDay = (row[5]).uppercased()
+                            let secondDay = (row[6]).uppercased()
+                            if self.dayNames.contains(firstDay) && self.dayNames.contains(secondDay) && firstDay != secondDay {
+                                self.dayName = row
+                                self.dayName.removeFirst(5)
+                            }
                         }
-                    }
-                    
-                    
-                }
-            }
-            
-            if let documentsFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-                if let fileURL = IndexCreator.shared.createIndex(inFolder: documentsFolder.appendingPathComponent(department), department: department) {
-                    let file = "index.html"
-                    do {
-                        let data = try Data(contentsOf: fileURL)
+                        if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
+                            self.nameAndHours = row
+                            let events = self.createEventsForPerson(nameAndHours: self.nameAndHours)
+                            if events.count > 0 {
+                                self.fileManager.createOrUpdateFile(events: events, name: "\((self.nameAndHours[4]))", department: dep)
+                            }
+                        }
                         
-                        //        MyFileUploader.shared.upload(fileURL: fileURL)
-                        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
-                        uploadService.send(data: data, with: file) { (success) in
-                            print(success)
-                            NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
+                        
+                    }
+                }
+                
+                if let documentsFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                    if let fileURL = IndexCreator.shared.createIndex(inFolder: documentsFolder.appendingPathComponent(dep), department: dep) {
+                        let file = "index.html"
+                        do {
+                            let data = try Data(contentsOf: fileURL)
                             
-                            DispatchQueue.main.async { () -> Void in  
-                                self.progress = self.progress + fraction 
-                            } 
-                            
+                            //        MyFileUploader.shared.upload(fileURL: fileURL)
+                            let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: dep)
+                            uploadService.send(data: data, with: file) { (success) in
+                                print(success)
+                                NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
+                                
+                                DispatchQueue.main.async { () -> Void in  
+                                    self.progress = self.progress + fraction 
+                                } 
+                                
+                            }
+                        } catch {
+                            print(error)
                         }
-                    } catch {
-                        print(error)
                     }
                 }
             }
-        }
         }
     }
     
@@ -140,10 +143,10 @@ class Converter {
                 h = 8
                 min = 0
                 name  = "Apertura negozio"
-            case "11":
+            case "11", "11X", "11x":
                 h = 11
                 min = 0
-                name = "Chiusura"
+                name = "11"
             case "":
                 if todayName != "D" {
                     h = 10
@@ -175,7 +178,7 @@ class Converter {
             case "12":
                 h = 12
                 min = 0
-                name = "Mezzogiorno"
+                name = "12"
             case "13", "13X", "13x":
                 h = 13
                 min = 0
@@ -226,9 +229,13 @@ class Converter {
             }
             if h != 0 {
                 var eh = h+9
-                if eh > 20 {
-                    eh = 20
+                if eh > 19 {
+                    eh = 19
+                    if monthInNumber >= 6 && monthInNumber <= 8 {
+                        eh = 20
+                    }
                 }
+                
                 let start = createDate(year: y, month: monthInNumber, day: day, hour: h, minute: min)
                 let end = createDate(year: y, month: monthInNumber, day: day, hour: eh, minute: min)
                 let event = createEvent(start: start, end: end, name: name)

@@ -126,14 +126,14 @@ easy as adding it to the `dependencies` value of your `Package.swift`.
 ```swift
 dependencies: [
   .package(url: "https://github.com/MaxDesiatov/CoreXLSX.git",
-           .upToNextMajor(from: "0.5.0"))
+           .upToNextMajor(from: "0.6.0"))
 ]
 ```
 
 ### CocoaPods
 
 CoreXLSX is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add `pod 'CoreXLSX', '~> 0.5.0'` to your `Podfile` like shown here:
+it, simply add `pod 'CoreXLSX', '~> 0.6.0'` to your `Podfile` like shown here:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -141,7 +141,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 # platform :ios, '9.0'
 use_frameworks!
 target '<Your Target Name>' do
-  pod 'CoreXLSX', '~> 0.5.0'
+  pod 'CoreXLSX', '~> 0.6.0'
 end
 ```
 
@@ -158,11 +158,10 @@ $ brew update
 $ brew install carthage
 ```
 
-Inside of your `Cartfile`, add GitHub path to `CoreXLSX` `master` branch
-(Carthage support is not available in a stable release yet):
+Inside of your `Cartfile`, add GitHub path to `CoreXLSX` and its latest version:
 
 ```ogdl
-github "MaxDesiatov/CoreXLSX" "master"
+github "MaxDesiatov/CoreXLSX" ~> 0.5
 ```
 
 Then, run the following command to build the framework:
@@ -172,7 +171,7 @@ $ carthage update
 ```
 
 Drag the built frameworks (including the subdependencies `XMLCoder` and
-`ZIPFoundation` into your Xcode project.
+`ZIPFoundation`) into your Xcode project.
 
 ## Contributing
 

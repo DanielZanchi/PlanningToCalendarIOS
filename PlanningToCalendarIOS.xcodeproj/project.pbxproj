@@ -17,6 +17,7 @@
 		3011095E2276F1EF0055577B /* FTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011095D2276F1EF0055577B /* FTPUpload.swift */; };
 		301109602276F2C00055577B /* IndexCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011095F2276F2C00055577B /* IndexCreator.swift */; };
 		301109622276F8910055577B /* CSVCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301109612276F8910055577B /* CSVCreator.swift */; };
+		3046A291227B420E0033F7DB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3046A290227B420E0033F7DB /* libz.tbd */; };
 		4D48CFB8FC5E506F4841375A /* Pods_PlanningToCalendarIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		3011095D2276F1EF0055577B /* FTPUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPUpload.swift; sourceTree = "<group>"; };
 		3011095F2276F2C00055577B /* IndexCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCreator.swift; sourceTree = "<group>"; };
 		301109612276F8910055577B /* CSVCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVCreator.swift; sourceTree = "<group>"; };
+		3046A290227B420E0033F7DB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6F4F0B1B9953474162A4B72E /* Pods-PlanningToCalendarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanningToCalendarIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanningToCalendarIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3046A291227B420E0033F7DB /* libz.tbd in Frameworks */,
 				4D48CFB8FC5E506F4841375A /* Pods_PlanningToCalendarIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +103,7 @@
 		9ED08DC1445173C153DA4F6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3046A290227B420E0033F7DB /* libz.tbd */,
 				B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */,
 			);
 			name = Frameworks;
@@ -328,9 +332,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/XlsxReaderWriter/";
 			};
 			name = Debug;
 		};
@@ -382,9 +388,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/XlsxReaderWriter/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -404,6 +412,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.PlanningToCalendarIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -424,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.PlanningToCalendarIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -26,10 +26,10 @@ let xmlStr = """
 """
 
 struct Note: Codable {
-    var to: String
-    var from: String
-    var heading: String
-    var body: String
+    let to: String
+    let from: String
+    let heading: String
+    let body: String
 }
 
 guard let data = xmlStr.data(using: .utf8) else { return }
@@ -199,6 +199,13 @@ struct Foo: Codable, DynamicNodeEncoding {
 }
 ```
 
+### Preserving whitespaces in element content
+
+By default whitespaces are trimmed in element content during decoding. This
+includes string values decoded with [value intrinsic keys](#coding-key-value-intrinsic). Starting with version 0.5 you can now set a
+property `trimValueWhitespaces` to `false` (the default value is `true`) on
+`XMLDecoder` instance to preserve all whitespaces in decoded strings.
+
 ## Installation
 
 ### Requirements
@@ -232,7 +239,7 @@ target 'YourApp' do
   use_frameworks!
 
   # Pods for Test
-  pod 'XMLCoder', '~> 0.4.1'
+  pod 'XMLCoder', '~> 0.5.1'
 
 end
 ```
@@ -261,7 +268,7 @@ $ brew install carthage
 Inside of your `Cartfile`, add GitHub path to `XMLCoder`:
 
 ```ogdl
-github "MaxDesiatov/XMLCoder" ~> 0.4.1
+github "MaxDesiatov/XMLCoder" ~> 0.5.1
 ```
 
 Then, run the following command to build the framework:
@@ -284,7 +291,7 @@ easy as adding it to the `dependencies` value of your `Package.swift`.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/MaxDesiatov/XMLCoder.git", from: "0.4.1")
+    .package(url: "https://github.com/MaxDesiatov/XMLCoder.git", from: "0.5.1")
 ]
 ```
 

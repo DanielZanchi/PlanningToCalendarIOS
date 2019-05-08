@@ -1,14 +1,14 @@
 PODS:
-  - CoreXLSX (0.5.0):
-    - XMLCoder (~> 0.4.1)
+  - CoreXLSX (0.6.0):
+    - XMLCoder (~> 0.5.1)
     - ZIPFoundation (~> 0.9.9)
   - CSV.swift (2.3.1)
   - iCalKit (0.1.0)
-  - XMLCoder (0.4.1)
+  - XMLCoder (0.5.1)
   - ZIPFoundation (0.9.9)
 
 DEPENDENCIES:
-  - CoreXLSX (~> 0.5.0)
+  - CoreXLSX (~> 0.6.0)
   - CSV.swift (from `https://github.com/yaslab/CSV.swift.git`)
   - iCalKit (from `https://github.com/Danny182/iCalKit.git`)
 
@@ -33,12 +33,12 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Danny182/iCalKit.git
 
 SPEC CHECKSUMS:
-  CoreXLSX: 1958e593f7f82533edaa91b8c2b7aa13f44068a1
+  CoreXLSX: 4e7f3bc9ec1f22c8c59e2fc04111d9680ebe8d96
   CSV.swift: d16f671b3090a2c0525d5f2165b18319074aae2b
   iCalKit: 6fc24b368fe28588ec9137b28d6c79636368ca4d
-  XMLCoder: d17bbfc6aad61f67ab94000dcc2bee914c686560
+  XMLCoder: 1b7ac2b8be0a2cb66ea2b62dbe6e03811c9f773e
   ZIPFoundation: 89df685c971926b0323087952320bdfee9f0b6ef
 
-PODFILE CHECKSUM: ec3e7f75b44f8af4a5c1ee5b31c5b03b47d7f62e
+PODFILE CHECKSUM: 97992d0c02b53f7ccdb5afdbda8171a018a12cbb
 
 COCOAPODS: 1.5.3
