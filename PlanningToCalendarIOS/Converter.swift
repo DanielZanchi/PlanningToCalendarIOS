@@ -60,17 +60,28 @@ class Converter {
                 let csv = try! CSVReader(string: CSVString)
                 
                 //parse CSV file
+                csv.next()
                 while let row = csv.next() {
                     let deptCellString = (row[0].uppercased())
-                    let monthCellString = (row[4]).uppercased()
+                    guard var monthCellString = (row[safe: 3]) else {
+                        continue
+                    }
+                    monthCellString = monthCellString.uppercased()
                     if self.monthDictionary.keys.contains(monthCellString) {
                         self.month = monthCellString
                         self.monthInNumber = self.getMonthInNumber(month: self.month)
                     }
                     else {
                         if row.count > 2 {
-                            let firstDay = (row[5]).uppercased()
-                            let secondDay = (row[6]).uppercased()
+                            guard var firstDay = row[safe: 5] else {
+                                continue
+                            }
+                            guard var secondDay = row[safe: 6] else {
+                                continue
+                            }
+
+                            firstDay = firstDay.uppercased()
+                            secondDay = secondDay.uppercased()
                             if self.dayNames.contains(firstDay) && self.dayNames.contains(secondDay) && firstDay != secondDay {
                                 self.dayName = row
                                 self.dayName.removeFirst(5)
@@ -289,5 +300,13 @@ extension Date {
         
         let year = calendar.component(.year, from: oneMonthFromNow! )        
         return year
+    }
+}
+
+
+extension Array {
+    subscript(safe index: Index) -> Element? {
+        let isValidIndex = index >= 0 && index < count
+        return isValidIndex ? self[index] : nil
     }
 }

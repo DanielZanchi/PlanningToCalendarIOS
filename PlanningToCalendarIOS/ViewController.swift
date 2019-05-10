@@ -8,7 +8,7 @@
 
 import UIKit
 import MobileCoreServices
-//import CoreXLSXx
+import CoreXLSX
 
 class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationControllerDelegate, ProgressDelegate {
 
@@ -19,8 +19,10 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
     @IBOutlet weak var progressBar: UIProgressView!
     
     var converter = Converter.shared
-    let types = [(kUTTypeCommaSeparatedText as String),
-                 (kUTTypeCompositeContent as String)]
+    let types = [
+//        (kUTTypeCommaSeparatedText as String),
+                 (kUTTypeCompositeContent as String)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,26 +62,16 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             progressBar.isHidden = false
             activityIndicator.alpha = 1.0
             activityIndicator.startAnimating()
-            converter.launchConverter(path: url.path)
             
-            
-//            guard let file = XLSXFile(filepath: url.path) else {
-//                fatalError("xlsx file corrupted")
-//            }
-//            do {
-//                for path in try file.parseWorksheetPaths() {
-//                    let ws = try file.parseWorksheet(at: path)
-//                    for row in ws.data?.rows ?? [] {
-//                        for c in row.cells {
-//                            print(c)
-//                        }
-//                    }
-//                }
-//            } catch {
-//                print("error: ")
-//                print(error.localizedDescription)
-//                print(error)
-//            }
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
+//        converter.launchConverter(path: url.path)
+            if let csvURL = CSVCreator.shared.create(path: url.path) {
+            converter.launchConverter(path: csvURL.path)
+            } else {
+                print("csv not created correctly")
+            }
+
         }
     }
     
@@ -88,6 +80,9 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
         progressBar.setProgress(progress, animated: true)
         
         if progress == 1.0 {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+            
             UIView.animate(withDuration: 0.8, delay: 1.0, options: .curveEaseInOut, animations: { 
                 self.progressBar.alpha = 0.0
                 self.completedLabel.alpha = 1.0
@@ -103,6 +98,9 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
     }
     
     @IBAction func selectCalendarTapped(_ sender: UIButton) {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
+        
         let documentPicker = UIDocumentPickerViewController(documentTypes: types, in: .import)
         documentPicker.delegate = self
         documentPicker.modalPresentationStyle = .formSheet
