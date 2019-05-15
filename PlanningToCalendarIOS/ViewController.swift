@@ -65,9 +65,8 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
-//        converter.launchConverter(path: url.path)
             if let csvURL = CSVCreator.shared.create(path: url.path) {
-            converter.launchConverter(path: csvURL.path)
+//            converter.launchConverter(path: csvURL.path)
             } else {
                 print("csv not created correctly")
             }

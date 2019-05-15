@@ -84,7 +84,7 @@ class Converter {
                             secondDay = secondDay.uppercased()
                             if self.dayNames.contains(firstDay) && self.dayNames.contains(secondDay) && firstDay != secondDay {
                                 self.dayName = row
-                                self.dayName.removeFirst(5)
+                                self.dayName.removeFirst(4)
                             }
                         }
                         if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
@@ -158,7 +158,7 @@ class Converter {
                 h = 11
                 min = 0
                 name = "11"
-            case "":
+            case "", " ":
                 if todayName != "D" {
                     h = 10
                     min = 0
