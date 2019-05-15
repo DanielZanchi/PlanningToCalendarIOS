@@ -10,18 +10,19 @@ import UIKit
 import MobileCoreServices
 import CoreXLSX
 
-class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationControllerDelegate, ProgressDelegate {
-
+class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationControllerDelegate, ProgressDelegate, ErrorDelegate {    
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var completedLabel: UILabel!
     @IBOutlet weak var selectCalendarButton: UIButton!
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     var converter = Converter.shared
     let types = [
-//        (kUTTypeCommaSeparatedText as String),
-                 (kUTTypeCompositeContent as String)
+        //        (kUTTypeCommaSeparatedText as String),
+        (kUTTypeCompositeContent as String)
     ]
     
     override func viewDidLoad() {
@@ -40,9 +41,9 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             versionLabel.text = ""
         }
         
-//        progressBar.isHidden = true
+        //        progressBar.isHidden = true
         progressBar.progress = 0.0
-
+        
         progressBar.isHidden = true
         progressBar.tintColor = .green
         progressBar.layer.cornerRadius = 10
@@ -53,12 +54,15 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
         completedLabel.alpha = 0.0
         
         activityIndicator.alpha = 0.0
+        
+        errorLabel.isHidden = true
     }
     
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         // you get from the urls parameter the urls from the files selected
         if let url = urls.first {
             converter.delegate = self
+            converter.errorDelegate = self
             progressBar.isHidden = false
             activityIndicator.alpha = 1.0
             activityIndicator.startAnimating()
@@ -66,11 +70,11 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
             if let csvURL = CSVCreator.shared.create(path: url.path) {
-            converter.launchConverter(path: csvURL.path)
+                converter.launchConverter(path: csvURL.path)
             } else {
                 print("csv not created correctly")
             }
-
+            
         }
     }
     
@@ -94,6 +98,12 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             }
         }
         
+    }
+    
+    func errorOccurred(error: String) {
+        errorLabel.isHidden = false
+        errorLabel.text = "Error! \(error)" 
+        print("error \(error)")
     }
     
     @IBAction func selectCalendarTapped(_ sender: UIButton) {

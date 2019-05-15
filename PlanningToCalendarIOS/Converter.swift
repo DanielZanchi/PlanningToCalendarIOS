@@ -14,10 +14,15 @@ protocol ProgressDelegate {
     func progressChanged(progress: Float)
 }
 
+protocol ErrorDelegate {
+    func errorOccurred(error: String)
+}
+
 class Converter {
     
     static let shared = Converter()
     
+    var errorDelegate: ErrorDelegate?
     var delegate: ProgressDelegate?
     var progress: Float = 0 {
         didSet {
@@ -37,7 +42,7 @@ class Converter {
     var nameAndHours: [String]!
     
     var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS", ]
-    var symbolsWithName = ["LSILK", "MSILK", "P(M)", "HB", "SHOES", "LUG", "LRTW", "MRTW"]
+    var symbolsWithName = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "P(M)", "HB", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00"]
     
     init() {
     }
@@ -63,6 +68,9 @@ class Converter {
                 csv.next()
                 while let row = csv.next() {
                     let deptCellString = (row[0].uppercased())
+                    if deptCellString == "VUOTO" {
+                        continue
+                    }
                     guard var monthCellString = (row[safe: 4]) else {
                         continue
                     }
@@ -104,17 +112,20 @@ class Converter {
                     do {
                         let deptDir = documentsFolder.appendingPathComponent(dep)
                         let files = try FileManager.default.contentsOfDirectory(at: deptDir, includingPropertiesForKeys: [], options: .skipsHiddenFiles)
-                        for file in files {
+                        for (index, file) in files.enumerated() {
                             let data = try Data(contentsOf: file)
                             
                             let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: dep)
                             uploadService.send(data: data, with: file.lastPathComponent) { (success) in
                                 print("\(file.lastPathComponent) \(success) in \(dep)")
-                                NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
                                 
-                                DispatchQueue.main.async { () -> Void in  
-                                    self.progress = self.progress + fraction 
-                                } 
+                                if index == files.count - 1{
+                                    NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
+                                    
+                                    DispatchQueue.main.async { () -> Void in  
+                                        self.progress = self.progress + fraction 
+                                    } 
+                                }
                             }
                         }
                     } catch {
@@ -129,17 +140,14 @@ class Converter {
     func createEventsForPerson(nameAndHours: [String]) -> [Event]{
         var events = [Event]()
         //parse Hours
-        var h: Int!
-        var min: Int!
         let y = Date().getCurrentYear()
-        var name: String!
         var NAH = nameAndHours
         NAH.removeFirst(5)
         var day = 0
+        
         for symbol in NAH {
+            var time = Time(h: 0, min: 0, name: "")
             day = day + 1
-            h = 0
-            min = 0
             
             let todayName = dayName[day-1].uppercased()
             if dayNames.contains(todayName) == false {
@@ -147,113 +155,118 @@ class Converter {
             }
             switch symbol {
             case "a":
-                h = 9
-                min = 0
-                name = "Apertura"
+                time = Time(h: 9, min: 0, name: "apertura")
             case "A":
-                h = 8
-                min = 0
-                name  = "Apertura negozio"
+                time = Time(h: 8, min: 0, name: "apertura negozio")
             case "11", "11X", "11x":
-                h = 11
-                min = 0
-                name = "11"
+                time = Time(h: 11, min: 0, name: "11")
             case "", " ":
                 if todayName != "D" {
-                    h = 10
-                    min = 0
-                    name = "Normale"
+                    time = Time(h: 10, min: 0, name: "normale")
+                    if isSummer() {
+                        time = Time(h: 9, min: 30, name: "normale (MB 9:15)")
+                    }
                 }
             case "P", "p", "10", "X":
-                h = 10
-                min = 0
-                name = "Normale"
+                time = Time(h: 10, min: 0, name: "normale")
+                if isSummer() {
+                    time = Time(h: 9, min: 30, name: "normale (MB 9:15)")
+                }
             case "T  T":
-                h = 10
-                min = 0
-                name = "Trasferta"
+                time = Time(h: 10, min: 0, name: "trasferta")
             case "$":
-                if monthInNumber >= 6 && monthInNumber <= 8 {
-                    h = 10
-                    min = 30
-                    name = "$"
+                if isSummer() {
+                    time = Time(h: 10, min: 0, name: "$")
                 } else {
-                    h = 10
-                    min = 0
-                    name = "Chiusura $"
+                    time = Time(h: 10, min: 0, name: "$")
                 }
             case "C":
-                h = 10
-                min = 0
-                name = "Chiusura negozio"
+                time = Time(h: 10, min: 0, name: "chiusura negozio")
             case "12":
-                h = 12
-                min = 0
-                name = "12"
-            case "13", "13X", "13x":
-                h = 13
-                min = 0
-                name = "13"
+                time = Time(h: 12, min: 0, name: "12")
+                if isSummer() {
+                    time = Time(h: 11, min: 30, name: "12 (11:30)")
+                }
+            case "13", "13X", "13x", "12:30", "0.52083333333333337":
+                time = Time(h: 13, min: 0, name: "13")
+                if isSummer() {
+                    time = Time(h: 12, min: 30, name: "12:30")
+                }
             case "15":
-                h = 15
-                min = 0
-                name = "15"
-            case "16":
-                h = 16
-                min = 0
-                name = "16"
-            case "14":
-                h = 14
-                min = 0
-                name = "14"
+                time = Time(h: 15, min: 0, name: "15")
+                if isSummer() {
+                    time = Time(h: 14, min: 30, name: "15 (14:30)")
+                }
+            case "16", "15:30", "0.64583333333333337":
+                time = Time(h: 16, min: 0, name: "16")
+                if isSummer() {
+                    time = Time(h: 15, min: 30, name: "15:30")
+                }
+            case "14", "13:30", "0.5625":
+                time = Time(h: 14, min: 0, name: "14")
+                if isSummer() {
+                    time = Time(h: 13, min: 30, name: "13:30")
+                }
             case "13$":
-                h = 13
-                min = 0
-                name = "13 $"
+                time = Time(h: 13, min: 0, name: "13 $")
             case "9.5", "9.5X":
-                h = 9
-                min = 30
-                name = "9:30"
+                time = Time(h: 9, min: 30, name: "9:30")
             case "15$":
-                h = 15
-                min = 0
-                name = "15 Chiusura"
+                time = Time(h: 15, min: 0, name: "15 $")
             case "11$":
-                h = 11
-                min = 0
-                name = "11 Chiusura"
+                time = Time(h: 11, min: 0, name: "$")
             case "12$":
-                h = 12
-                min = 0
-                name = "12 Chiusura"
+                time = Time(h: 12, min: 0, name: "12 $")
             case "inv":
-                h = 10
-                min = 0
-                name = "inventario"
+                time = Time(h: 10, min: 0, name: "inventario")
+            case "10:30", "10:30:00", "0.4375":
+                time = Time(h: 10, min: 30, name: "10:30 (MB 10:30)")
+            case "MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00" :
+                if isSummer() {
+                    time = Time(h: 13, min: 30, name: symbol)
+                }
+            case "MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00":
+                if isSummer() {
+                    time = Time(h: 15, min: 30, name: symbol)
+                }
+            case "shoes12:30:00", "MSILK12:30:00":
+                time = Time(h: 12, min: 30, name: symbol)
             case _ where symbolsWithName.contains(symbol):
-                h = 10
-                min = 0
-                name = symbol
+                if isSummer() {
+                    time = Time(h: 10, min: 30, name: symbol)
+                } else {
+                    time = Time(h: 10, min: 0, name: symbol)
+                }
+            case "x17", "X17":
+                time = Time(h: 10, min: 30, name: symbol)
+            case "L", "FR", "F", "R", "As", "ROL", "B.R", "LM":
+                // not working
+                time = Time(h: 0, min: 0, name: "")
             default:
-                h = 0
-                min = 0
+                print("symbol \(symbol)")
+                errorDelegate?.errorOccurred(error: "Symbol not handled: \(symbol)")
+                time = Time(h: 0, min: 0, name: "")
             }
-            if h != 0 {
-                var eh = h+9
+            if time.h != 0 {
+                var eh = time.h + 9
                 if eh > 19 {
                     eh = 19
-                    if monthInNumber >= 6 && monthInNumber <= 8 {
+                    if isSummer() {
                         eh = 20
                     }
                 }
                 
-                let start = createDate(year: y, month: monthInNumber, day: day, hour: h, minute: min)
-                let end = createDate(year: y, month: monthInNumber, day: day, hour: eh, minute: min)
-                let event = createEvent(start: start, end: end, name: name)
+                let start = createDate(year: y, month: monthInNumber, day: day, hour: time.h, minute: time.min)
+                let end = createDate(year: y, month: monthInNumber, day: day, hour: eh, minute: time.min)
+                let event = createEvent(start: start, end: end, name: time.name)
                 events.append(event)
             }
         }
         return events
+    }
+    
+    func isSummer() -> Bool {
+        return monthInNumber >= 6 && monthInNumber <= 8
     }
     
     func createEvent(start: Date, end: Date, name: String) -> Event{
@@ -288,6 +301,12 @@ class Converter {
             }
         }
         return 0
+    }
+    
+    struct Time {
+        var h: Int
+        var min: Int
+        var name: String
     }
 }
 

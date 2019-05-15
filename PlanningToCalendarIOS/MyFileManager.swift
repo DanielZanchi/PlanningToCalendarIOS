@@ -66,20 +66,10 @@ class MyFileManager  {
         catch {/* error handling here */
             print("error creating file")
         }
-        
-//        let data = try! Data(contentsOf: fileURL)
-        
-//        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
-//        uploadService.send(data: data, with: file) { (success) in
-//            print(success)
-//        }
+
     }
     
-    func updateFile(events: [Event], name: String, department: String, fileURL: URL) {
-        print("already exists \(name)")
-        let file = "\(name).ics" //this is the file. we will write to and read from it
-        
-        
+    func updateFile(events: [Event], name: String, department: String, fileURL: URL) {       
         let cals = try! iCal.load(url: fileURL)
         var cal = cals.first
         
@@ -105,15 +95,6 @@ class MyFileManager  {
         catch {/* error handling here */
             print("error creating file")
         }
-        
-//        let data = try! Data(contentsOf: fileURL)
-        
-        
-        
-//        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
-//        uploadService.send(data: data, with: file) { (success) in
-//            print(success)
-//        }
         
     }
     
