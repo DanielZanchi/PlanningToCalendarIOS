@@ -63,7 +63,7 @@ class Converter {
                 csv.next()
                 while let row = csv.next() {
                     let deptCellString = (row[0].uppercased())
-                    guard var monthCellString = (row[safe: 3]) else {
+                    guard var monthCellString = (row[safe: 4]) else {
                         continue
                     }
                     monthCellString = monthCellString.uppercased()
@@ -79,12 +79,12 @@ class Converter {
                             guard var secondDay = row[safe: 6] else {
                                 continue
                             }
-
+                            
                             firstDay = firstDay.uppercased()
                             secondDay = secondDay.uppercased()
                             if self.dayNames.contains(firstDay) && self.dayNames.contains(secondDay) && firstDay != secondDay {
                                 self.dayName = row
-                                self.dayName.removeFirst(4)
+                                self.dayName.removeFirst(5)
                             }
                         }
                         if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
@@ -100,25 +100,25 @@ class Converter {
                 }
                 
                 if let documentsFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-                    if let fileURL = IndexCreator.shared.createIndex(inFolder: documentsFolder.appendingPathComponent(dep), department: dep) {
-                        let file = "index.html"
-                        do {
-                            let data = try Data(contentsOf: fileURL)
+                    _ = IndexCreator.shared.createIndex(inFolder: documentsFolder.appendingPathComponent(dep), department: dep) 
+                    do {
+                        let deptDir = documentsFolder.appendingPathComponent(dep)
+                        let files = try FileManager.default.contentsOfDirectory(at: deptDir, includingPropertiesForKeys: [], options: .skipsHiddenFiles)
+                        for file in files {
+                            let data = try Data(contentsOf: file)
                             
-                            //        MyFileUploader.shared.upload(fileURL: fileURL)
                             let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: dep)
-                            uploadService.send(data: data, with: file) { (success) in
-                                print(success)
+                            uploadService.send(data: data, with: file.lastPathComponent) { (success) in
+                                print("\(file.lastPathComponent) \(success) in \(dep)")
                                 NotificationCenter.default.post(name: Notification.Name(rawValue: "finish"), object: nil)
                                 
                                 DispatchQueue.main.async { () -> Void in  
                                     self.progress = self.progress + fraction 
                                 } 
-                                
                             }
-                        } catch {
-                            print(error)
                         }
+                    } catch {
+                        print(error)
                     }
                 }
             }

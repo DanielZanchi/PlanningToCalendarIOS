@@ -67,13 +67,12 @@ class MyFileManager  {
             print("error creating file")
         }
         
-        let data = try! Data(contentsOf: fileURL)
+//        let data = try! Data(contentsOf: fileURL)
         
-        //        MyFileUploader.shared.upload(fileURL: fileURL)
-        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
-        uploadService.send(data: data, with: file) { (success) in
-            print(success)
-        }
+//        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
+//        uploadService.send(data: data, with: file) { (success) in
+//            print(success)
+//        }
     }
     
     func updateFile(events: [Event], name: String, department: String, fileURL: URL) {
@@ -107,14 +106,14 @@ class MyFileManager  {
             print("error creating file")
         }
         
-        let data = try! Data(contentsOf: fileURL)
+//        let data = try! Data(contentsOf: fileURL)
         
         
         
-        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
-        uploadService.send(data: data, with: file) { (success) in
-            print(success)
-        }
+//        let uploadService = FTPUpload(baseUrl: "ftp.planning.altervista.org", userName: "planning", password: "pazpih-zetvUj-tymwu5", directoryPath: department)
+//        uploadService.send(data: data, with: file) { (success) in
+//            print(success)
+//        }
         
     }
     

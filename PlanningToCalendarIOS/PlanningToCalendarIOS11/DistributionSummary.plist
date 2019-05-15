@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PlanningToCalendarIOS.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>FDCF3B77A558CE05E5A27B5BB407DEEA5295EAC2</string>
+				<key>dateExpires</key>
+				<string>23/11/2019</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FDCF3B77A558CE05E5A27B5BB407DEEA5295EAC2</string>
+						<key>dateExpires</key>
+						<string>23/11/2019</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>CSV.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZAN22F267Y</string>
+						<key>name</key>
+						<string>Daniel Zanchi</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FDCF3B77A558CE05E5A27B5BB407DEEA5295EAC2</string>
+						<key>dateExpires</key>
+						<string>23/11/2019</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>CoreXLSX.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZAN22F267Y</string>
+						<key>name</key>
+						<string>Daniel Zanchi</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FDCF3B77A558CE05E5A27B5BB407DEEA5295EAC2</string>
+						<key>dateExpires</key>
+						<string>23/11/2019</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>XMLCoder.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZAN22F267Y</string>
+						<key>name</key>
+						<string>Daniel Zanchi</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FDCF3B77A558CE05E5A27B5BB407DEEA5295EAC2</string>
+						<key>dateExpires</key>
+						<string>23/11/2019</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>ZIPFoundation.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZAN22F267Y</string>
+						<key>name</key>
+						<string>Daniel Zanchi</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FDCF3B77A558CE05E5A27B5BB407DEEA5295EAC2</string>
+						<key>dateExpires</key>
+						<string>23/11/2019</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>iCalKit.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZAN22F267Y</string>
+						<key>name</key>
+						<string>Daniel Zanchi</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>ZAN22F267Y.com.DanielZanchi.PlanningToCalendarIOS</string>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<string>Production</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>iCloud.com.DanielZanchi.PlanningToCalendarIOS</string>
+				</array>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>CloudDocuments</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>ZAN22F267Y</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>iCloud.com.DanielZanchi.PlanningToCalendarIOS</string>
+				</array>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>ZAN22F267Y.com.DanielZanchi.PlanningToCalendarIOS</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>ZAN22F267Y.com.DanielZanchi.PlanningToCalendarIOS</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>PlanningToCalendarIOS.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>cd11a8fd-b577-47da-8d6a-568cd3ae806e</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.DanielZanchi.PlanningToCalendarIOS</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>ZAN22F267Y</string>
+				<key>name</key>
+				<string>Daniel Zanchi</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

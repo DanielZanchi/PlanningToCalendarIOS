@@ -75,7 +75,6 @@ extension FTPUpload {
                 break
             } else if bytesWritten == 0 {
                 // SUCCESS
-                print("FTPUpload - Completed!!")
                 break
             }
         } while CFWriteStreamCanAcceptBytes(ftpWriteStream)
