@@ -41,8 +41,8 @@ class Converter {
     var dayName: [String]!
     var nameAndHours: [String]!
     
-    var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS", ]
-    var symbolsWithName = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "P(M)", "HB", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00"]
+    var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS", "BAG"]
+    var symbolsWithName = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30"]
     
     init() {
     }
@@ -61,6 +61,9 @@ class Converter {
                 var dep = department
                 if department == "SERVIZI" {
                     dep = "servizi"
+                }
+                if department == "BAG" {
+                    dep = "BAGS"
                 }
                 let csv = try! CSVReader(string: CSVString)
                 
@@ -221,11 +224,11 @@ class Converter {
                 time = Time(h: 10, min: 0, name: "inventario")
             case "10:30", "10:30:00", "0.4375":
                 time = Time(h: 10, min: 30, name: "10:30 (MB 10:30)")
-            case "MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00" :
+            case "MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00", "HB13:30:00":
                 if isSummer() {
                     time = Time(h: 13, min: 30, name: symbol)
                 }
-            case "MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00":
+            case "MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00", "HB15:30:00":
                 if isSummer() {
                     time = Time(h: 15, min: 30, name: symbol)
                 }
