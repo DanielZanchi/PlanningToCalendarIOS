@@ -66,6 +66,8 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             progressBar.isHidden = false
             activityIndicator.alpha = 1.0
             activityIndicator.startAnimating()
+            errorLabel.isHidden = true
+            progressBar.setProgress(0.0, animated: true)
             
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
@@ -85,6 +87,8 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
         if progress == 1.0 {
             let generator = UIImpactFeedbackGenerator(style: .heavy)
             generator.impactOccurred()
+            
+            completedLabel.text = "Updated \(counter) employee events"
             
             UIView.animate(withDuration: 0.8, delay: 1.0, options: .curveEaseInOut, animations: { 
                 self.progressBar.alpha = 0.0

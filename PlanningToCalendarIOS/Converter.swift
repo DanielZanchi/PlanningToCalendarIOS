@@ -18,6 +18,8 @@ protocol ErrorDelegate {
     func errorOccurred(error: String)
 }
 
+var counter = 0
+
 class Converter {
     
     static let shared = Converter()
@@ -42,7 +44,7 @@ class Converter {
     var nameAndHours: [String]!
     
     var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS", "BAG"]
-    var symbolsWithName = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30"]
+    var symbolsWithName = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "MSILK10:30", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30"]
     
     init() {
     }
@@ -55,6 +57,8 @@ class Converter {
         let CSVString = fileManager.replaceWithCommas(string: fileStringNoCommas)
         
         let fraction: Float = 1.0 / Float(dept.count)
+        counter = 0
+        
         DispatchQueue.global().async {
             
             for department in self.dept {            
@@ -102,6 +106,7 @@ class Converter {
                             self.nameAndHours = row
                             let events = self.createEventsForPerson(nameAndHours: self.nameAndHours)
                             if events.count > 0 {
+                                counter += 1
                                 self.fileManager.createOrUpdateFile(events: events, name: "\((self.nameAndHours[4]))", department: dep)
                             }
                         }
@@ -259,6 +264,10 @@ class Converter {
                     }
                 }
                 
+                if monthInNumber == nil {
+                    errorDelegate?.errorOccurred(error: "MonthInNumber NIL - Contact Daniel")    
+                    break
+                }
                 let start = createDate(year: y, month: monthInNumber, day: day, hour: time.h, minute: time.min)
                 let end = createDate(year: y, month: monthInNumber, day: day, hour: eh, minute: time.min)
                 let event = createEvent(start: start, end: end, name: time.name)
@@ -269,6 +278,10 @@ class Converter {
     }
     
     func isSummer() -> Bool {
+        if monthInNumber == nil {
+            errorDelegate?.errorOccurred(error: "MonthInNumber NIL - Contact Daniel")
+            return false
+        }
         return monthInNumber >= 6 && monthInNumber <= 8
     }
     
