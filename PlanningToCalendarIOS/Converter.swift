@@ -43,15 +43,20 @@ class Converter {
     var dayName: [String]!
     var nameAndHours: [String]!
     
-    var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS", "BAG"]
-    var symbolsWithName = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "MSILK10:30", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30"]
+    var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS"]
+    var deptServizi = ["WELCOMIST", "MAGAZZINIERI", "INCARTO", "RUNNER", "CASSIERI", "CASSA", "MAGAZZINO", "SERVIZI"]
+    var symbolsWithName1030 = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "MSILK10:30", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30", "HB  10:30", "SILK  10:30", "LRTW  10:30", "MRTW  10:30", "SHOES  10:30", "SILK  12:30", "LUG  10:30", "10:30", "\"10:30\"", "LRTW 10:30", "HB", "SILK", "LUG", "MRTW", "LRTW", ]
+    var symbolsWithName1230 = ["shoes12:30:00", "MSILK12:30:00", "SHOES  12:30", "12:30", "LUG  12:30",  "\"12:30\""]
+    var symbolsWithName1530 = ["MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00", "HB15:30:00", "MRTW  15:30", "HB  15:30", "SILK  15:30", "SHOES  15:30", "LUG  15:30", "LRTW  15:30", "15shoes", "15:30", "\"15:30\""]
+    var symbolsWithName1330 = ["MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00", "HB13:30:00", "HB  13:30", "LUG  13:30" , "MRTW  13:30", "SHOES  13:30", "SILK  13:30"]
     
     init() {
     }
     
-    func launchConverter(path: String) {
+    func launchConverter(path: String, departments: [String]) {
         fileManager = MyFileManager()
         
+        self.dept = departments
         let fileString = fileManager.readFile(path: path)
         let fileStringNoCommas = fileManager.replaceCommasWithDots(string: fileString)
         let CSVString = fileManager.replaceWithCommas(string: fileStringNoCommas)
@@ -61,20 +66,27 @@ class Converter {
         
         DispatchQueue.global().async {
             
-            for department in self.dept {            
+            for department in self.dept {
+                let department = department.uppercased()
                 var dep = department
-                if department == "SERVIZI" {
+                if self.deptServizi.contains(department) {
                     dep = "servizi"
                 }
-                if department == "BAG" {
+                if department == "BAG" || department == "HB" {
                     dep = "BAGS"
                 }
                 let csv = try! CSVReader(string: CSVString)
                 
                 //parse CSV file
-                csv.next()
+//                csv.next()
                 while let row = csv.next() {
-                    let deptCellString = (row[0].uppercased())
+                    var deptCellString = (row[0].uppercased())
+                    if self.deptServizi.contains(deptCellString) {
+                        deptCellString = "SERVIZI"
+                    }
+                    if deptCellString == "HB" || deptCellString == "BAG" {
+                        deptCellString = "BAGS"
+                    }
                     if deptCellString == "VUOTO" {
                         continue
                     }
@@ -104,10 +116,14 @@ class Converter {
                         }
                         if monthCellString != "" && monthCellString != "Casa gucci".capitalized && department == deptCellString {
                             self.nameAndHours = row
+                            let name = self.nameAndHours[4]
+                            if name.isNumber || name == "CASSIERI" || name == "MAGAZZINIERI" || name == "RUNNER" || name == "INCARTO" {
+                                continue
+                            }
                             let events = self.createEventsForPerson(nameAndHours: self.nameAndHours)
                             if events.count > 0 {
                                 counter += 1
-                                self.fileManager.createOrUpdateFile(events: events, name: "\((self.nameAndHours[4]))", department: dep)
+                                self.fileManager.createOrUpdateFile(events: events, name: name, department: dep)
                             }
                         }
                         
@@ -188,7 +204,7 @@ class Converter {
                 } else {
                     time = Time(h: 10, min: 0, name: "$")
                 }
-            case "C":
+            case "C", "Cx", "CX":
                 time = Time(h: 10, min: 0, name: "chiusura negozio")
             case "12":
                 time = Time(h: 12, min: 0, name: "12")
@@ -200,7 +216,7 @@ class Converter {
                 if isSummer() {
                     time = Time(h: 12, min: 30, name: "12:30")
                 }
-            case "15":
+            case "15", "15:00":
                 time = Time(h: 15, min: 0, name: "15")
                 if isSummer() {
                     time = Time(h: 14, min: 30, name: "15 (14:30)")
@@ -210,7 +226,7 @@ class Converter {
                 if isSummer() {
                     time = Time(h: 15, min: 30, name: "15:30")
                 }
-            case "14", "13:30", "0.5625":
+            case "14", "13:30", "0.5625", "x14":
                 time = Time(h: 14, min: 0, name: "14")
                 if isSummer() {
                     time = Time(h: 13, min: 30, name: "13:30")
@@ -219,6 +235,8 @@ class Converter {
                 time = Time(h: 13, min: 0, name: "13 $")
             case "9.5", "9.5X":
                 time = Time(h: 9, min: 30, name: "9:30")
+            case "11:30", "0.47916666666666669":
+                time = Time(h: 11, min: 30, name: "11:30")
             case "15$":
                 time = Time(h: 15, min: 0, name: "15 $")
             case "11$":
@@ -229,17 +247,17 @@ class Converter {
                 time = Time(h: 10, min: 0, name: "inventario")
             case "10:30", "10:30:00", "0.4375":
                 time = Time(h: 10, min: 30, name: "10:30 (MB 10:30)")
-            case "MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00", "HB13:30:00":
+            case _ where symbolsWithName1330.contains(symbol):
                 if isSummer() {
                     time = Time(h: 13, min: 30, name: symbol)
                 }
-            case "MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00", "HB15:30:00":
+            case _ where symbolsWithName1530.contains(symbol):
                 if isSummer() {
                     time = Time(h: 15, min: 30, name: symbol)
                 }
-            case "shoes12:30:00", "MSILK12:30:00":
+            case _ where symbolsWithName1230.contains(symbol):
                 time = Time(h: 12, min: 30, name: symbol)
-            case _ where symbolsWithName.contains(symbol):
+            case _ where symbolsWithName1030.contains(symbol):
                 if isSummer() {
                     time = Time(h: 10, min: 30, name: symbol)
                 } else {
@@ -247,7 +265,7 @@ class Converter {
                 }
             case "x17", "X17":
                 time = Time(h: 10, min: 30, name: symbol)
-            case "L", "FR", "F", "R", "As", "ROL", "B.R", "LM":
+            case "L", "FR", "F", "R", "As", "ROL", "B.R", "LM", "BR", "-", "fr", "MAL", "_", "OFF":
                 // not working
                 time = Time(h: 0, min: 0, name: "")
             default:
@@ -343,5 +361,11 @@ extension Array {
     subscript(safe index: Index) -> Element? {
         let isValidIndex = index >= 0 && index < count
         return isValidIndex ? self[index] : nil
+    }
+}
+
+extension String  {
+    var isNumber: Bool {
+        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
     }
 }

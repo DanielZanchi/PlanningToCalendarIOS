@@ -18,6 +18,7 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var serviziSwitch: UISwitch!
     
     var converter = Converter.shared
     let types = [
@@ -68,11 +69,19 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
             activityIndicator.startAnimating()
             errorLabel.isHidden = true
             progressBar.setProgress(0.0, animated: true)
+            completedLabel.text = ""
+
             
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
+            
+            var dept = ["SILK", "SHOES", "LRTW", "MRTW", "BAGS"]
+            if serviziSwitch.isOn {
+                dept.append("SERVIZI")
+            } 
+            
             if let csvURL = CSVCreator.shared.create(path: url.path) {
-                converter.launchConverter(path: csvURL.path)
+                converter.launchConverter(path: csvURL.path, departments: dept)
             } else {
                 print("csv not created correctly")
             }
@@ -105,9 +114,11 @@ class ViewController: UIViewController, UIDocumentPickerDelegate, UINavigationCo
     }
     
     func errorOccurred(error: String) {
-        errorLabel.isHidden = false
-        errorLabel.text = "Error! \(error)" 
-        print("error \(error)")
+        DispatchQueue.main.async {
+            self.errorLabel.isHidden = false            
+            self.errorLabel.text = "Error! \(error)" 
+            print("error \(error)")
+        }
     }
     
     @IBAction func selectCalendarTapped(_ sender: UIButton) {
