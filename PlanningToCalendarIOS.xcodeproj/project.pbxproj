@@ -17,6 +17,10 @@
 		3011095E2276F1EF0055577B /* FTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011095D2276F1EF0055577B /* FTPUpload.swift */; };
 		301109602276F2C00055577B /* IndexCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011095F2276F2C00055577B /* IndexCreator.swift */; };
 		301109622276F8910055577B /* CSVCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301109612276F8910055577B /* CSVCreator.swift */; };
+		30273A9C2301ACE000736B8E /* String+isNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30273A9B2301ACE000736B8E /* String+isNumber.swift */; };
+		30273A9E2301ACFA00736B8E /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30273A9D2301ACFA00736B8E /* Array+Safe.swift */; };
+		30273AA12301AD2800736B8E /* Date+getMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30273AA02301AD2800736B8E /* Date+getMonth.swift */; };
+		30273AA32301AD4D00736B8E /* Date+getYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30273AA22301AD4D00736B8E /* Date+getYear.swift */; };
 		3046A291227B420E0033F7DB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3046A290227B420E0033F7DB /* libz.tbd */; };
 		4D48CFB8FC5E506F4841375A /* Pods_PlanningToCalendarIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,10 @@
 		3011095D2276F1EF0055577B /* FTPUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPUpload.swift; sourceTree = "<group>"; };
 		3011095F2276F2C00055577B /* IndexCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCreator.swift; sourceTree = "<group>"; };
 		301109612276F8910055577B /* CSVCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVCreator.swift; sourceTree = "<group>"; };
+		30273A9B2301ACE000736B8E /* String+isNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isNumber.swift"; sourceTree = "<group>"; };
+		30273A9D2301ACFA00736B8E /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		30273AA02301AD2800736B8E /* Date+getMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+getMonth.swift"; sourceTree = "<group>"; };
+		30273AA22301AD4D00736B8E /* Date+getYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+getYear.swift"; sourceTree = "<group>"; };
 		3046A290227B420E0033F7DB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6F4F0B1B9953474162A4B72E /* Pods-PlanningToCalendarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanningToCalendarIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B8AB9B839C62566851E35875 /* Pods_PlanningToCalendarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanningToCalendarIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,12 +100,24 @@
 				3011095B2276F1B10055577B /* MyFileManager.swift */,
 				3011095F2276F2C00055577B /* IndexCreator.swift */,
 				3011095D2276F1EF0055577B /* FTPUpload.swift */,
+				30273A9F2301AD0900736B8E /* Util */,
 				3011094A2276EC7D0055577B /* Main.storyboard */,
 				3011094D2276EC7F0055577B /* Assets.xcassets */,
 				3011094F2276EC7F0055577B /* LaunchScreen.storyboard */,
 				301109522276EC7F0055577B /* Info.plist */,
 			);
 			path = PlanningToCalendarIOS;
+			sourceTree = "<group>";
+		};
+		30273A9F2301AD0900736B8E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				30273A9D2301ACFA00736B8E /* Array+Safe.swift */,
+				30273A9B2301ACE000736B8E /* String+isNumber.swift */,
+				30273AA02301AD2800736B8E /* Date+getMonth.swift */,
+				30273AA22301AD4D00736B8E /* Date+getYear.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		9ED08DC1445173C153DA4F6F /* Frameworks */ = {
@@ -248,10 +268,14 @@
 				301109492276EC7D0055577B /* ViewController.swift in Sources */,
 				3011095E2276F1EF0055577B /* FTPUpload.swift in Sources */,
 				3011095A2276F0AE0055577B /* Converter.swift in Sources */,
+				30273A9E2301ACFA00736B8E /* Array+Safe.swift in Sources */,
 				301109472276EC7D0055577B /* AppDelegate.swift in Sources */,
 				301109622276F8910055577B /* CSVCreator.swift in Sources */,
 				3011095C2276F1B10055577B /* MyFileManager.swift in Sources */,
+				30273AA12301AD2800736B8E /* Date+getMonth.swift in Sources */,
 				301109602276F2C00055577B /* IndexCreator.swift in Sources */,
+				30273A9C2301ACE000736B8E /* String+isNumber.swift in Sources */,
+				30273AA32301AD4D00736B8E /* Date+getYear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

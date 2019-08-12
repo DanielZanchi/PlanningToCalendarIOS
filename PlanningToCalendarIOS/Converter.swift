@@ -344,28 +344,3 @@ class Converter {
     }
 }
 
-extension Date {
-    func getCurrentYear() -> Int {
-        let calendar = Calendar.current
-        
-        
-        let oneMonthFromNow = Calendar.current.date(byAdding: .month, value: 1, to: Date())
-        
-        let year = calendar.component(.year, from: oneMonthFromNow! )        
-        return year
-    }
-}
-
-
-extension Array {
-    subscript(safe index: Index) -> Element? {
-        let isValidIndex = index >= 0 && index < count
-        return isValidIndex ? self[index] : nil
-    }
-}
-
-extension String  {
-    var isNumber: Bool {
-        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
-    }
-}
