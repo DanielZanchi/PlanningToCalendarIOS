@@ -3,688 +3,714 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E15EBEE50996CD823E2CF4F35F13D4 /* URLBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1C2A2FF830BBFCAE37AC9EDD1D907 /* URLBox.swift */; };
-		0300D65AEEDD12786EDB53276F6E20C9 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A590BC3A61FB5C6CCB94FAB59C3B94 /* Entry.swift */; };
-		034EA05C41670E40BAD1EBDFA7AA0F60 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF35AC24DE4EA4C6580DCCB8A6D53E /* XMLReferencingEncoder.swift */; };
-		04639B64919BA7E14364F36F44C8A5F3 /* iCalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BE97C934832B13254F49DEEBB7343 /* iCalError.swift */; };
-		04DF22C4053D5E12FEEDB827C72F634C /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7C1F363611C3004484C6DE8676D376 /* ISO8601DateFormatter.swift */; };
-		0A6197344188F2C2DA5CE5C12F2B8199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */; };
-		0A76CBC7942D92BD32FB88C562E5364C /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62037EE56ABB585DF2E7E406483C33 /* UnicodeIterator.swift */; };
-		0B6A73B353246C3DF846889B72BEBD47 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E254B8B06CC0E77F2582B39A081B2 /* BinaryReader.swift */; };
-		0C988B3B14157D98AEE02A7AAC9B0751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */; };
-		0D89051332B2E78382D1C3CB780F97C5 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04D44270E06FEC359ACC990D03BDEA /* Data+Compression.swift */; };
-		11FC2303C6E3C8A92807D60693DD4B63 /* KeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329EAE9C9F181EF364B6F6451ADDA11 /* KeyedBox.swift */; };
-		128CA60B7145CC1499ECF39625EC5C5D /* iCalKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C4121DF6308649BE17E37E6F33B51 /* iCalKit-dummy.m */; };
-		187E0F36505F62771F8A9B49CE24E45A /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B210A53A529DD61AD67DA74BDCC1 /* XMLKey.swift */; };
-		1C3628F419FD2BC05FE21A0DD2E44096 /* ZIPFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A00C6FBF50ACA0EAE783B276D2BAAB /* ZIPFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E7EAD4A4C57A3D2FDF7F299024930F5 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8144FE97B248A3F39A828C81561D1E6 /* CSV.swift-dummy.m */; };
-		1F812E1265DB714AC108B99585FD6B74 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02251821B7AC2DAC10A278CCFCCCF52 /* Date.swift */; };
-		26585F474584E007CA9ACDBC8C7D08F3 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33F40B81F18A7DA35D9B844854FA2E /* EncodingErrorExtension.swift */; };
-		2A619264B958544EE1F98EA648CC4E10 /* CoreXLSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6DCE1A3FE1E638AA6EDDB54BAF7276 /* CoreXLSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3140F44D4D3241B66548AEDEF68C8EC0 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F119469C9FC818F34179752B83158 /* Endian.swift */; };
-		31B06846D72039099DD4377975D88E72 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006102F65D2A6D05B086621D0FB3F03D /* XMLEncodingStorage.swift */; };
-		3317432141E55013098CEDF3718F11E3 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5831C7170792D991A94A321B77788E /* Cell.swift */; };
-		356FDA8E24E4651B880F0F099EC4B323 /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1130BE0C2C9462BBD54BCF9D4EC0A /* Archive+Writing.swift */; };
-		3C633855423D2C35B78141B081DFD9C0 /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD85940D02F6F83CFEA05702B8FB53B8 /* XMLCoder.framework */; };
-		3CA31113AB67DD3B2FEA05C7BF7041BC /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD6FAFAAEA287B1AB0C202DE075093E /* CSV.swift */; };
-		434F5F6B0595E5F23BB04E195B2C344D /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A540C371E87AFF992CF678D05ACF9489 /* CSVWriter.swift */; };
-		43A93EA502E12C5BA6AFD88E777A819E /* UIntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B174A78F445B16C6A51F7269F1F697CF /* UIntBox.swift */; };
-		4A5A30FAD3E457539B1EA7C8E5039704 /* DataBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18DC8BBED7EB578E7ADD4AAF078FBE /* DataBox.swift */; };
-		4AE297B0B5F6723F8DD459ED5D6E00AA /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B152B01BDA0B007098FB6EE4647D4C27 /* XMLKeyedDecodingContainer.swift */; };
-		4D23596D81D25974882F16CA644075F1 /* XMLUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCA25DFC60F7C08D3F278226DE6143 /* XMLUnkeyedEncodingContainer.swift */; };
-		4D8C2F10BA798F466B8A17833A428962 /* Workbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1420DEDDE43E46B22ECEE1A501E0564 /* Workbook.swift */; };
-		50AA6708C915B89BE67B49BA778251D8 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD5132760C4CAE0DC00FCE10625D35 /* Styles.swift */; };
-		528C2DDC1EBDDE15E33AE4FAC1872860 /* XMLCoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA972869A5F80D620EC3985B054A0464 /* XMLCoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		537321E312C2F8C591842B3064300C8A /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E168604CD5511911A3084A49D0A95C /* XMLStackParser.swift */; };
-		56A107971C5C3CEC56544B10B5827613 /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F76556E897FF35441AD21C91E9B37 /* Relationships.swift */; };
-		5E34C8035C90E82A0FC55B8E26D45AD3 /* Pods-PlanningToCalendarIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E87BDE662EF6D5EE8945DBEDB47525F3 /* Pods-PlanningToCalendarIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632149BE0A9D12F2FAF7FDBB53F03542 /* XMLKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446D996DA1B5B6D77C50AFF466B0FC85 /* XMLKeyedEncodingContainer.swift */; };
-		691C717172EFEE3C067285D10B8B8B1B /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561132D647DCA1C6DFFF4EC929C09D88 /* SharedStrings.swift */; };
-		69C80E5EA4F806F2C15A86FB17DF04B8 /* XMLDecoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FDBAC203219B06F11E884F9536592 /* XMLDecoderImplementation.swift */; };
-		75FC758FCA7BD99C61642B9CC0437040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */; };
-		76BBBB646E79A1CCAF4B0E7AA32C58A7 /* Worksheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7B8A72246704CFCF638B48A916468 /* Worksheet.swift */; };
-		778BFA96C1566F3B8D0C8723024B6A09 /* XMLCoderElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8B189312D988E18B59506F71EB24C /* XMLCoderElement.swift */; };
-		7D686E0D486538C8CBE29F7AD922A008 /* ColumnReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969264BB3C054B5E0AC8B4D77D27C0A6 /* ColumnReference.swift */; };
-		81564C68B6E27E1F65E25EF8DE52B340 /* XMLHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85878945A604DE8F3F5F429221BEF45 /* XMLHeader.swift */; };
-		827FDEFC71D46E1D2D79AE9B8A56FB10 /* CellQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5B59BE001538DCD26F449D32F7267 /* CellQueries.swift */; };
-		88C3826F96CB39DD063717866936836D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD82E64E9B970C5E2AE7208B501666E /* Alarm.swift */; };
-		8DEFDFBEDCEEE8B9A5F9ADC275E75A26 /* ZIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5554D0FC7202EAC0E61273F54004BF /* ZIPFoundation.framework */; };
-		8E66902F9BB143998F58C30CD95DFAB4 /* FloatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EABA4EE057B21F070873C8F4456CC /* FloatBox.swift */; };
-		90687435D040EDC3700AFEDA6FA4C237 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12B9743BB14E804123031B9768CF01 /* Parser.swift */; };
-		9294AAEBAD57DC7969284BD7E9046A38 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A90C87D5FBB91612BDA0440B1C93FF /* Data+Serialization.swift */; };
-		9B1527E707C981ED8B4D8A81A2C90286 /* XMLCoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F52FA9CDCBE2CB266C1DC3DEE051C98D /* XMLCoder-dummy.m */; };
-		9CDFA78978F2E85C65AF33DDA4FFA11B /* DynamicNodeDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0C5CA3D1B918463F56F67B6334179 /* DynamicNodeDecoding.swift */; };
-		9F7253CC7C6BBFA1A88985A900BEFB1C /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C3E1EBFAA90BE8AC606A444992AAC /* FileManager+ZIP.swift */; };
-		A0CD748C76ABDE8A943AAE90223DA14F /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EF3329D6F6669A21271D2CF4FD95F /* Box.swift */; };
-		A4E157665C6D4A3AFCA9879761DEA035 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130BD8F9383379B7312FC9DBF4852D1 /* XMLDecoder.swift */; };
-		AE8F1002D3405604529CC0AEE1BB08D1 /* IcsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F82011257D72C47A5A4016E97E8E8D /* IcsElement.swift */; };
-		AFEF837A3ED2208ABE445FF994F43AFA /* Metatypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F156BC1F1177461385966AA5B25DC5C7 /* Metatypes.swift */; };
-		B025D36740DD00A9331FB3F19DAA8D94 /* SharedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084A15588077647C50EE55557573AE3 /* SharedBox.swift */; };
-		B6FA325F71F999B0B725FF7391A1EA99 /* NullBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272D2D99D1617B0662DF620F80FAC9B /* NullBox.swift */; };
-		B863BBC31D2B7EED474DDF44564620FA /* CellReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E94C9BDDC50ECCFCE95D4C6A85A56 /* CellReference.swift */; };
-		B8DF380779678C2B15058AF2A1D4C3D6 /* IntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD75FE7DC0E08B536A8A50CA657A9E /* IntBox.swift */; };
-		B9217CD3CB9B4ECE79A6E8CC8217B035 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F64D1AF4243076149465BA33550E1 /* DecodingErrorExtension.swift */; };
-		BA2A2DD7510469C6840F850371F98709 /* ZIPFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EFE88D79B7852ECD9CD2FCB2A4A0 /* ZIPFoundation-dummy.m */; };
-		BAD8C5110DADF8608BCBAD7B8857E6ED /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF131BFDF9860FC89024F26A4ADF740 /* CSVRowDecoder.swift */; };
-		BD30F0A9F3CA794142E8D62F79AD47E6 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54BECC573B308CE12429109E36E59A0 /* CSVReader.swift */; };
-		C03AA64176729DCF2262684E3575D099 /* iCalKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B74E09C22DD3156B87B641F976335 /* iCalKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C077425D71C236005B9B0ED1DEA3CB24 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B94F0E13B2A55FE20311255D6DD9D9 /* String.swift */; };
-		C3A4C441AD5C917C9B178EBB956A5062 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211EC006EDAA5ED59FE8B20139E83657 /* XMLUnkeyedDecodingContainer.swift */; };
-		C4DEF05BDB0A1734B91D4E7E659C3611 /* CoreXLSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A662621DCCEB0E6B76F620C891BED60 /* CoreXLSX-dummy.m */; };
-		C4E0BF45FF150CFB8A6C2B0BF1E1D824 /* CoreXLSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6E0AEC66335A11EFCFD8752FA540D /* CoreXLSX.swift */; };
-		C65AC29FF2A777945432275672647048 /* DateBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40265E0DD43DFFA4A530C2185E3BC9A /* DateBox.swift */; };
-		C6A5555A6B6AF9B19C5856CB4F49ADA4 /* Pods-PlanningToCalendarIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798DFF83A8889EF9D9DD78BB5DECEA1 /* Pods-PlanningToCalendarIOS-dummy.m */; };
-		C904A3CB9BECFF97AAC5EB4507E52FAC /* DecimalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88326E2A5EE7AED6E0178C5CD4BCD0E1 /* DecimalBox.swift */; };
-		CC856C1BE7907FE1C953D94F48A8BADE /* CalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0337B8BBEF988EF6C61ED9C3EF415FA /* CalendarComponent.swift */; };
-		CD48893890E455CA31E9629984A30797 /* SingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4A9E3157502C08A1B2FF0823D76A9 /* SingleValueEncodingContainer.swift */; };
-		D03799BDBB32736ECBE750EA197A6BB1 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B84CDB665C7EAE1186C1C7A788FE6 /* XMLDecodingStorage.swift */; };
-		D2E407A3D4E6F826780B75B23A45B26F /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE5338D8D228E969A87101B1B93D86 /* Calendar.swift */; };
-		D4ACB15480975CF7B1F7F7BE6E0F47B3 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F65635683D1A824709D32471086AD79 /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5D8EC508DEFA3B55611BA34CB0A21F6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B075CC0D8F9044AEBDB53A7B4C76C /* Event.swift */; };
-		D656D1D8420A90EE97172CE185DCFD09 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054BED58BA5B8FF4A7F5CF13C52FBF4 /* XMLEncoder.swift */; };
-		D7F11D5AE45EB16EC34890391B102143 /* BoolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689561AB7FBEF1C0B418C64B3471314 /* BoolBox.swift */; };
-		DA681793A43046C64A5294903B64879A /* KeyedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E8D59A5F7501C8FECFB87B0795409 /* KeyedStorage.swift */; };
-		DB7AC802B1E9C2AF5564DF2B7964C99A /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E312A15441BEA4DAE4D86DA7CCF15DB /* Path.swift */; };
-		DEAA8C0C3259A0AF00A63E6BA1ECA20D /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ACEDD559751821C743102FCA62C338 /* Archive.swift */; };
-		E07275F9C570AC59D0B1CC9E943A490D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42C0370C9425C49AB8E32C3DED89EE5 /* String+Extensions.swift */; };
-		E7C45994A1820EB9B80961707AEBD0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */; };
-		E86BAD400552F4B8D2BA004F0C617C32 /* StringBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B5CE45906A2FB5AF725553C3EA1A4 /* StringBox.swift */; };
-		ECAA5D31264D0FEC53E203A9AF793A92 /* XMLEncoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814C5DAA99A23D49917818E160C7CC1 /* XMLEncoderImplementation.swift */; };
-		EF0DC8ACEEFD3CCF91CF43956A683516 /* iCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678C59F6945A03F417A2FFDC6405B624 /* iCal.swift */; };
-		F4961FBF7C77C0B9345AE4123829FCC4 /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1958ADB0771A81DFCB753DF3F31FADD /* Archive+Reading.swift */; };
-		F56A9772083C6BC6A28729CC010818DA /* UnkeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5849A0D620232E3D450A7BC847EC0FD8 /* UnkeyedBox.swift */; };
-		F78F86276D4CE51887C6D94F917BDC66 /* SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA38125062F0320F9BE440DAB61ACE6 /* SingleValueDecodingContainer.swift */; };
-		FA8B0E85F0DC20431787DE728410FB49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */; };
-		FD9766E7523660E127F3EA53FAAAB808 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E31FC4CC5938D7FF0C97A5F740BC558 /* CSVError.swift */; };
-		FF14F4917769E49060890AF8E316C8BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */; };
-		FF264A7D6A824CE61C0000D751BD96D1 /* DynamicNodeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A7E4AB29800C5B16F0E1A2E0F6127 /* DynamicNodeEncoding.swift */; };
+		02804D0F6AA7A45175B3655322D6C8F0 /* XMLKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F049D28A4DF747370592CBB496BBD7 /* XMLKeyedEncodingContainer.swift */; };
+		03C5C19C8747DC075725BBE9CB57ABF2 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD21FA1C8B588C32BD43013181CA1F2 /* Endian.swift */; };
+		03E5EBE84FC7AE7A77785782B5FE28FD /* XMLHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC18E1AFAA5CD32976BE7502C036AB2 /* XMLHeader.swift */; };
+		0C2EDD4D746664768F166D5985A92F87 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF3DA207201FB541D93F80E534BD6D /* CSV.swift */; };
+		0D1DF01ABB82078B580EDFDE751F6CBD /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F9B752422FB6E6C911FF2494BF45C /* DecodingErrorExtension.swift */; };
+		0FD4C17C8BA69F5E469FA284ECDF4298 /* URLBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD206EE6A6991EE030A75DE29EA909D7 /* URLBox.swift */; };
+		11F1E4E619B54B2E2BB77820A8BB5AF8 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5252EB5D8BBCA0ECC98E0FBC181DD2 /* XMLKey.swift */; };
+		1378A5F6F610418ED381028E6AF8C9B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */; };
+		14E12ABF5E9F76EEA8416C71B6E1A49F /* CellReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C0E0F99CF96B963129E51153FB057A /* CellReference.swift */; };
+		152B32EFB89B90A08B145D102EC5E588 /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB457B8E8219D2ABA4924E5C0A39DC10 /* Archive+Writing.swift */; };
+		1DD7F483830DFC9972EC194807DDAEB5 /* ColumnReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C420F41C525DF7ABC95ADB17AC242 /* ColumnReference.swift */; };
+		2196CDB9DDA460E94D17A7D6E8F2568F /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB167D09DCDD28CC7BCCD2CC33C8C9 /* Box.swift */; };
+		30C3B2B2908764043B29316365B49943 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3EB0C046E7B683C4F0AC5C4BD28ED /* ISO8601DateFormatter.swift */; };
+		3249A1CF554FDCCE2972ED31913B9CE8 /* CoreXLSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE0461E2AA9350E8230D3400671A7A8 /* CoreXLSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3252EC0642767FF857BF6670FDF51BD3 /* Pods-PlanningToCalendarIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE298ADF579508DB156A95AE7C668C72 /* Pods-PlanningToCalendarIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A9335D7D70DE718B836A5E49A535FC3 /* iCalKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D04434DB82589DA3DC6D35E6181DE5 /* iCalKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B2B73401EDC0409D186BB35E8D14C7D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CCD2BD6C02F47A6DD6F62CC445BEC0 /* Alarm.swift */; };
+		3BD1573E3FFD9796CF72098616BC1AA5 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76BBC0BBF9CC1A02BF21FC2CFC5F59F /* XMLUnkeyedDecodingContainer.swift */; };
+		3FFB2A98715CEA177C7A1770D7464474 /* iCalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521FAC0CFEF35F51DC9A0153DAF66C8 /* iCalError.swift */; };
+		41BBA509403564E51451A2ED07187351 /* XMLCoderElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF80D3A4577BE1DDC976B110210C70 /* XMLCoderElement.swift */; };
+		420281C15A17768A1489612DD8F642E7 /* iCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956B4F94BA5BAC2B06DBA7B4B7C6E5C0 /* iCal.swift */; };
+		46CC094A5B1717441505677EE0C182E9 /* XMLCoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7067C5106A692D401745D9CE633F4094 /* XMLCoder-dummy.m */; };
+		4753D08C8AA9F4DC9D61AC28248CC633 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */; };
+		4861C29DAB4DFB90D75464D8BFC8F7C2 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979804E5474129ADFFF8FF4FEE7E056 /* FileManager+ZIP.swift */; };
+		488EF3B0F1470B31E35DBB537478D13C /* SingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3460FA38D97D61E389FC6585C00B9E2 /* SingleValueEncodingContainer.swift */; };
+		49A8F21C0D74181BA84A7D6126BF7257 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F7976A3AB7D28EFC97E0DC3983BF6 /* Cell.swift */; };
+		4C8A8D434B6225072E4DEA8B19C50CAC /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0605F2BCEC8F81959C01B01380612A9B /* Data+Serialization.swift */; };
+		4D8E21F158160A4DAAE305275A76A0CC /* KeyedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF5C53747C737334F0F6657EB5D63B /* KeyedStorage.swift */; };
+		4EFBC7D8E8A4635DABD14BFB6EFF4494 /* ZIPFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E59A04D98F74932C8CC7D3374D80607 /* ZIPFoundation-dummy.m */; };
+		5245C2667C8A25BE97B539EFD50660B0 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0A70CF4B427F21283E469C720AA84 /* Styles.swift */; };
+		53649B82AB073C43418FE626702DC020 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700F89EDB5F4949A7D3F9736451DC8B /* CSVWriter.swift */; };
+		579FCEFC45EF54E93DBE3A605236A62B /* SharedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0606ECB849AEF3EAA3E7396ECCEA9E /* SharedBox.swift */; };
+		6004414EB47B177B99016FA2DAFA824A /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F979669107075B08178000AB316A920C /* CSVReader.swift */; };
+		616F012F71447BE8E51943C762B8570D /* CoreXLSX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C85BA7873D779E264DE22E48038B5 /* CoreXLSX.swift */; };
+		62FB11D4FB9D046A67745D73DD3A6C34 /* UIntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC18E91FE07B6008BE4B50A437DDA84 /* UIntBox.swift */; };
+		6D011DC3DAD45515AD4EA84C279EA30E /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE804D28ABA7DCB52A82802F0240E6 /* XMLDecodingStorage.swift */; };
+		6E2C789181AD67D32AF660F2C9F4A82A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */; };
+		70537FC32FFC2E47EE1E2412D8E09674 /* iCalKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B0230DBE43F2C2EEE33BF95D8F2F70 /* iCalKit-dummy.m */; };
+		73667B693D8777AAD1262C93A1979D3A /* IntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048CC5C419F958B141571B62938401E0 /* IntBox.swift */; };
+		738D2D39FAE8497E19A5AE70DD0A7640 /* CellQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACEA3F7FF49D1B4792926DB67F4EE70 /* CellQueries.swift */; };
+		740845C4ED071CD149B90B25B9F9E09D /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE22FDBE7004F55BFAF3E62CA53A7C4A /* Archive+Reading.swift */; };
+		74C261122B504AFBDB303CF4239CD15C /* DataBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4193EBE1AAF04980BB60387D0C8C1D8 /* DataBox.swift */; };
+		766D4638A83B41E01775D34CF49D761B /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B291B67A3438A703E4F640EAF4613E /* XMLEncoder.swift */; };
+		7786980AB491B0424D407DDC55783CE9 /* DateBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98135CE75D1B8133EC49B814E354E4 /* DateBox.swift */; };
+		7B18764A34C8FFAA1EF35892D53B08DF /* ZIPFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DF3ADB71A82CDA587B4B89A72E9D81 /* ZIPFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C2D90E04A97FCEE783898778B63B7C1 /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B79FBDA0F28771F1D414614162B42 /* UnicodeIterator.swift */; };
+		7D277B67684E50872DEC45D7F7065659 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC655BCAE85BCA3142B718AD9ED8AABB /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F0715BDED088E7026240A01A3C43883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */; };
+		8020A168BF075E73A5963A4D62C301B3 /* DynamicNodeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76A1918A601CE3E8BC3EE2C4D3A696 /* DynamicNodeEncoding.swift */; };
+		81546EA61855F30E597500778BDCD55E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30742B4853A87F9DF87B1688533A9FD5 /* Date.swift */; };
+		830BC59DAFAC117C86CDDB5228FFE7DC /* KeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9DB5ECEE750A31D06F6AE1EB5A25EE /* KeyedBox.swift */; };
+		863EC92F8EBF405A0705BA453CC7CB8D /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8111D78240E5F006178A38D1959F7CB /* CSV.swift-dummy.m */; };
+		8A311EC368E9C95989C1BCFAD53354B7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070BC282F8225D2A6F6CEC6BF53E0A4D /* Calendar.swift */; };
+		8B10C047CF31DF58F0AF39548A95E8C9 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC02A0030D1D686F93B7E7291061327 /* XMLKeyedDecodingContainer.swift */; };
+		8C90BDACAF3EBCF2B04DCBD77B2CA6ED /* CoreXLSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3708D8E562B7EB3F278B23E024305B56 /* CoreXLSX-dummy.m */; };
+		8F54AA2404F484751E74CD1311B585E0 /* XMLEncoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EB30A7D1B3B69E27073E0B53F2F25 /* XMLEncoderImplementation.swift */; };
+		9557D3CFB9F8A049C318A4748BDF0573 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D75268D70356ED4C62824BD8752B /* Path.swift */; };
+		98F8AFA522273ECE3108F439C40FC411 /* DecimalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31F6935567F40A3AA5B804EBF282C5F /* DecimalBox.swift */; };
+		9BE8F9EC39DC81D135000A3D96922369 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BAAC9EB907D96120CB0A85CD3F11BC /* Parser.swift */; };
+		9F1C979D43FFBFAB5E96F659964BDFBC /* UnkeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFA5ED411BC58A68292415936A91EC /* UnkeyedBox.swift */; };
+		A075FCAE13E3F78A117406CB49225062 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CA438DA1DB4D683A384036168D7BF /* String.swift */; };
+		A2448592ABEE1201EE3F2AE1C4819662 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73849B5B479E76541CF5AAF97E82A /* XMLEncodingStorage.swift */; };
+		A6372EDD44F43E456586BD21769B291E /* SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27AA87F7CD8C6B1A56711FE521149A /* SingleValueDecodingContainer.swift */; };
+		A71CCD0DB32452CD52361832662FC32E /* NullBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573207B3BE3BE461542A40DE9AE2742 /* NullBox.swift */; };
+		A8212EE39083309347FA329FF07F30E9 /* ZIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC61536D544738BDF92E4E2B9DC9005 /* ZIPFoundation.framework */; };
+		A939C722F9EB661E6224B15345E08912 /* XMLUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24EC39BB895299178C4B57D54CD356C /* XMLUnkeyedEncodingContainer.swift */; };
+		AC839A1E6A5FCF5D509B51DEDD7071D4 /* XMLCoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C653E791836B54633CE7F89DED24946 /* XMLCoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC95489E4B065C3736D200E31E985086 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB5F974685D430CF83573BE9CA2DC9 /* String+Extensions.swift */; };
+		AD2067C7FE822B82B6F0CD73FB014869 /* Worksheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CAD1B093177A0AF0BCF12AFE0376 /* Worksheet.swift */; };
+		AD34B2B8CEB3E53344ABA4C446B552D4 /* CalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466611639B987989A3DA92F5B3131DF6 /* CalendarComponent.swift */; };
+		ADDCE13CEF2C789DAA7C1EAA107532F0 /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B762B52831EEEA1B2015E3A0F0C75BC /* CSVRowDecoder.swift */; };
+		AE086021912B0BFDDB88BDB0A48ACE41 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F40B82A6C16831576D51225147B8C3 /* Archive.swift */; };
+		AE2B13558A88AFC1EE286C0ACF882F45 /* StringBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAFF927BB34D24A049A822B2D1A28A /* StringBox.swift */; };
+		B0AA2A97432F078038124B3AEB67634E /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB48B28FCD94B237151D696654026D7 /* Relationships.swift */; };
+		B314198ECEA1824A9CC08B2688AB34AA /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5567526FFAD55AB27945A285826D7CA4 /* XMLCoder.framework */; };
+		B8BA13C1C131976F881E3B877435D33A /* SharedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08D11F350ECCE31F62557D62E95844 /* SharedStrings.swift */; };
+		B92E262737811DF37DC77F703A11457E /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131AA701BB9BB4BC449A59B6A1531D51 /* XMLDecoder.swift */; };
+		B94702856E7484FA329239DCE995EEDC /* IcsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA6708098EC9E188887B512AB47046 /* IcsElement.swift */; };
+		B9B06D4C9FDF5724E40D4AA860E257F6 /* XMLDecoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEF21F89EFD7BA901D0DE58AAEECB29 /* XMLDecoderImplementation.swift */; };
+		C5B1A86080D09050466943CE63682897 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738106C2CFB8D2237FF90075F78BA564 /* EncodingErrorExtension.swift */; };
+		C8DAAB9BEEDB3C4CC9C296775583A478 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A600400F98C5D715BBC2BA03BDFEE /* Entry.swift */; };
+		C9643061AF5B86B0904666E6C6D692A9 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91E8AB78D0249C7627B71887CEDE7F1 /* BinaryReader.swift */; };
+		CFDD3495B2561535582D4353FD8C9889 /* Workbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A20260C1699D4510C6FBD9F6E2620 /* Workbook.swift */; };
+		D0856BEC0C1C658F921B94655BF6B499 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E436B8CAE545E437498791EFD2D32 /* CSVError.swift */; };
+		D0C2EE164CFC528BBDB12C181C2FBE91 /* Pods-PlanningToCalendarIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1FED6DC460DC17F2ADB2BF68CFF08 /* Pods-PlanningToCalendarIOS-dummy.m */; };
+		D1EDEB87A964C0F27E3E2696CEA3CCEB /* Metatypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A46F63CCB631081C95139DEFD7AE1DE /* Metatypes.swift */; };
+		D2DBD76DA3D8A95F20BBC429755393D0 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14544F3F0F8EFCDE9239817E61524EDC /* XMLReferencingEncoder.swift */; };
+		D75D3F0257C4A1DEFB5B5AA5DA3C7522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */; };
+		D771762552A9AC7B934552B5CE521C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */; };
+		DDE2AACF6E48CDC60860EA06564C7CDC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA920629F5FE4055FB98B4EBA73A41F7 /* Event.swift */; };
+		E07937E7343878C20DAFC4C10771AFA1 /* DynamicNodeDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C9D9E2F2C5184982F5C0AA19432AE /* DynamicNodeDecoding.swift */; };
+		EB88779319C551F121CEA41C1F848B16 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C1A89BEC185146758609B4FE13F038 /* Data+Compression.swift */; };
+		EC12D33FC497E8FFC070A559F272E907 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B9395E60887663B09A79B2BEF41D6 /* XMLStackParser.swift */; };
+		F034E7DC6D3A1DC9F6914AE60C7CA1BB /* BoolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE655651B973F08DAA3562EAD1FCF9D /* BoolBox.swift */; };
+		F03E0BCA46E27A6BBB37BD86EFBB193E /* FloatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F698F06222DCE82A4814AE198F7347 /* FloatBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0500D2EB987044003D8481C5870701F7 /* PBXContainerItemProxy */ = {
+		0DB3384372D3A92879AC097D422C6525 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93079866FE59F84FBBD0784A84691718;
+			remoteGlobalIDString = E1753B4FA19C5F745ADF56B844ACAB36;
 			remoteInfo = XMLCoder;
 		};
-		059E9A73AB744EC1592972B1D7A301FB /* PBXContainerItemProxy */ = {
+		1A2E8DB7D5BCAECEB473FC9FF8059435 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA4667863A43BF35617903617321E56C;
-			remoteInfo = ZIPFoundation;
-		};
-		2CD55C2ED21748ADBBBDC0363A8432A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 31834AB339EBD68E74CD2CD95DE9AE78;
-			remoteInfo = CoreXLSX;
-		};
-		495FFF618E4E3C0CE1BAD8BB1FA997DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59D0A23DB65E60F61E5F2FE78575925F;
+			remoteGlobalIDString = 9617FEF749C2A4DEB177789B70E08C51;
 			remoteInfo = CSV.swift;
 		};
-		9BEDA1F2968FD53EB7CE386F81CCC42F /* PBXContainerItemProxy */ = {
+		3C9DF9DD225863E27FB945CBD49488A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F74E22579CA86374AD3303B2E632F5A;
-			remoteInfo = iCalKit;
-		};
-		C579750491935EE4AAC03AD3942259A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93079866FE59F84FBBD0784A84691718;
+			remoteGlobalIDString = E1753B4FA19C5F745ADF56B844ACAB36;
 			remoteInfo = XMLCoder;
 		};
-		FE3C3A8414030B8494FA74D0D0E0002D /* PBXContainerItemProxy */ = {
+		8EB8786D8E9BC4F2F4A8938C138E87F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA4667863A43BF35617903617321E56C;
+			remoteGlobalIDString = 3B04C1F70F5EC647583FC131CED595D8;
+			remoteInfo = CoreXLSX;
+		};
+		91E725C0F6DF4FA5C21AEA9A5126C1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
+			remoteInfo = ZIPFoundation;
+		};
+		DEC73F2ECD790EDA9A39F254A7EAF336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C60EFC601A7827F36FF65E03E71B3126;
+			remoteInfo = iCalKit;
+		};
+		EB5EBF234C2EC870034EEE4E1B107017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
 			remoteInfo = ZIPFoundation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006102F65D2A6D05B086621D0FB3F03D /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEncodingStorage.swift; path = Sources/XMLCoder/Encoder/XMLEncodingStorage.swift; sourceTree = "<group>"; };
-		04E9EFE88D79B7852ECD9CD2FCB2A4A0 /* ZIPFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIPFoundation-dummy.m"; sourceTree = "<group>"; };
-		05585D522B63A55CD19D46DD93608587 /* iCalKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCalKit-prefix.pch"; sourceTree = "<group>"; };
-		0F107C2DC7943AFC5E1FAA4E5D5151AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F5831C7170792D991A94A321B77788E /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Sources/CoreXLSX/Worksheet/Cell.swift; sourceTree = "<group>"; };
-		1365B6EA1164E6E71A91E0C8DE1305B0 /* CoreXLSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreXLSX-prefix.pch"; sourceTree = "<group>"; };
-		152B84CDB665C7EAE1186C1C7A788FE6 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecodingStorage.swift; path = Sources/XMLCoder/Decoder/XMLDecodingStorage.swift; sourceTree = "<group>"; };
-		1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1C532C352C24E7C423DFD3566AE6F970 /* Pods-PlanningToCalendarIOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlanningToCalendarIOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		1F6DCE1A3FE1E638AA6EDDB54BAF7276 /* CoreXLSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreXLSX-umbrella.h"; sourceTree = "<group>"; };
-		1FCD247BD35273D29579F113CA4A5AF0 /* ZIPFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZIPFoundation.modulemap; sourceTree = "<group>"; };
-		2084A15588077647C50EE55557573AE3 /* SharedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/SharedBox.swift; sourceTree = "<group>"; };
-		211EC006EDAA5ED59FE8B20139E83657 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLUnkeyedDecodingContainer.swift; path = Sources/XMLCoder/Decoder/XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
-		23A3FE56D17BC962CCF2A71493AFBE9C /* XMLCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMLCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2430A05A09007B494B5E5ED5EE424A4A /* Pods-PlanningToCalendarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlanningToCalendarIOS.release.xcconfig"; sourceTree = "<group>"; };
-		26BE5338D8D228E969A87101B1B93D86 /* Calendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = Sources/Calendar.swift; sourceTree = "<group>"; };
-		285BE97C934832B13254F49DEEBB7343 /* iCalError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iCalError.swift; path = Sources/Enums/iCalError.swift; sourceTree = "<group>"; };
-		2B04D44270E06FEC359ACC990D03BDEA /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Sources/ZIPFoundation/Data+Compression.swift"; sourceTree = "<group>"; };
-		2D62037EE56ABB585DF2E7E406483C33 /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
-		2F9FDBAC203219B06F11E884F9536592 /* XMLDecoderImplementation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecoderImplementation.swift; path = Sources/XMLCoder/Decoder/XMLDecoderImplementation.swift; sourceTree = "<group>"; };
-		308EF3329D6F6669A21271D2CF4FD95F /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/XMLCoder/Auxiliaries/Box/Box.swift; sourceTree = "<group>"; };
-		327F119469C9FC818F34179752B83158 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
-		39A7B8A72246704CFCF638B48A916468 /* Worksheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Worksheet.swift; path = Sources/CoreXLSX/Worksheet/Worksheet.swift; sourceTree = "<group>"; };
-		3A662621DCCEB0E6B76F620C891BED60 /* CoreXLSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreXLSX-dummy.m"; sourceTree = "<group>"; };
-		3B3B5CE45906A2FB5AF725553C3EA1A4 /* StringBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/StringBox.swift; sourceTree = "<group>"; };
-		3BDA3CA81F6DCD697CA2D8A4EC7765E3 /* CoreXLSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreXLSX.modulemap; sourceTree = "<group>"; };
-		3D12B9743BB14E804123031B9768CF01 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
-		3F2C4121DF6308649BE17E37E6F33B51 /* iCalKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCalKit-dummy.m"; sourceTree = "<group>"; };
-		3F65635683D1A824709D32471086AD79 /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
-		3FD82E64E9B970C5E2AE7208B501666E /* Alarm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alarm.swift; path = Sources/Alarm.swift; sourceTree = "<group>"; };
-		3FFFA23BF814DB8A235999E19C2F5E81 /* CoreXLSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreXLSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4456DF81933BE5F6E0F2B32D3252BA94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		446D996DA1B5B6D77C50AFF466B0FC85 /* XMLKeyedEncodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLKeyedEncodingContainer.swift; path = Sources/XMLCoder/Encoder/XMLKeyedEncodingContainer.swift; sourceTree = "<group>"; };
-		466A7E4AB29800C5B16F0E1A2E0F6127 /* DynamicNodeEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicNodeEncoding.swift; path = Sources/XMLCoder/Encoder/DynamicNodeEncoding.swift; sourceTree = "<group>"; };
-		4FF131BFDF9860FC89024F26A4ADF740 /* CSVRowDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRowDecoder.swift; path = Sources/CSV/CSVRowDecoder.swift; sourceTree = "<group>"; };
-		501173430498C45CFED9FA8546CFFDB6 /* iCalKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCalKit.xcconfig; sourceTree = "<group>"; };
-		561132D647DCA1C6DFFF4EC929C09D88 /* SharedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedStrings.swift; path = Sources/CoreXLSX/SharedStrings.swift; sourceTree = "<group>"; };
-		57F82011257D72C47A5A4016E97E8E8D /* IcsElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IcsElement.swift; path = Sources/Protocols/IcsElement.swift; sourceTree = "<group>"; };
-		5849A0D620232E3D450A7BC847EC0FD8 /* UnkeyedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnkeyedBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/UnkeyedBox.swift; sourceTree = "<group>"; };
-		5AF7F80DEFF7D778F444BD15CC04C931 /* ZIPFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-prefix.pch"; sourceTree = "<group>"; };
-		5C33F40B81F18A7DA35D9B844854FA2E /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EncodingErrorExtension.swift; path = Sources/XMLCoder/Encoder/EncodingErrorExtension.swift; sourceTree = "<group>"; };
-		5F52B210A53A529DD61AD67DA74BDCC1 /* XMLKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLKey.swift; path = Sources/XMLCoder/Auxiliaries/XMLKey.swift; sourceTree = "<group>"; };
-		61E42B096CBDA616426371084591C890 /* Pods-PlanningToCalendarIOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PlanningToCalendarIOS-frameworks.sh"; sourceTree = "<group>"; };
-		63B1130BE0C2C9462BBD54BCF9D4EC0A /* Archive+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Writing.swift"; path = "Sources/ZIPFoundation/Archive+Writing.swift"; sourceTree = "<group>"; };
-		678C59F6945A03F417A2FFDC6405B624 /* iCal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iCal.swift; path = Sources/iCal.swift; sourceTree = "<group>"; };
-		6798DFF83A8889EF9D9DD78BB5DECEA1 /* Pods-PlanningToCalendarIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlanningToCalendarIOS-dummy.m"; sourceTree = "<group>"; };
-		67A2A2486BA6545D8A4CCA8276F7816C /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AD6FAFAAEA287B1AB0C202DE075093E /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = Sources/CSV/CSV.swift; sourceTree = "<group>"; };
-		6CC8B189312D988E18B59506F71EB24C /* XMLCoderElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLCoderElement.swift; path = Sources/XMLCoder/Auxiliaries/XMLCoderElement.swift; sourceTree = "<group>"; };
-		6DCD75FE7DC0E08B536A8A50CA657A9E /* IntBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/IntBox.swift; sourceTree = "<group>"; };
-		6E312A15441BEA4DAE4D86DA7CCF15DB /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Sources/CoreXLSX/Path.swift; sourceTree = "<group>"; };
-		6E31FC4CC5938D7FF0C97A5F740BC558 /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
-		7054BED58BA5B8FF4A7F5CF13C52FBF4 /* XMLEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEncoder.swift; path = Sources/XMLCoder/Encoder/XMLEncoder.swift; sourceTree = "<group>"; };
-		708D383DB90C88502C5AFDECC5218E3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7329EAE9C9F181EF364B6F6451ADDA11 /* KeyedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyedBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/KeyedBox.swift; sourceTree = "<group>"; };
-		73531D29243C9A93FE4C26307A6746FD /* Pods-PlanningToCalendarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlanningToCalendarIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7570DAB6277C16C2806544EF72E8CD7D /* Pods-PlanningToCalendarIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PlanningToCalendarIOS.modulemap"; sourceTree = "<group>"; };
-		76C1E3A1E18A86159901430192E21BE6 /* XMLCoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMLCoder.modulemap; sourceTree = "<group>"; };
-		7B0C3E1EBFAA90BE8AC606A444992AAC /* FileManager+ZIP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+ZIP.swift"; path = "Sources/ZIPFoundation/FileManager+ZIP.swift"; sourceTree = "<group>"; };
-		7E7C1F363611C3004484C6DE8676D376 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateFormatter.swift; path = Sources/XMLCoder/Auxiliaries/ISO8601DateFormatter.swift; sourceTree = "<group>"; };
-		83AF35AC24DE4EA4C6580DCCB8A6D53E /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLReferencingEncoder.swift; path = Sources/XMLCoder/Encoder/XMLReferencingEncoder.swift; sourceTree = "<group>"; };
-		85A90C87D5FBB91612BDA0440B1C93FF /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Sources/ZIPFoundation/Data+Serialization.swift"; sourceTree = "<group>"; };
-		863E94C9BDDC50ECCFCE95D4C6A85A56 /* CellReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellReference.swift; path = Sources/CoreXLSX/Worksheet/CellReference.swift; sourceTree = "<group>"; };
-		88326E2A5EE7AED6E0178C5CD4BCD0E1 /* DecimalBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/DecimalBox.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		969264BB3C054B5E0AC8B4D77D27C0A6 /* ColumnReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColumnReference.swift; path = Sources/CoreXLSX/Worksheet/ColumnReference.swift; sourceTree = "<group>"; };
-		9740B9ABC4345AA60C6CF0713920083E /* CoreXLSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreXLSX.xcconfig; sourceTree = "<group>"; };
-		A00AD967730743FAA3DE68E92C3DF420 /* XMLCoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLCoder-prefix.pch"; sourceTree = "<group>"; };
-		A02251821B7AC2DAC10A278CCFCCCF52 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Extensions/Date.swift; sourceTree = "<group>"; };
-		A1655E2BF564D082EA58C98B35DD9B89 /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
-		A540C371E87AFF992CF678D05ACF9489 /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
-		A8144FE97B248A3F39A828C81561D1E6 /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
-		A96764AB3F4D450BC57F95F87C6E73C4 /* Pods-PlanningToCalendarIOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PlanningToCalendarIOS-resources.sh"; sourceTree = "<group>"; };
-		ACA38125062F0320F9BE440DAB61ACE6 /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleValueDecodingContainer.swift; path = Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
-		B130BD8F9383379B7312FC9DBF4852D1 /* XMLDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecoder.swift; path = Sources/XMLCoder/Decoder/XMLDecoder.swift; sourceTree = "<group>"; };
-		B152B01BDA0B007098FB6EE4647D4C27 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLKeyedDecodingContainer.swift; path = Sources/XMLCoder/Decoder/XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
-		B174A78F445B16C6A51F7269F1F697CF /* UIntBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIntBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/UIntBox.swift; sourceTree = "<group>"; };
-		B5BBD7C56866A1B1221EA5C79FEEC748 /* Pods-PlanningToCalendarIOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlanningToCalendarIOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B64857445C5C58E9A0BE4530E20C8F14 /* iCalKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iCalKit.modulemap; sourceTree = "<group>"; };
-		B7F1C2A2FF830BBFCAE37AC9EDD1D907 /* URLBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/URLBox.swift; sourceTree = "<group>"; };
-		B814C5DAA99A23D49917818E160C7CC1 /* XMLEncoderImplementation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEncoderImplementation.swift; path = Sources/XMLCoder/Encoder/XMLEncoderImplementation.swift; sourceTree = "<group>"; };
-		B9A00C6FBF50ACA0EAE783B276D2BAAB /* ZIPFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-umbrella.h"; sourceTree = "<group>"; };
-		BB4F76556E897FF35441AD21C91E9B37 /* Relationships.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Relationships.swift; path = Sources/CoreXLSX/Relationships.swift; sourceTree = "<group>"; };
-		BC18DC8BBED7EB578E7ADD4AAF078FBE /* DataBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/DataBox.swift; sourceTree = "<group>"; };
-		BD6E7F9137722FED45614E166D556234 /* XMLCoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMLCoder.xcconfig; sourceTree = "<group>"; };
-		C15FAA923B0DEF95D861F26AA9E1098B /* iCalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1ACEDD559751821C743102FCA62C338 /* Archive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archive.swift; path = Sources/ZIPFoundation/Archive.swift; sourceTree = "<group>"; };
-		C1F566E38CEFA15B0C1107A069378723 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C272D2D99D1617B0662DF620F80FAC9B /* NullBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NullBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/NullBox.swift; sourceTree = "<group>"; };
-		C2FD5132760C4CAE0DC00FCE10625D35 /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = Sources/CoreXLSX/Styles.swift; sourceTree = "<group>"; };
-		C35BF46D8CF553E9ADD1249E0AFBCF98 /* CSV.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.xcconfig; sourceTree = "<group>"; };
-		C43F64D1AF4243076149465BA33550E1 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodingErrorExtension.swift; path = Sources/XMLCoder/Decoder/DecodingErrorExtension.swift; sourceTree = "<group>"; };
-		C689561AB7FBEF1C0B418C64B3471314 /* BoolBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoolBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/BoolBox.swift; sourceTree = "<group>"; };
-		C9638EA7BF18D7039A1C62E6382BD1E1 /* Pods_PlanningToCalendarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanningToCalendarIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA972869A5F80D620EC3985B054A0464 /* XMLCoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLCoder-umbrella.h"; sourceTree = "<group>"; };
-		CCF6E0AEC66335A11EFCFD8752FA540D /* CoreXLSX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreXLSX.swift; path = Sources/CoreXLSX/CoreXLSX.swift; sourceTree = "<group>"; };
-		D02E0F4CB3FC3C250372D340B4E16B45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D08E8D59A5F7501C8FECFB87B0795409 /* KeyedStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyedStorage.swift; path = Sources/XMLCoder/Auxiliaries/KeyedStorage.swift; sourceTree = "<group>"; };
-		D0FCA25DFC60F7C08D3F278226DE6143 /* XMLUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLUnkeyedEncodingContainer.swift; path = Sources/XMLCoder/Encoder/XMLUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
-		D4116C02924187E95157074A416198E2 /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
-		D51B075CC0D8F9044AEBDB53A7B4C76C /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Sources/Event.swift; sourceTree = "<group>"; };
-		D5C4A9E3157502C08A1B2FF0823D76A9 /* SingleValueEncodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleValueEncodingContainer.swift; path = Sources/XMLCoder/Encoder/SingleValueEncodingContainer.swift; sourceTree = "<group>"; };
-		D6B94F0E13B2A55FE20311255D6DD9D9 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/Extensions/String.swift; sourceTree = "<group>"; };
-		D7A0C5CA3D1B918463F56F67B6334179 /* DynamicNodeDecoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicNodeDecoding.swift; path = Sources/XMLCoder/Decoder/DynamicNodeDecoding.swift; sourceTree = "<group>"; };
-		D7A590BC3A61FB5C6CCB94FAB59C3B94 /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Sources/ZIPFoundation/Entry.swift; sourceTree = "<group>"; };
-		D85878945A604DE8F3F5F429221BEF45 /* XMLHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLHeader.swift; path = Sources/XMLCoder/Auxiliaries/XMLHeader.swift; sourceTree = "<group>"; };
-		D85E254B8B06CC0E77F2582B39A081B2 /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
-		DB5554D0FC7202EAC0E61273F54004BF /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFDBEC1A7F574A60A4AF6F653BB6201F /* ZIPFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.xcconfig; sourceTree = "<group>"; };
-		E0337B8BBEF988EF6C61ED9C3EF415FA /* CalendarComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarComponent.swift; path = Sources/Protocols/CalendarComponent.swift; sourceTree = "<group>"; };
-		E1420DEDDE43E46B22ECEE1A501E0564 /* Workbook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Workbook.swift; path = Sources/CoreXLSX/Workbook.swift; sourceTree = "<group>"; };
-		E15B74E09C22DD3156B87B641F976335 /* iCalKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCalKit-umbrella.h"; sourceTree = "<group>"; };
-		E1958ADB0771A81DFCB753DF3F31FADD /* Archive+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Reading.swift"; path = "Sources/ZIPFoundation/Archive+Reading.swift"; sourceTree = "<group>"; };
-		E40265E0DD43DFFA4A530C2185E3BC9A /* DateBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/DateBox.swift; sourceTree = "<group>"; };
-		E42C0370C9425C49AB8E32C3DED89EE5 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Sources/XMLCoder/Auxiliaries/String+Extensions.swift"; sourceTree = "<group>"; };
-		E54BECC573B308CE12429109E36E59A0 /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
-		E87BDE662EF6D5EE8945DBEDB47525F3 /* Pods-PlanningToCalendarIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PlanningToCalendarIOS-umbrella.h"; sourceTree = "<group>"; };
-		E8E168604CD5511911A3084A49D0A95C /* XMLStackParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLStackParser.swift; path = Sources/XMLCoder/Auxiliaries/XMLStackParser.swift; sourceTree = "<group>"; };
-		EC2114A70288C6D2D773D195FB04FA34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F156BC1F1177461385966AA5B25DC5C7 /* Metatypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metatypes.swift; path = Sources/XMLCoder/Auxiliaries/Metatypes.swift; sourceTree = "<group>"; };
-		F49EABA4EE057B21F070873C8F4456CC /* FloatBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/FloatBox.swift; sourceTree = "<group>"; };
-		F52FA9CDCBE2CB266C1DC3DEE051C98D /* XMLCoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMLCoder-dummy.m"; sourceTree = "<group>"; };
-		F8A5B59BE001538DCD26F449D32F7267 /* CellQueries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellQueries.swift; path = Sources/CoreXLSX/Worksheet/CellQueries.swift; sourceTree = "<group>"; };
-		FD85940D02F6F83CFEA05702B8FB53B8 /* XMLCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMLCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE84779B70EC4E79C5A308CF7E3B6CE3 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EBDF47BC40ECA30EC320B0F3FFF184 /* iCalKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iCalKit.modulemap; sourceTree = "<group>"; };
+		0137BA95E0C6B620DA74EA10885921C4 /* ZIPFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZIPFoundation.modulemap; sourceTree = "<group>"; };
+		048CC5C419F958B141571B62938401E0 /* IntBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/IntBox.swift; sourceTree = "<group>"; };
+		0605F2BCEC8F81959C01B01380612A9B /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Sources/ZIPFoundation/Data+Serialization.swift"; sourceTree = "<group>"; };
+		066A600400F98C5D715BBC2BA03BDFEE /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Sources/ZIPFoundation/Entry.swift; sourceTree = "<group>"; };
+		067A20260C1699D4510C6FBD9F6E2620 /* Workbook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Workbook.swift; path = Sources/CoreXLSX/Workbook.swift; sourceTree = "<group>"; };
+		06C1A89BEC185146758609B4FE13F038 /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Sources/ZIPFoundation/Data+Compression.swift"; sourceTree = "<group>"; };
+		0700F89EDB5F4949A7D3F9736451DC8B /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
+		070BC282F8225D2A6F6CEC6BF53E0A4D /* Calendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = Sources/Calendar.swift; sourceTree = "<group>"; };
+		08B3DAE7C680C26F6A62C0163C7A3B8D /* CoreXLSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreXLSX.xcconfig; sourceTree = "<group>"; };
+		0AB0A70CF4B427F21283E469C720AA84 /* Styles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = Sources/CoreXLSX/Styles.swift; sourceTree = "<group>"; };
+		0ACEA3F7FF49D1B4792926DB67F4EE70 /* CellQueries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellQueries.swift; path = Sources/CoreXLSX/Worksheet/CellQueries.swift; sourceTree = "<group>"; };
+		0DDA6708098EC9E188887B512AB47046 /* IcsElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IcsElement.swift; path = Sources/Protocols/IcsElement.swift; sourceTree = "<group>"; };
+		0FA90C3A57A5AD8E21D54F98C55CC061 /* ZIPFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZIPFoundation-Info.plist"; sourceTree = "<group>"; };
+		118B79FBDA0F28771F1D414614162B42 /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
+		11CF3DA207201FB541D93F80E534BD6D /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = Sources/CSV/CSV.swift; sourceTree = "<group>"; };
+		1316570C4F23A0028CD14822804E58F1 /* XMLCoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMLCoder.xcconfig; sourceTree = "<group>"; };
+		131AA701BB9BB4BC449A59B6A1531D51 /* XMLDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecoder.swift; path = Sources/XMLCoder/Decoder/XMLDecoder.swift; sourceTree = "<group>"; };
+		14544F3F0F8EFCDE9239817E61524EDC /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLReferencingEncoder.swift; path = Sources/XMLCoder/Encoder/XMLReferencingEncoder.swift; sourceTree = "<group>"; };
+		14D3EB0C046E7B683C4F0AC5C4BD28ED /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateFormatter.swift; path = Sources/XMLCoder/Auxiliaries/ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		1B14057D41622B797E231B1E0086BFAB /* iCalKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCalKit-prefix.pch"; sourceTree = "<group>"; };
+		1C653E791836B54633CE7F89DED24946 /* XMLCoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLCoder-umbrella.h"; sourceTree = "<group>"; };
+		25AF80D3A4577BE1DDC976B110210C70 /* XMLCoderElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLCoderElement.swift; path = Sources/XMLCoder/Auxiliaries/XMLCoderElement.swift; sourceTree = "<group>"; };
+		2BC18E91FE07B6008BE4B50A437DDA84 /* UIntBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIntBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/UIntBox.swift; sourceTree = "<group>"; };
+		2BEF21F89EFD7BA901D0DE58AAEECB29 /* XMLDecoderImplementation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecoderImplementation.swift; path = Sources/XMLCoder/Decoder/XMLDecoderImplementation.swift; sourceTree = "<group>"; };
+		30742B4853A87F9DF87B1688533A9FD5 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Extensions/Date.swift; sourceTree = "<group>"; };
+		308EB30A7D1B3B69E27073E0B53F2F25 /* XMLEncoderImplementation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEncoderImplementation.swift; path = Sources/XMLCoder/Encoder/XMLEncoderImplementation.swift; sourceTree = "<group>"; };
+		3123DE1071A2806B5D55FEE8CB176C81 /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
+		319448E71A7616AE5E474F119AA26127 /* CoreXLSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreXLSX.modulemap; sourceTree = "<group>"; };
+		3708D8E562B7EB3F278B23E024305B56 /* CoreXLSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreXLSX-dummy.m"; sourceTree = "<group>"; };
+		3979804E5474129ADFFF8FF4FEE7E056 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+ZIP.swift"; path = "Sources/ZIPFoundation/FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		3AD21FA1C8B588C32BD43013181CA1F2 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
+		3DC18E1AFAA5CD32976BE7502C036AB2 /* XMLHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLHeader.swift; path = Sources/XMLCoder/Auxiliaries/XMLHeader.swift; sourceTree = "<group>"; };
+		3EEAFF927BB34D24A049A822B2D1A28A /* StringBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/StringBox.swift; sourceTree = "<group>"; };
+		3F616D3E24543D97C200EBBCFDF225D0 /* XMLCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMLCoder.framework; path = XMLCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CB2E18C7157B935EDD1804973248F0 /* Pods-PlanningToCalendarIOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PlanningToCalendarIOS-frameworks.sh"; sourceTree = "<group>"; };
+		466611639B987989A3DA92F5B3131DF6 /* CalendarComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarComponent.swift; path = Sources/Protocols/CalendarComponent.swift; sourceTree = "<group>"; };
+		48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZIPFoundation.framework; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B291B67A3438A703E4F640EAF4613E /* XMLEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEncoder.swift; path = Sources/XMLCoder/Encoder/XMLEncoder.swift; sourceTree = "<group>"; };
+		4F13A3A6FFDC060D588B06A56741D9C5 /* Pods-PlanningToCalendarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlanningToCalendarIOS.release.xcconfig"; sourceTree = "<group>"; };
+		52EB167D09DCDD28CC7BCCD2CC33C8C9 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/XMLCoder/Auxiliaries/Box/Box.swift; sourceTree = "<group>"; };
+		54B3924992F99C7AA0220955613A7F2C /* CSV.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.xcconfig; sourceTree = "<group>"; };
+		5567526FFAD55AB27945A285826D7CA4 /* XMLCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMLCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		561F9B752422FB6E6C911FF2494BF45C /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodingErrorExtension.swift; path = Sources/XMLCoder/Decoder/DecodingErrorExtension.swift; sourceTree = "<group>"; };
+		5631CAD1B093177A0AF0BCF12AFE0376 /* Worksheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Worksheet.swift; path = Sources/CoreXLSX/Worksheet/Worksheet.swift; sourceTree = "<group>"; };
+		57DB5F974685D430CF83573BE9CA2DC9 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Sources/XMLCoder/Auxiliaries/String+Extensions.swift"; sourceTree = "<group>"; };
+		5BE655651B973F08DAA3562EAD1FCF9D /* BoolBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoolBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/BoolBox.swift; sourceTree = "<group>"; };
+		5CE73849B5B479E76541CF5AAF97E82A /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLEncodingStorage.swift; path = Sources/XMLCoder/Encoder/XMLEncodingStorage.swift; sourceTree = "<group>"; };
+		5CEF2BAB4E71DB7B165651080197B16E /* CoreXLSX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoreXLSX-Info.plist"; sourceTree = "<group>"; };
+		65CCD2BD6C02F47A6DD6F62CC445BEC0 /* Alarm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alarm.swift; path = Sources/Alarm.swift; sourceTree = "<group>"; };
+		6E0606ECB849AEF3EAA3E7396ECCEA9E /* SharedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/SharedBox.swift; sourceTree = "<group>"; };
+		6E59A04D98F74932C8CC7D3374D80607 /* ZIPFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIPFoundation-dummy.m"; sourceTree = "<group>"; };
+		7067C5106A692D401745D9CE633F4094 /* XMLCoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMLCoder-dummy.m"; sourceTree = "<group>"; };
+		71CD01C8E213B01B9884A6479C8F558D /* iCalKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCalKit.xcconfig; sourceTree = "<group>"; };
+		71DF3ADB71A82CDA587B4B89A72E9D81 /* ZIPFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-umbrella.h"; sourceTree = "<group>"; };
+		72B1FED6DC460DC17F2ADB2BF68CFF08 /* Pods-PlanningToCalendarIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlanningToCalendarIOS-dummy.m"; sourceTree = "<group>"; };
+		738106C2CFB8D2237FF90075F78BA564 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EncodingErrorExtension.swift; path = Sources/XMLCoder/Encoder/EncodingErrorExtension.swift; sourceTree = "<group>"; };
+		7B98135CE75D1B8133EC49B814E354E4 /* DateBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/DateBox.swift; sourceTree = "<group>"; };
+		810E95902DDAEDB75A0712C531CD8953 /* ZIPFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-prefix.pch"; sourceTree = "<group>"; };
+		81BAAC9EB907D96120CB0A85CD3F11BC /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		84F40B82A6C16831576D51225147B8C3 /* Archive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archive.swift; path = Sources/ZIPFoundation/Archive.swift; sourceTree = "<group>"; };
+		895C85BA7873D779E264DE22E48038B5 /* CoreXLSX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreXLSX.swift; path = Sources/CoreXLSX/CoreXLSX.swift; sourceTree = "<group>"; };
+		8A46F63CCB631081C95139DEFD7AE1DE /* Metatypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metatypes.swift; path = Sources/XMLCoder/Auxiliaries/Metatypes.swift; sourceTree = "<group>"; };
+		8B762B52831EEEA1B2015E3A0F0C75BC /* CSVRowDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVRowDecoder.swift; path = Sources/CSV/CSVRowDecoder.swift; sourceTree = "<group>"; };
+		8D5C420F41C525DF7ABC95ADB17AC242 /* ColumnReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColumnReference.swift; path = Sources/CoreXLSX/Worksheet/ColumnReference.swift; sourceTree = "<group>"; };
+		956B4F94BA5BAC2B06DBA7B4B7C6E5C0 /* iCal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iCal.swift; path = Sources/iCal.swift; sourceTree = "<group>"; };
+		97081CB20E21F6BA1D1EC9FCD1450BF4 /* ZIPFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.xcconfig; sourceTree = "<group>"; };
+		98E743C5AC665516CAC5F18FD829B34E /* Pods-PlanningToCalendarIOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlanningToCalendarIOS-Info.plist"; sourceTree = "<group>"; };
+		9D27AA87F7CD8C6B1A56711FE521149A /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleValueDecodingContainer.swift; path = Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E9DB5ECEE750A31D06F6AE1EB5A25EE /* KeyedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyedBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/KeyedBox.swift; sourceTree = "<group>"; };
+		A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A31F6935567F40A3AA5B804EBF282C5F /* DecimalBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/DecimalBox.swift; sourceTree = "<group>"; };
+		A4193EBE1AAF04980BB60387D0C8C1D8 /* DataBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/DataBox.swift; sourceTree = "<group>"; };
+		A4F698F06222DCE82A4814AE198F7347 /* FloatBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/FloatBox.swift; sourceTree = "<group>"; };
+		A573207B3BE3BE461542A40DE9AE2742 /* NullBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NullBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/NullBox.swift; sourceTree = "<group>"; };
+		A6B0230DBE43F2C2EEE33BF95D8F2F70 /* iCalKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCalKit-dummy.m"; sourceTree = "<group>"; };
+		AA08D11F350ECCE31F62557D62E95844 /* SharedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedStrings.swift; path = Sources/CoreXLSX/SharedStrings.swift; sourceTree = "<group>"; };
+		AAF519214671AEAF9172E293007241CC /* XMLCoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMLCoder.modulemap; sourceTree = "<group>"; };
+		AB707559D04BDF4AB801156AAEF95501 /* XMLCoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLCoder-prefix.pch"; sourceTree = "<group>"; };
+		AD5E436B8CAE545E437498791EFD2D32 /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
+		AF53D75268D70356ED4C62824BD8752B /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Sources/CoreXLSX/Path.swift; sourceTree = "<group>"; };
+		AFE8C7FA23830776EEC5A8ED326CF99A /* iCalKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iCalKit-Info.plist"; sourceTree = "<group>"; };
+		B1C0E0F99CF96B963129E51153FB057A /* CellReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellReference.swift; path = Sources/CoreXLSX/Worksheet/CellReference.swift; sourceTree = "<group>"; };
+		B1F049D28A4DF747370592CBB496BBD7 /* XMLKeyedEncodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLKeyedEncodingContainer.swift; path = Sources/XMLCoder/Encoder/XMLKeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		B521FAC0CFEF35F51DC9A0153DAF66C8 /* iCalError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iCalError.swift; path = Sources/Enums/iCalError.swift; sourceTree = "<group>"; };
+		B60C9D9E2F2C5184982F5C0AA19432AE /* DynamicNodeDecoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicNodeDecoding.swift; path = Sources/XMLCoder/Decoder/DynamicNodeDecoding.swift; sourceTree = "<group>"; };
+		B7C1087F964BAFC2953972A902E85FF5 /* CoreXLSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreXLSX-prefix.pch"; sourceTree = "<group>"; };
+		BA2B9395E60887663B09A79B2BEF41D6 /* XMLStackParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLStackParser.swift; path = Sources/XMLCoder/Auxiliaries/XMLStackParser.swift; sourceTree = "<group>"; };
+		BD206EE6A6991EE030A75DE29EA909D7 /* URLBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/URLBox.swift; sourceTree = "<group>"; };
+		BE5E1CE8769950763CFE5F9A16892E90 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSV.framework; path = CSV.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24EC39BB895299178C4B57D54CD356C /* XMLUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLUnkeyedEncodingContainer.swift; path = Sources/XMLCoder/Encoder/XMLUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		C2DD69BDE8D54E8CDEF228D306700D7F /* Pods_PlanningToCalendarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PlanningToCalendarIOS.framework; path = "Pods-PlanningToCalendarIOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FFA5ED411BC58A68292415936A91EC /* UnkeyedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnkeyedBox.swift; path = Sources/XMLCoder/Auxiliaries/Box/UnkeyedBox.swift; sourceTree = "<group>"; };
+		C55E9282F9119E0970C5A45C600F5DE0 /* XMLCoder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XMLCoder-Info.plist"; sourceTree = "<group>"; };
+		C7254E3C950DF4C0DC2C066B1B2A1B6B /* iCalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iCalKit.framework; path = iCalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86CA438DA1DB4D683A384036168D7BF /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/Extensions/String.swift; sourceTree = "<group>"; };
+		CAC02A0030D1D686F93B7E7291061327 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLKeyedDecodingContainer.swift; path = Sources/XMLCoder/Decoder/XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		CD6921F69BED42F143F31CF1F3CB1F1A /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
+		CDC61536D544738BDF92E4E2B9DC9005 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73F7976A3AB7D28EFC97E0DC3983BF6 /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Sources/CoreXLSX/Worksheet/Cell.swift; sourceTree = "<group>"; };
+		D8111D78240E5F006178A38D1959F7CB /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
+		D8F4AE462586ADE68979535BD04AD65A /* CSV.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CSV.swift-Info.plist"; sourceTree = "<group>"; };
+		D91E8AB78D0249C7627B71887CEDE7F1 /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
+		DA920629F5FE4055FB98B4EBA73A41F7 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Sources/Event.swift; sourceTree = "<group>"; };
+		DB539864527E538EDBFF06463088306D /* Pods-PlanningToCalendarIOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlanningToCalendarIOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC5252EB5D8BBCA0ECC98E0FBC181DD2 /* XMLKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLKey.swift; path = Sources/XMLCoder/Auxiliaries/XMLKey.swift; sourceTree = "<group>"; };
+		DE22FDBE7004F55BFAF3E62CA53A7C4A /* Archive+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Reading.swift"; path = "Sources/ZIPFoundation/Archive+Reading.swift"; sourceTree = "<group>"; };
+		DE2A61EE1412F66A9188253CD356BDB9 /* Pods-PlanningToCalendarIOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlanningToCalendarIOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3BF5C53747C737334F0F6657EB5D63B /* KeyedStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyedStorage.swift; path = Sources/XMLCoder/Auxiliaries/KeyedStorage.swift; sourceTree = "<group>"; };
+		EBDE804D28ABA7DCB52A82802F0240E6 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecodingStorage.swift; path = Sources/XMLCoder/Decoder/XMLDecodingStorage.swift; sourceTree = "<group>"; };
+		EC4503EC2D8127AE222EF6BFE4A370F0 /* Pods-PlanningToCalendarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlanningToCalendarIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		EC655BCAE85BCA3142B718AD9ED8AABB /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
+		F1A83E93F54CE20DA82A937BB2E3E50B /* Pods-PlanningToCalendarIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PlanningToCalendarIOS.modulemap"; sourceTree = "<group>"; };
+		F3460FA38D97D61E389FC6585C00B9E2 /* SingleValueEncodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleValueEncodingContainer.swift; path = Sources/XMLCoder/Encoder/SingleValueEncodingContainer.swift; sourceTree = "<group>"; };
+		F6D04434DB82589DA3DC6D35E6181DE5 /* iCalKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCalKit-umbrella.h"; sourceTree = "<group>"; };
+		F7697CE4600AFF04DD7B37AB9EDFFC00 /* CoreXLSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreXLSX.framework; path = CoreXLSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76BBC0BBF9CC1A02BF21FC2CFC5F59F /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLUnkeyedDecodingContainer.swift; path = Sources/XMLCoder/Decoder/XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		F979669107075B08178000AB316A920C /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
+		FB457B8E8219D2ABA4924E5C0A39DC10 /* Archive+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Writing.swift"; path = "Sources/ZIPFoundation/Archive+Writing.swift"; sourceTree = "<group>"; };
+		FBB48B28FCD94B237151D696654026D7 /* Relationships.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Relationships.swift; path = Sources/CoreXLSX/Relationships.swift; sourceTree = "<group>"; };
+		FC76A1918A601CE3E8BC3EE2C4D3A696 /* DynamicNodeEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicNodeEncoding.swift; path = Sources/XMLCoder/Encoder/DynamicNodeEncoding.swift; sourceTree = "<group>"; };
+		FCE0461E2AA9350E8230D3400671A7A8 /* CoreXLSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreXLSX-umbrella.h"; sourceTree = "<group>"; };
+		FE298ADF579508DB156A95AE7C668C72 /* Pods-PlanningToCalendarIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PlanningToCalendarIOS-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		34E3A92531B629EBE04B30CCA8519AC0 /* Frameworks */ = {
+		043AB8B68CC43A949570DE0665682BE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C988B3B14157D98AEE02A7AAC9B0751 /* Foundation.framework in Frameworks */,
+				D771762552A9AC7B934552B5CE521C3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DC1DAE3203070AC885689E41946830F /* Frameworks */ = {
+		60EB9D801420E1F42AA0773109A82E27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA8B0E85F0DC20431787DE728410FB49 /* Foundation.framework in Frameworks */,
+				1378A5F6F610418ED381028E6AF8C9B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A26C18A513EC5C3E438C4ACE38A0AD20 /* Frameworks */ = {
+		A00C2025978B95D8261ECA85B8F4A15F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FC758FCA7BD99C61642B9CC0437040 /* Foundation.framework in Frameworks */,
+				7F0715BDED088E7026240A01A3C43883 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE135D65273E0C6045C55B5D25E60068 /* Frameworks */ = {
+		CFEAA75228C1D85EE169F491A447D798 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C45994A1820EB9B80961707AEBD0C7 /* Foundation.framework in Frameworks */,
+				4753D08C8AA9F4DC9D61AC28248CC633 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF1723A7E9B6F8A22185D37CEECA74D0 /* Frameworks */ = {
+		DA8A6320C656EA7A83E4C7A3CD879D43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6197344188F2C2DA5CE5C12F2B8199 /* Foundation.framework in Frameworks */,
-				3C633855423D2C35B78141B081DFD9C0 /* XMLCoder.framework in Frameworks */,
-				8DEFDFBEDCEEE8B9A5F9ADC275E75A26 /* ZIPFoundation.framework in Frameworks */,
+				6E2C789181AD67D32AF660F2C9F4A82A /* Foundation.framework in Frameworks */,
+				B314198ECEA1824A9CC08B2688AB34AA /* XMLCoder.framework in Frameworks */,
+				A8212EE39083309347FA329FF07F30E9 /* ZIPFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA18FC3E196F8188B95FC96EF85B9763 /* Frameworks */ = {
+		E580EFC88DFBC8F1C71860BF78489CF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF14F4917769E49060890AF8E316C8BD /* Foundation.framework in Frameworks */,
+				D75D3F0257C4A1DEFB5B5AA5DA3C7522 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E50F0A95C21BAA02F9C9FA211758F81 /* Support Files */ = {
+		084CFBAEC1A5B42F8FB7C1A65E632275 /* Pods-PlanningToCalendarIOS */ = {
 			isa = PBXGroup;
 			children = (
-				3BDA3CA81F6DCD697CA2D8A4EC7765E3 /* CoreXLSX.modulemap */,
-				9740B9ABC4345AA60C6CF0713920083E /* CoreXLSX.xcconfig */,
-				3A662621DCCEB0E6B76F620C891BED60 /* CoreXLSX-dummy.m */,
-				1365B6EA1164E6E71A91E0C8DE1305B0 /* CoreXLSX-prefix.pch */,
-				1F6DCE1A3FE1E638AA6EDDB54BAF7276 /* CoreXLSX-umbrella.h */,
-				EC2114A70288C6D2D773D195FB04FA34 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CoreXLSX";
-			sourceTree = "<group>";
-		};
-		109FBF1F35E9BA315E2DE016DA4491B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B64857445C5C58E9A0BE4530E20C8F14 /* iCalKit.modulemap */,
-				501173430498C45CFED9FA8546CFFDB6 /* iCalKit.xcconfig */,
-				3F2C4121DF6308649BE17E37E6F33B51 /* iCalKit-dummy.m */,
-				05585D522B63A55CD19D46DD93608587 /* iCalKit-prefix.pch */,
-				E15B74E09C22DD3156B87B641F976335 /* iCalKit-umbrella.h */,
-				708D383DB90C88502C5AFDECC5218E3F /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/iCalKit";
-			sourceTree = "<group>";
-		};
-		3C8405782E62360BAC64E80D531FDFB1 /* CSV.swift */ = {
-			isa = PBXGroup;
-			children = (
-				D85E254B8B06CC0E77F2582B39A081B2 /* BinaryReader.swift */,
-				6AD6FAFAAEA287B1AB0C202DE075093E /* CSV.swift */,
-				6E31FC4CC5938D7FF0C97A5F740BC558 /* CSVError.swift */,
-				E54BECC573B308CE12429109E36E59A0 /* CSVReader.swift */,
-				4FF131BFDF9860FC89024F26A4ADF740 /* CSVRowDecoder.swift */,
-				A540C371E87AFF992CF678D05ACF9489 /* CSVWriter.swift */,
-				327F119469C9FC818F34179752B83158 /* Endian.swift */,
-				2D62037EE56ABB585DF2E7E406483C33 /* UnicodeIterator.swift */,
-				690305CDB607DF71E7DE60C530B1A309 /* Support Files */,
-			);
-			path = CSV.swift;
-			sourceTree = "<group>";
-		};
-		4BD1EE8A1C5DF59A8AB0C3529547CA22 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AD5A1EF3719E18BF1D6E5DF733AE9388 /* CoreXLSX */,
-				3C8405782E62360BAC64E80D531FDFB1 /* CSV.swift */,
-				993C0CC1760F9130D4991A5AA0CDD0CB /* iCalKit */,
-				EC3DDDE0DB6FB2B88E8BDD90D4F24535 /* XMLCoder */,
-				6C5B1592EF6DA873F1C5795C5B7E9F6F /* ZIPFoundation */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5A67A1C9EE642B12E9B682B4CDABB843 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C1F566E38CEFA15B0C1107A069378723 /* Info.plist */,
-				76C1E3A1E18A86159901430192E21BE6 /* XMLCoder.modulemap */,
-				BD6E7F9137722FED45614E166D556234 /* XMLCoder.xcconfig */,
-				F52FA9CDCBE2CB266C1DC3DEE051C98D /* XMLCoder-dummy.m */,
-				A00AD967730743FAA3DE68E92C3DF420 /* XMLCoder-prefix.pch */,
-				CA972869A5F80D620EC3985B054A0464 /* XMLCoder-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XMLCoder";
-			sourceTree = "<group>";
-		};
-		5AD4F561DE417D587315155E85392CDB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3FFFA23BF814DB8A235999E19C2F5E81 /* CoreXLSX.framework */,
-				67A2A2486BA6545D8A4CCA8276F7816C /* CSV.framework */,
-				C15FAA923B0DEF95D861F26AA9E1098B /* iCalKit.framework */,
-				C9638EA7BF18D7039A1C62E6382BD1E1 /* Pods_PlanningToCalendarIOS.framework */,
-				23A3FE56D17BC962CCF2A71493AFBE9C /* XMLCoder.framework */,
-				FE84779B70EC4E79C5A308CF7E3B6CE3 /* ZIPFoundation.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		690305CDB607DF71E7DE60C530B1A309 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1655E2BF564D082EA58C98B35DD9B89 /* CSV.swift.modulemap */,
-				C35BF46D8CF553E9ADD1249E0AFBCF98 /* CSV.swift.xcconfig */,
-				A8144FE97B248A3F39A828C81561D1E6 /* CSV.swift-dummy.m */,
-				D4116C02924187E95157074A416198E2 /* CSV.swift-prefix.pch */,
-				3F65635683D1A824709D32471086AD79 /* CSV.swift-umbrella.h */,
-				0F107C2DC7943AFC5E1FAA4E5D5151AE /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CSV.swift";
-			sourceTree = "<group>";
-		};
-		6C5B1592EF6DA873F1C5795C5B7E9F6F /* ZIPFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				C1ACEDD559751821C743102FCA62C338 /* Archive.swift */,
-				E1958ADB0771A81DFCB753DF3F31FADD /* Archive+Reading.swift */,
-				63B1130BE0C2C9462BBD54BCF9D4EC0A /* Archive+Writing.swift */,
-				2B04D44270E06FEC359ACC990D03BDEA /* Data+Compression.swift */,
-				85A90C87D5FBB91612BDA0440B1C93FF /* Data+Serialization.swift */,
-				D7A590BC3A61FB5C6CCB94FAB59C3B94 /* Entry.swift */,
-				7B0C3E1EBFAA90BE8AC606A444992AAC /* FileManager+ZIP.swift */,
-				DD2F58C516276044ED9E9C2FB4296C40 /* Support Files */,
-			);
-			path = ZIPFoundation;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8DE9855CB0370A90CE91AF68678C00D7 /* Frameworks */,
-				4BD1EE8A1C5DF59A8AB0C3529547CA22 /* Pods */,
-				5AD4F561DE417D587315155E85392CDB /* Products */,
-				DF5673B548BE5A9F0252481CDB8120F1 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8DE9855CB0370A90CE91AF68678C00D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FD85940D02F6F83CFEA05702B8FB53B8 /* XMLCoder.framework */,
-				DB5554D0FC7202EAC0E61273F54004BF /* ZIPFoundation.framework */,
-				AE8CD76AADEED45BAC1AE1B117E98C8A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		993C0CC1760F9130D4991A5AA0CDD0CB /* iCalKit */ = {
-			isa = PBXGroup;
-			children = (
-				3FD82E64E9B970C5E2AE7208B501666E /* Alarm.swift */,
-				26BE5338D8D228E969A87101B1B93D86 /* Calendar.swift */,
-				E0337B8BBEF988EF6C61ED9C3EF415FA /* CalendarComponent.swift */,
-				A02251821B7AC2DAC10A278CCFCCCF52 /* Date.swift */,
-				D51B075CC0D8F9044AEBDB53A7B4C76C /* Event.swift */,
-				678C59F6945A03F417A2FFDC6405B624 /* iCal.swift */,
-				285BE97C934832B13254F49DEEBB7343 /* iCalError.swift */,
-				57F82011257D72C47A5A4016E97E8E8D /* IcsElement.swift */,
-				3D12B9743BB14E804123031B9768CF01 /* Parser.swift */,
-				D6B94F0E13B2A55FE20311255D6DD9D9 /* String.swift */,
-				109FBF1F35E9BA315E2DE016DA4491B4 /* Support Files */,
-			);
-			path = iCalKit;
-			sourceTree = "<group>";
-		};
-		AD5A1EF3719E18BF1D6E5DF733AE9388 /* CoreXLSX */ = {
-			isa = PBXGroup;
-			children = (
-				0F5831C7170792D991A94A321B77788E /* Cell.swift */,
-				F8A5B59BE001538DCD26F449D32F7267 /* CellQueries.swift */,
-				863E94C9BDDC50ECCFCE95D4C6A85A56 /* CellReference.swift */,
-				969264BB3C054B5E0AC8B4D77D27C0A6 /* ColumnReference.swift */,
-				CCF6E0AEC66335A11EFCFD8752FA540D /* CoreXLSX.swift */,
-				6E312A15441BEA4DAE4D86DA7CCF15DB /* Path.swift */,
-				BB4F76556E897FF35441AD21C91E9B37 /* Relationships.swift */,
-				561132D647DCA1C6DFFF4EC929C09D88 /* SharedStrings.swift */,
-				C2FD5132760C4CAE0DC00FCE10625D35 /* Styles.swift */,
-				E1420DEDDE43E46B22ECEE1A501E0564 /* Workbook.swift */,
-				39A7B8A72246704CFCF638B48A916468 /* Worksheet.swift */,
-				0E50F0A95C21BAA02F9C9FA211758F81 /* Support Files */,
-			);
-			path = CoreXLSX;
-			sourceTree = "<group>";
-		};
-		AE8CD76AADEED45BAC1AE1B117E98C8A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				1713DD171D2E2E5E4511FB1D8A8D0586 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DD2F58C516276044ED9E9C2FB4296C40 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4456DF81933BE5F6E0F2B32D3252BA94 /* Info.plist */,
-				1FCD247BD35273D29579F113CA4A5AF0 /* ZIPFoundation.modulemap */,
-				DFDBEC1A7F574A60A4AF6F653BB6201F /* ZIPFoundation.xcconfig */,
-				04E9EFE88D79B7852ECD9CD2FCB2A4A0 /* ZIPFoundation-dummy.m */,
-				5AF7F80DEFF7D778F444BD15CC04C931 /* ZIPFoundation-prefix.pch */,
-				B9A00C6FBF50ACA0EAE783B276D2BAAB /* ZIPFoundation-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ZIPFoundation";
-			sourceTree = "<group>";
-		};
-		DF5673B548BE5A9F0252481CDB8120F1 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E8996A2CB31EBABF0529F97154FDC780 /* Pods-PlanningToCalendarIOS */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E8996A2CB31EBABF0529F97154FDC780 /* Pods-PlanningToCalendarIOS */ = {
-			isa = PBXGroup;
-			children = (
-				D02E0F4CB3FC3C250372D340B4E16B45 /* Info.plist */,
-				7570DAB6277C16C2806544EF72E8CD7D /* Pods-PlanningToCalendarIOS.modulemap */,
-				B5BBD7C56866A1B1221EA5C79FEEC748 /* Pods-PlanningToCalendarIOS-acknowledgements.markdown */,
-				1C532C352C24E7C423DFD3566AE6F970 /* Pods-PlanningToCalendarIOS-acknowledgements.plist */,
-				6798DFF83A8889EF9D9DD78BB5DECEA1 /* Pods-PlanningToCalendarIOS-dummy.m */,
-				61E42B096CBDA616426371084591C890 /* Pods-PlanningToCalendarIOS-frameworks.sh */,
-				A96764AB3F4D450BC57F95F87C6E73C4 /* Pods-PlanningToCalendarIOS-resources.sh */,
-				E87BDE662EF6D5EE8945DBEDB47525F3 /* Pods-PlanningToCalendarIOS-umbrella.h */,
-				73531D29243C9A93FE4C26307A6746FD /* Pods-PlanningToCalendarIOS.debug.xcconfig */,
-				2430A05A09007B494B5E5ED5EE424A4A /* Pods-PlanningToCalendarIOS.release.xcconfig */,
+				F1A83E93F54CE20DA82A937BB2E3E50B /* Pods-PlanningToCalendarIOS.modulemap */,
+				DB539864527E538EDBFF06463088306D /* Pods-PlanningToCalendarIOS-acknowledgements.markdown */,
+				DE2A61EE1412F66A9188253CD356BDB9 /* Pods-PlanningToCalendarIOS-acknowledgements.plist */,
+				72B1FED6DC460DC17F2ADB2BF68CFF08 /* Pods-PlanningToCalendarIOS-dummy.m */,
+				40CB2E18C7157B935EDD1804973248F0 /* Pods-PlanningToCalendarIOS-frameworks.sh */,
+				98E743C5AC665516CAC5F18FD829B34E /* Pods-PlanningToCalendarIOS-Info.plist */,
+				FE298ADF579508DB156A95AE7C668C72 /* Pods-PlanningToCalendarIOS-umbrella.h */,
+				EC4503EC2D8127AE222EF6BFE4A370F0 /* Pods-PlanningToCalendarIOS.debug.xcconfig */,
+				4F13A3A6FFDC060D588B06A56741D9C5 /* Pods-PlanningToCalendarIOS.release.xcconfig */,
 			);
 			name = "Pods-PlanningToCalendarIOS";
 			path = "Target Support Files/Pods-PlanningToCalendarIOS";
 			sourceTree = "<group>";
 		};
-		EC3DDDE0DB6FB2B88E8BDD90D4F24535 /* XMLCoder */ = {
+		25E4B8C24B202464783D1C451AFF7CFA /* XMLCoder */ = {
 			isa = PBXGroup;
 			children = (
-				C689561AB7FBEF1C0B418C64B3471314 /* BoolBox.swift */,
-				308EF3329D6F6669A21271D2CF4FD95F /* Box.swift */,
-				BC18DC8BBED7EB578E7ADD4AAF078FBE /* DataBox.swift */,
-				E40265E0DD43DFFA4A530C2185E3BC9A /* DateBox.swift */,
-				88326E2A5EE7AED6E0178C5CD4BCD0E1 /* DecimalBox.swift */,
-				C43F64D1AF4243076149465BA33550E1 /* DecodingErrorExtension.swift */,
-				D7A0C5CA3D1B918463F56F67B6334179 /* DynamicNodeDecoding.swift */,
-				466A7E4AB29800C5B16F0E1A2E0F6127 /* DynamicNodeEncoding.swift */,
-				5C33F40B81F18A7DA35D9B844854FA2E /* EncodingErrorExtension.swift */,
-				F49EABA4EE057B21F070873C8F4456CC /* FloatBox.swift */,
-				6DCD75FE7DC0E08B536A8A50CA657A9E /* IntBox.swift */,
-				7E7C1F363611C3004484C6DE8676D376 /* ISO8601DateFormatter.swift */,
-				7329EAE9C9F181EF364B6F6451ADDA11 /* KeyedBox.swift */,
-				D08E8D59A5F7501C8FECFB87B0795409 /* KeyedStorage.swift */,
-				F156BC1F1177461385966AA5B25DC5C7 /* Metatypes.swift */,
-				C272D2D99D1617B0662DF620F80FAC9B /* NullBox.swift */,
-				2084A15588077647C50EE55557573AE3 /* SharedBox.swift */,
-				ACA38125062F0320F9BE440DAB61ACE6 /* SingleValueDecodingContainer.swift */,
-				D5C4A9E3157502C08A1B2FF0823D76A9 /* SingleValueEncodingContainer.swift */,
-				E42C0370C9425C49AB8E32C3DED89EE5 /* String+Extensions.swift */,
-				3B3B5CE45906A2FB5AF725553C3EA1A4 /* StringBox.swift */,
-				B174A78F445B16C6A51F7269F1F697CF /* UIntBox.swift */,
-				5849A0D620232E3D450A7BC847EC0FD8 /* UnkeyedBox.swift */,
-				B7F1C2A2FF830BBFCAE37AC9EDD1D907 /* URLBox.swift */,
-				6CC8B189312D988E18B59506F71EB24C /* XMLCoderElement.swift */,
-				B130BD8F9383379B7312FC9DBF4852D1 /* XMLDecoder.swift */,
-				2F9FDBAC203219B06F11E884F9536592 /* XMLDecoderImplementation.swift */,
-				152B84CDB665C7EAE1186C1C7A788FE6 /* XMLDecodingStorage.swift */,
-				7054BED58BA5B8FF4A7F5CF13C52FBF4 /* XMLEncoder.swift */,
-				B814C5DAA99A23D49917818E160C7CC1 /* XMLEncoderImplementation.swift */,
-				006102F65D2A6D05B086621D0FB3F03D /* XMLEncodingStorage.swift */,
-				D85878945A604DE8F3F5F429221BEF45 /* XMLHeader.swift */,
-				5F52B210A53A529DD61AD67DA74BDCC1 /* XMLKey.swift */,
-				B152B01BDA0B007098FB6EE4647D4C27 /* XMLKeyedDecodingContainer.swift */,
-				446D996DA1B5B6D77C50AFF466B0FC85 /* XMLKeyedEncodingContainer.swift */,
-				83AF35AC24DE4EA4C6580DCCB8A6D53E /* XMLReferencingEncoder.swift */,
-				E8E168604CD5511911A3084A49D0A95C /* XMLStackParser.swift */,
-				211EC006EDAA5ED59FE8B20139E83657 /* XMLUnkeyedDecodingContainer.swift */,
-				D0FCA25DFC60F7C08D3F278226DE6143 /* XMLUnkeyedEncodingContainer.swift */,
-				5A67A1C9EE642B12E9B682B4CDABB843 /* Support Files */,
+				5BE655651B973F08DAA3562EAD1FCF9D /* BoolBox.swift */,
+				52EB167D09DCDD28CC7BCCD2CC33C8C9 /* Box.swift */,
+				A4193EBE1AAF04980BB60387D0C8C1D8 /* DataBox.swift */,
+				7B98135CE75D1B8133EC49B814E354E4 /* DateBox.swift */,
+				A31F6935567F40A3AA5B804EBF282C5F /* DecimalBox.swift */,
+				561F9B752422FB6E6C911FF2494BF45C /* DecodingErrorExtension.swift */,
+				B60C9D9E2F2C5184982F5C0AA19432AE /* DynamicNodeDecoding.swift */,
+				FC76A1918A601CE3E8BC3EE2C4D3A696 /* DynamicNodeEncoding.swift */,
+				738106C2CFB8D2237FF90075F78BA564 /* EncodingErrorExtension.swift */,
+				A4F698F06222DCE82A4814AE198F7347 /* FloatBox.swift */,
+				048CC5C419F958B141571B62938401E0 /* IntBox.swift */,
+				14D3EB0C046E7B683C4F0AC5C4BD28ED /* ISO8601DateFormatter.swift */,
+				9E9DB5ECEE750A31D06F6AE1EB5A25EE /* KeyedBox.swift */,
+				E3BF5C53747C737334F0F6657EB5D63B /* KeyedStorage.swift */,
+				8A46F63CCB631081C95139DEFD7AE1DE /* Metatypes.swift */,
+				A573207B3BE3BE461542A40DE9AE2742 /* NullBox.swift */,
+				6E0606ECB849AEF3EAA3E7396ECCEA9E /* SharedBox.swift */,
+				9D27AA87F7CD8C6B1A56711FE521149A /* SingleValueDecodingContainer.swift */,
+				F3460FA38D97D61E389FC6585C00B9E2 /* SingleValueEncodingContainer.swift */,
+				57DB5F974685D430CF83573BE9CA2DC9 /* String+Extensions.swift */,
+				3EEAFF927BB34D24A049A822B2D1A28A /* StringBox.swift */,
+				2BC18E91FE07B6008BE4B50A437DDA84 /* UIntBox.swift */,
+				C2FFA5ED411BC58A68292415936A91EC /* UnkeyedBox.swift */,
+				BD206EE6A6991EE030A75DE29EA909D7 /* URLBox.swift */,
+				25AF80D3A4577BE1DDC976B110210C70 /* XMLCoderElement.swift */,
+				131AA701BB9BB4BC449A59B6A1531D51 /* XMLDecoder.swift */,
+				2BEF21F89EFD7BA901D0DE58AAEECB29 /* XMLDecoderImplementation.swift */,
+				EBDE804D28ABA7DCB52A82802F0240E6 /* XMLDecodingStorage.swift */,
+				48B291B67A3438A703E4F640EAF4613E /* XMLEncoder.swift */,
+				308EB30A7D1B3B69E27073E0B53F2F25 /* XMLEncoderImplementation.swift */,
+				5CE73849B5B479E76541CF5AAF97E82A /* XMLEncodingStorage.swift */,
+				3DC18E1AFAA5CD32976BE7502C036AB2 /* XMLHeader.swift */,
+				DC5252EB5D8BBCA0ECC98E0FBC181DD2 /* XMLKey.swift */,
+				CAC02A0030D1D686F93B7E7291061327 /* XMLKeyedDecodingContainer.swift */,
+				B1F049D28A4DF747370592CBB496BBD7 /* XMLKeyedEncodingContainer.swift */,
+				14544F3F0F8EFCDE9239817E61524EDC /* XMLReferencingEncoder.swift */,
+				BA2B9395E60887663B09A79B2BEF41D6 /* XMLStackParser.swift */,
+				F76BBC0BBF9CC1A02BF21FC2CFC5F59F /* XMLUnkeyedDecodingContainer.swift */,
+				C24EC39BB895299178C4B57D54CD356C /* XMLUnkeyedEncodingContainer.swift */,
+				B5A3854481A5EE18F29AEF8D95E19EBA /* Support Files */,
 			);
+			name = XMLCoder;
 			path = XMLCoder;
+			sourceTree = "<group>";
+		};
+		2E5B277BF42D8C9C825C9BEA3D5D3292 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00EBDF47BC40ECA30EC320B0F3FFF184 /* iCalKit.modulemap */,
+				71CD01C8E213B01B9884A6479C8F558D /* iCalKit.xcconfig */,
+				A6B0230DBE43F2C2EEE33BF95D8F2F70 /* iCalKit-dummy.m */,
+				AFE8C7FA23830776EEC5A8ED326CF99A /* iCalKit-Info.plist */,
+				1B14057D41622B797E231B1E0086BFAB /* iCalKit-prefix.pch */,
+				F6D04434DB82589DA3DC6D35E6181DE5 /* iCalKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iCalKit";
+			sourceTree = "<group>";
+		};
+		427C13B042B4F86E694874E28F2DBB2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7697CE4600AFF04DD7B37AB9EDFFC00 /* CoreXLSX.framework */,
+				BE5E1CE8769950763CFE5F9A16892E90 /* CSV.framework */,
+				C7254E3C950DF4C0DC2C066B1B2A1B6B /* iCalKit.framework */,
+				C2DD69BDE8D54E8CDEF228D306700D7F /* Pods_PlanningToCalendarIOS.framework */,
+				3F616D3E24543D97C200EBBCFDF225D0 /* XMLCoder.framework */,
+				48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D2F165CCE71ACD7E0B783F78CE8C53E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				319448E71A7616AE5E474F119AA26127 /* CoreXLSX.modulemap */,
+				08B3DAE7C680C26F6A62C0163C7A3B8D /* CoreXLSX.xcconfig */,
+				3708D8E562B7EB3F278B23E024305B56 /* CoreXLSX-dummy.m */,
+				5CEF2BAB4E71DB7B165651080197B16E /* CoreXLSX-Info.plist */,
+				B7C1087F964BAFC2953972A902E85FF5 /* CoreXLSX-prefix.pch */,
+				FCE0461E2AA9350E8230D3400671A7A8 /* CoreXLSX-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CoreXLSX";
+			sourceTree = "<group>";
+		};
+		6F873873E747D5ACA8DDA6AA9FF33D35 /* CSV.swift */ = {
+			isa = PBXGroup;
+			children = (
+				D91E8AB78D0249C7627B71887CEDE7F1 /* BinaryReader.swift */,
+				11CF3DA207201FB541D93F80E534BD6D /* CSV.swift */,
+				AD5E436B8CAE545E437498791EFD2D32 /* CSVError.swift */,
+				F979669107075B08178000AB316A920C /* CSVReader.swift */,
+				8B762B52831EEEA1B2015E3A0F0C75BC /* CSVRowDecoder.swift */,
+				0700F89EDB5F4949A7D3F9736451DC8B /* CSVWriter.swift */,
+				3AD21FA1C8B588C32BD43013181CA1F2 /* Endian.swift */,
+				118B79FBDA0F28771F1D414614162B42 /* UnicodeIterator.swift */,
+				FBFB0B7BA187451826DFDB4998A3C8A1 /* Support Files */,
+			);
+			name = CSV.swift;
+			path = CSV.swift;
+			sourceTree = "<group>";
+		};
+		77ECAFC0AAD5CA6C3831C1942BD30E10 /* ZIPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				84F40B82A6C16831576D51225147B8C3 /* Archive.swift */,
+				DE22FDBE7004F55BFAF3E62CA53A7C4A /* Archive+Reading.swift */,
+				FB457B8E8219D2ABA4924E5C0A39DC10 /* Archive+Writing.swift */,
+				06C1A89BEC185146758609B4FE13F038 /* Data+Compression.swift */,
+				0605F2BCEC8F81959C01B01380612A9B /* Data+Serialization.swift */,
+				066A600400F98C5D715BBC2BA03BDFEE /* Entry.swift */,
+				3979804E5474129ADFFF8FF4FEE7E056 /* FileManager+ZIP.swift */,
+				887BE8CF827646CA097A4E9576F23DB6 /* Support Files */,
+			);
+			name = ZIPFoundation;
+			path = ZIPFoundation;
+			sourceTree = "<group>";
+		};
+		887BE8CF827646CA097A4E9576F23DB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0137BA95E0C6B620DA74EA10885921C4 /* ZIPFoundation.modulemap */,
+				97081CB20E21F6BA1D1EC9FCD1450BF4 /* ZIPFoundation.xcconfig */,
+				6E59A04D98F74932C8CC7D3374D80607 /* ZIPFoundation-dummy.m */,
+				0FA90C3A57A5AD8E21D54F98C55CC061 /* ZIPFoundation-Info.plist */,
+				810E95902DDAEDB75A0712C531CD8953 /* ZIPFoundation-prefix.pch */,
+				71DF3ADB71A82CDA587B4B89A72E9D81 /* ZIPFoundation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZIPFoundation";
+			sourceTree = "<group>";
+		};
+		A2C134B6DBAA8996E8C46AD73D8E88DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C76A7589E3681779E8F37DDF716D5106 /* CoreXLSX */,
+				6F873873E747D5ACA8DDA6AA9FF33D35 /* CSV.swift */,
+				A3A3218A082DA8349C3C7D44BE34A336 /* iCalKit */,
+				25E4B8C24B202464783D1C451AFF7CFA /* XMLCoder */,
+				77ECAFC0AAD5CA6C3831C1942BD30E10 /* ZIPFoundation */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3A3218A082DA8349C3C7D44BE34A336 /* iCalKit */ = {
+			isa = PBXGroup;
+			children = (
+				65CCD2BD6C02F47A6DD6F62CC445BEC0 /* Alarm.swift */,
+				070BC282F8225D2A6F6CEC6BF53E0A4D /* Calendar.swift */,
+				466611639B987989A3DA92F5B3131DF6 /* CalendarComponent.swift */,
+				30742B4853A87F9DF87B1688533A9FD5 /* Date.swift */,
+				DA920629F5FE4055FB98B4EBA73A41F7 /* Event.swift */,
+				956B4F94BA5BAC2B06DBA7B4B7C6E5C0 /* iCal.swift */,
+				B521FAC0CFEF35F51DC9A0153DAF66C8 /* iCalError.swift */,
+				0DDA6708098EC9E188887B512AB47046 /* IcsElement.swift */,
+				81BAAC9EB907D96120CB0A85CD3F11BC /* Parser.swift */,
+				C86CA438DA1DB4D683A384036168D7BF /* String.swift */,
+				2E5B277BF42D8C9C825C9BEA3D5D3292 /* Support Files */,
+			);
+			name = iCalKit;
+			path = iCalKit;
+			sourceTree = "<group>";
+		};
+		B5A3854481A5EE18F29AEF8D95E19EBA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAF519214671AEAF9172E293007241CC /* XMLCoder.modulemap */,
+				1316570C4F23A0028CD14822804E58F1 /* XMLCoder.xcconfig */,
+				7067C5106A692D401745D9CE633F4094 /* XMLCoder-dummy.m */,
+				C55E9282F9119E0970C5A45C600F5DE0 /* XMLCoder-Info.plist */,
+				AB707559D04BDF4AB801156AAEF95501 /* XMLCoder-prefix.pch */,
+				1C653E791836B54633CE7F89DED24946 /* XMLCoder-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMLCoder";
+			sourceTree = "<group>";
+		};
+		B5ED3CE42B06C962B254379A85FDF5BB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A0E217EB0B1486EF24F760FC9EADFB56 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BA2519F06C6014432EE271578B6A50AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5567526FFAD55AB27945A285826D7CA4 /* XMLCoder.framework */,
+				CDC61536D544738BDF92E4E2B9DC9005 /* ZIPFoundation.framework */,
+				B5ED3CE42B06C962B254379A85FDF5BB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76A7589E3681779E8F37DDF716D5106 /* CoreXLSX */ = {
+			isa = PBXGroup;
+			children = (
+				D73F7976A3AB7D28EFC97E0DC3983BF6 /* Cell.swift */,
+				0ACEA3F7FF49D1B4792926DB67F4EE70 /* CellQueries.swift */,
+				B1C0E0F99CF96B963129E51153FB057A /* CellReference.swift */,
+				8D5C420F41C525DF7ABC95ADB17AC242 /* ColumnReference.swift */,
+				895C85BA7873D779E264DE22E48038B5 /* CoreXLSX.swift */,
+				AF53D75268D70356ED4C62824BD8752B /* Path.swift */,
+				FBB48B28FCD94B237151D696654026D7 /* Relationships.swift */,
+				AA08D11F350ECCE31F62557D62E95844 /* SharedStrings.swift */,
+				0AB0A70CF4B427F21283E469C720AA84 /* Styles.swift */,
+				067A20260C1699D4510C6FBD9F6E2620 /* Workbook.swift */,
+				5631CAD1B093177A0AF0BCF12AFE0376 /* Worksheet.swift */,
+				6D2F165CCE71ACD7E0B783F78CE8C53E /* Support Files */,
+			);
+			name = CoreXLSX;
+			path = CoreXLSX;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA2519F06C6014432EE271578B6A50AD /* Frameworks */,
+				A2C134B6DBAA8996E8C46AD73D8E88DC /* Pods */,
+				427C13B042B4F86E694874E28F2DBB2B /* Products */,
+				FC21AD77B06D3923CE71B58BE34553CD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FBFB0B7BA187451826DFDB4998A3C8A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3123DE1071A2806B5D55FEE8CB176C81 /* CSV.swift.modulemap */,
+				54B3924992F99C7AA0220955613A7F2C /* CSV.swift.xcconfig */,
+				D8111D78240E5F006178A38D1959F7CB /* CSV.swift-dummy.m */,
+				D8F4AE462586ADE68979535BD04AD65A /* CSV.swift-Info.plist */,
+				CD6921F69BED42F143F31CF1F3CB1F1A /* CSV.swift-prefix.pch */,
+				EC655BCAE85BCA3142B718AD9ED8AABB /* CSV.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSV.swift";
+			sourceTree = "<group>";
+		};
+		FC21AD77B06D3923CE71B58BE34553CD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				084CFBAEC1A5B42F8FB7C1A65E632275 /* Pods-PlanningToCalendarIOS */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F77BEC3AB3B8CD41C35D7E74575020D /* Headers */ = {
+		5FF0B749055272C0C6A3F6095E12B946 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3628F419FD2BC05FE21A0DD2E44096 /* ZIPFoundation-umbrella.h in Headers */,
+				3252EC0642767FF857BF6670FDF51BD3 /* Pods-PlanningToCalendarIOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42CC73F6F4EDD144CD5A38B105EA2829 /* Headers */ = {
+		783EF8242141CE32EB4CF868ADFFD8EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03AA64176729DCF2262684E3575D099 /* iCalKit-umbrella.h in Headers */,
+				7B18764A34C8FFAA1EF35892D53B08DF /* ZIPFoundation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AD9D1BCE176458D178308C7A3B85EE8 /* Headers */ = {
+		9510B40CE324D040E080581D06767ADE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A619264B958544EE1F98EA648CC4E10 /* CoreXLSX-umbrella.h in Headers */,
+				3A9335D7D70DE718B836A5E49A535FC3 /* iCalKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		592ECBE861783EB8B3F3CF57775A5F44 /* Headers */ = {
+		BCD858DC23658932864344284D1D7FAD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528C2DDC1EBDDE15E33AE4FAC1872860 /* XMLCoder-umbrella.h in Headers */,
+				7D277B67684E50872DEC45D7F7065659 /* CSV.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD837B6F47912A3170AB4DE297B09170 /* Headers */ = {
+		CA0411995A0C62E7E346A2D5B30F14C8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E34C8035C90E82A0FC55B8E26D45AD3 /* Pods-PlanningToCalendarIOS-umbrella.h in Headers */,
+				3249A1CF554FDCCE2972ED31913B9CE8 /* CoreXLSX-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD11D50B4F4B5C3106E5380348AB2880 /* Headers */ = {
+		CC536A54FE784181D210E9B4719B619A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4ACB15480975CF7B1F7F7BE6E0F47B3 /* CSV.swift-umbrella.h in Headers */,
+				AC839A1E6A5FCF5D509B51DEDD7071D4 /* XMLCoder-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		31834AB339EBD68E74CD2CD95DE9AE78 /* CoreXLSX */ = {
+		17DE3A4FD3B4D2850EFBDC096AA2DB77 /* Pods-PlanningToCalendarIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F867CBF799CC4293B7AA85959DB5186 /* Build configuration list for PBXNativeTarget "CoreXLSX" */;
+			buildConfigurationList = A880A6BEC5DD43B72F78E75ED8E579F3 /* Build configuration list for PBXNativeTarget "Pods-PlanningToCalendarIOS" */;
 			buildPhases = (
-				4AD9D1BCE176458D178308C7A3B85EE8 /* Headers */,
-				53A6E4DE6F11F5583755D30F9CE4A7C8 /* Sources */,
-				EF1723A7E9B6F8A22185D37CEECA74D0 /* Frameworks */,
-				E9FE7098FF923131B7E0C40DBB0E10B2 /* Resources */,
+				5FF0B749055272C0C6A3F6095E12B946 /* Headers */,
+				396199FC1132CED81660E50D64197CB6 /* Sources */,
+				60EB9D801420E1F42AA0773109A82E27 /* Frameworks */,
+				81809C637E213FD1F53D9C8724E26A65 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E0B0DCF0857D37E73A2359FBB0460DA0 /* PBXTargetDependency */,
-				BF23B5E071853ED5A1364D6C1759846A /* PBXTargetDependency */,
+				C9E9AE8261D2F46583E4A619B0E54A99 /* PBXTargetDependency */,
+				FC6E8E465AB10CBB90FBC7C6B667DF3A /* PBXTargetDependency */,
+				AF0C0C7B1B8928157435241155F0DF38 /* PBXTargetDependency */,
+				5A2858C5CCAFD0D3420D4407570D917E /* PBXTargetDependency */,
+				7160E97109EE653FAA9022F2D4964E98 /* PBXTargetDependency */,
+			);
+			name = "Pods-PlanningToCalendarIOS";
+			productName = "Pods-PlanningToCalendarIOS";
+			productReference = C2DD69BDE8D54E8CDEF228D306700D7F /* Pods_PlanningToCalendarIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B04C1F70F5EC647583FC131CED595D8 /* CoreXLSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71C3ED5291E0BBE8DF4B589AAE46E16C /* Build configuration list for PBXNativeTarget "CoreXLSX" */;
+			buildPhases = (
+				CA0411995A0C62E7E346A2D5B30F14C8 /* Headers */,
+				478AC992B13237F3BF0061A9367B49E5 /* Sources */,
+				DA8A6320C656EA7A83E4C7A3CD879D43 /* Frameworks */,
+				C649766333237A481DDBBE336565CE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5B5568C62D5ABA4A24C2E71D882AE5 /* PBXTargetDependency */,
+				AF2D2F23556AF8D7682EF45EA0986FD8 /* PBXTargetDependency */,
 			);
 			name = CoreXLSX;
 			productName = CoreXLSX;
-			productReference = 3FFFA23BF814DB8A235999E19C2F5E81 /* CoreXLSX.framework */;
+			productReference = F7697CE4600AFF04DD7B37AB9EDFFC00 /* CoreXLSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		59D0A23DB65E60F61E5F2FE78575925F /* CSV.swift */ = {
+		9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF04AB75E0BA05725233F82E8A820CB0 /* Build configuration list for PBXNativeTarget "CSV.swift" */;
+			buildConfigurationList = 333D52041D98CABA333A68CAD8C47E4E /* Build configuration list for PBXNativeTarget "CSV.swift" */;
 			buildPhases = (
-				FD11D50B4F4B5C3106E5380348AB2880 /* Headers */,
-				227901404FF67BAE1D16484E8888BF60 /* Sources */,
-				34E3A92531B629EBE04B30CCA8519AC0 /* Frameworks */,
-				EA9E977B2AABF5DC94B38D0517BBE63D /* Resources */,
+				BCD858DC23658932864344284D1D7FAD /* Headers */,
+				45339F7CA1AD7D8D819C3C71FC335F6C /* Sources */,
+				E580EFC88DFBC8F1C71860BF78489CF3 /* Frameworks */,
+				EF977F6D1B481C70E8BB082EC419E96E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -692,76 +718,17 @@
 			);
 			name = CSV.swift;
 			productName = CSV.swift;
-			productReference = 67A2A2486BA6545D8A4CCA8276F7816C /* CSV.framework */;
+			productReference = BE5E1CE8769950763CFE5F9A16892E90 /* CSV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		93079866FE59F84FBBD0784A84691718 /* XMLCoder */ = {
+		AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2ABED334230AA9332E28454B7AA69F5 /* Build configuration list for PBXNativeTarget "XMLCoder" */;
+			buildConfigurationList = BD8847081DFEF88935CB8957B3E9F541 /* Build configuration list for PBXNativeTarget "ZIPFoundation" */;
 			buildPhases = (
-				592ECBE861783EB8B3F3CF57775A5F44 /* Headers */,
-				DB0B150D984E47AFD6065BF3CB646883 /* Sources */,
-				A26C18A513EC5C3E438C4ACE38A0AD20 /* Frameworks */,
-				C06E80118D640861968EBEF339BEEB91 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XMLCoder;
-			productName = XMLCoder;
-			productReference = 23A3FE56D17BC962CCF2A71493AFBE9C /* XMLCoder.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9F74E22579CA86374AD3303B2E632F5A /* iCalKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FB2EE472508CF61F77B701555FFCC6C /* Build configuration list for PBXNativeTarget "iCalKit" */;
-			buildPhases = (
-				42CC73F6F4EDD144CD5A38B105EA2829 /* Headers */,
-				AF666D430E5B058F7B5BDAAB77842CBE /* Sources */,
-				FA18FC3E196F8188B95FC96EF85B9763 /* Frameworks */,
-				732EF12A9D9E0A4A7D6AD0D3307074DD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iCalKit;
-			productName = iCalKit;
-			productReference = C15FAA923B0DEF95D861F26AA9E1098B /* iCalKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C9F58826D7FDB20F7086C96C3DF44997 /* Pods-PlanningToCalendarIOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 288D9BC370A18ADF7BE7CCE7D766F0CE /* Build configuration list for PBXNativeTarget "Pods-PlanningToCalendarIOS" */;
-			buildPhases = (
-				BD837B6F47912A3170AB4DE297B09170 /* Headers */,
-				739E2C64753AAAEF846A6720BDC0DCE5 /* Sources */,
-				BE135D65273E0C6045C55B5D25E60068 /* Frameworks */,
-				BC5AC98667F745F52589C67D62A6C5BA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B50F44B9BFF766502C448FE6BAED09EE /* PBXTargetDependency */,
-				3B59A93A14C8244C2ABEA180ED3E092E /* PBXTargetDependency */,
-				4EE11C72E0E5FDC6C90D99CD1EC1B612 /* PBXTargetDependency */,
-				A480FE9E570E101A07451E98C34C67CE /* PBXTargetDependency */,
-				24904AEF248383F3E5CE594210ED16AA /* PBXTargetDependency */,
-			);
-			name = "Pods-PlanningToCalendarIOS";
-			productName = "Pods-PlanningToCalendarIOS";
-			productReference = C9638EA7BF18D7039A1C62E6382BD1E1 /* Pods_PlanningToCalendarIOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DA4667863A43BF35617903617321E56C /* ZIPFoundation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 544D5C52F96EEB99A7A5DE72E8633FA7 /* Build configuration list for PBXNativeTarget "ZIPFoundation" */;
-			buildPhases = (
-				2F77BEC3AB3B8CD41C35D7E74575020D /* Headers */,
-				AFA8EF12F79548F69A83B6D64A78FBA9 /* Sources */,
-				8DC1DAE3203070AC885689E41946830F /* Frameworks */,
-				77A8E5EA8CEB1112655E462F0E1A9211 /* Resources */,
+				783EF8242141CE32EB4CF868ADFFD8EA /* Headers */,
+				8858F6F51B9AFDA3B9AC56BF536F8EA7 /* Sources */,
+				CFEAA75228C1D85EE169F491A447D798 /* Frameworks */,
+				7960DD4EB2BF0C720DE85BCDF459330A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -769,78 +736,113 @@
 			);
 			name = ZIPFoundation;
 			productName = ZIPFoundation;
-			productReference = FE84779B70EC4E79C5A308CF7E3B6CE3 /* ZIPFoundation.framework */;
+			productReference = 48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C60EFC601A7827F36FF65E03E71B3126 /* iCalKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AADFA8E529BBB57505B0E28AB79737B1 /* Build configuration list for PBXNativeTarget "iCalKit" */;
+			buildPhases = (
+				9510B40CE324D040E080581D06767ADE /* Headers */,
+				81C39F944C5CFA9023109A20710FBF3F /* Sources */,
+				A00C2025978B95D8261ECA85B8F4A15F /* Frameworks */,
+				AAF2CA43CEAEA0402676C7F9513ABACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCalKit;
+			productName = iCalKit;
+			productReference = C7254E3C950DF4C0DC2C066B1B2A1B6B /* iCalKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1753B4FA19C5F745ADF56B844ACAB36 /* XMLCoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB394AA1634C69D190FA52E697F3518 /* Build configuration list for PBXNativeTarget "XMLCoder" */;
+			buildPhases = (
+				CC536A54FE784181D210E9B4719B619A /* Headers */,
+				F25FAC993463769E1504044D1608F04D /* Sources */,
+				043AB8B68CC43A949570DE0665682BE0 /* Frameworks */,
+				4C96CB686499E04001B726198F7DB60E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLCoder;
+			productName = XMLCoder;
+			productReference = 3F616D3E24543D97C200EBBCFDF225D0 /* XMLCoder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5AD4F561DE417D587315155E85392CDB /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 427C13B042B4F86E694874E28F2DBB2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31834AB339EBD68E74CD2CD95DE9AE78 /* CoreXLSX */,
-				59D0A23DB65E60F61E5F2FE78575925F /* CSV.swift */,
-				9F74E22579CA86374AD3303B2E632F5A /* iCalKit */,
-				C9F58826D7FDB20F7086C96C3DF44997 /* Pods-PlanningToCalendarIOS */,
-				93079866FE59F84FBBD0784A84691718 /* XMLCoder */,
-				DA4667863A43BF35617903617321E56C /* ZIPFoundation */,
+				3B04C1F70F5EC647583FC131CED595D8 /* CoreXLSX */,
+				9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */,
+				C60EFC601A7827F36FF65E03E71B3126 /* iCalKit */,
+				17DE3A4FD3B4D2850EFBDC096AA2DB77 /* Pods-PlanningToCalendarIOS */,
+				E1753B4FA19C5F745ADF56B844ACAB36 /* XMLCoder */,
+				AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		732EF12A9D9E0A4A7D6AD0D3307074DD /* Resources */ = {
+		4C96CB686499E04001B726198F7DB60E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77A8E5EA8CEB1112655E462F0E1A9211 /* Resources */ = {
+		7960DD4EB2BF0C720DE85BCDF459330A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC5AC98667F745F52589C67D62A6C5BA /* Resources */ = {
+		81809C637E213FD1F53D9C8724E26A65 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C06E80118D640861968EBEF339BEEB91 /* Resources */ = {
+		AAF2CA43CEAEA0402676C7F9513ABACE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9FE7098FF923131B7E0C40DBB0E10B2 /* Resources */ = {
+		C649766333237A481DDBBE336565CE16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA9E977B2AABF5DC94B38D0517BBE63D /* Resources */ = {
+		EF977F6D1B481C70E8BB082EC419E96E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -850,279 +852,180 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		227901404FF67BAE1D16484E8888BF60 /* Sources */ = {
+		396199FC1132CED81660E50D64197CB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B6A73B353246C3DF846889B72BEBD47 /* BinaryReader.swift in Sources */,
-				3CA31113AB67DD3B2FEA05C7BF7041BC /* CSV.swift in Sources */,
-				1E7EAD4A4C57A3D2FDF7F299024930F5 /* CSV.swift-dummy.m in Sources */,
-				FD9766E7523660E127F3EA53FAAAB808 /* CSVError.swift in Sources */,
-				BD30F0A9F3CA794142E8D62F79AD47E6 /* CSVReader.swift in Sources */,
-				BAD8C5110DADF8608BCBAD7B8857E6ED /* CSVRowDecoder.swift in Sources */,
-				434F5F6B0595E5F23BB04E195B2C344D /* CSVWriter.swift in Sources */,
-				3140F44D4D3241B66548AEDEF68C8EC0 /* Endian.swift in Sources */,
-				0A76CBC7942D92BD32FB88C562E5364C /* UnicodeIterator.swift in Sources */,
+				D0C2EE164CFC528BBDB12C181C2FBE91 /* Pods-PlanningToCalendarIOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A6E4DE6F11F5583755D30F9CE4A7C8 /* Sources */ = {
+		45339F7CA1AD7D8D819C3C71FC335F6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3317432141E55013098CEDF3718F11E3 /* Cell.swift in Sources */,
-				827FDEFC71D46E1D2D79AE9B8A56FB10 /* CellQueries.swift in Sources */,
-				B863BBC31D2B7EED474DDF44564620FA /* CellReference.swift in Sources */,
-				7D686E0D486538C8CBE29F7AD922A008 /* ColumnReference.swift in Sources */,
-				C4DEF05BDB0A1734B91D4E7E659C3611 /* CoreXLSX-dummy.m in Sources */,
-				C4E0BF45FF150CFB8A6C2B0BF1E1D824 /* CoreXLSX.swift in Sources */,
-				DB7AC802B1E9C2AF5564DF2B7964C99A /* Path.swift in Sources */,
-				56A107971C5C3CEC56544B10B5827613 /* Relationships.swift in Sources */,
-				691C717172EFEE3C067285D10B8B8B1B /* SharedStrings.swift in Sources */,
-				50AA6708C915B89BE67B49BA778251D8 /* Styles.swift in Sources */,
-				4D8C2F10BA798F466B8A17833A428962 /* Workbook.swift in Sources */,
-				76BBBB646E79A1CCAF4B0E7AA32C58A7 /* Worksheet.swift in Sources */,
+				C9643061AF5B86B0904666E6C6D692A9 /* BinaryReader.swift in Sources */,
+				0C2EDD4D746664768F166D5985A92F87 /* CSV.swift in Sources */,
+				863EC92F8EBF405A0705BA453CC7CB8D /* CSV.swift-dummy.m in Sources */,
+				D0856BEC0C1C658F921B94655BF6B499 /* CSVError.swift in Sources */,
+				6004414EB47B177B99016FA2DAFA824A /* CSVReader.swift in Sources */,
+				ADDCE13CEF2C789DAA7C1EAA107532F0 /* CSVRowDecoder.swift in Sources */,
+				53649B82AB073C43418FE626702DC020 /* CSVWriter.swift in Sources */,
+				03C5C19C8747DC075725BBE9CB57ABF2 /* Endian.swift in Sources */,
+				7C2D90E04A97FCEE783898778B63B7C1 /* UnicodeIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		739E2C64753AAAEF846A6720BDC0DCE5 /* Sources */ = {
+		478AC992B13237F3BF0061A9367B49E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A5555A6B6AF9B19C5856CB4F49ADA4 /* Pods-PlanningToCalendarIOS-dummy.m in Sources */,
+				49A8F21C0D74181BA84A7D6126BF7257 /* Cell.swift in Sources */,
+				738D2D39FAE8497E19A5AE70DD0A7640 /* CellQueries.swift in Sources */,
+				14E12ABF5E9F76EEA8416C71B6E1A49F /* CellReference.swift in Sources */,
+				1DD7F483830DFC9972EC194807DDAEB5 /* ColumnReference.swift in Sources */,
+				8C90BDACAF3EBCF2B04DCBD77B2CA6ED /* CoreXLSX-dummy.m in Sources */,
+				616F012F71447BE8E51943C762B8570D /* CoreXLSX.swift in Sources */,
+				9557D3CFB9F8A049C318A4748BDF0573 /* Path.swift in Sources */,
+				B0AA2A97432F078038124B3AEB67634E /* Relationships.swift in Sources */,
+				B8BA13C1C131976F881E3B877435D33A /* SharedStrings.swift in Sources */,
+				5245C2667C8A25BE97B539EFD50660B0 /* Styles.swift in Sources */,
+				CFDD3495B2561535582D4353FD8C9889 /* Workbook.swift in Sources */,
+				AD2067C7FE822B82B6F0CD73FB014869 /* Worksheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF666D430E5B058F7B5BDAAB77842CBE /* Sources */ = {
+		81C39F944C5CFA9023109A20710FBF3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C3826F96CB39DD063717866936836D /* Alarm.swift in Sources */,
-				D2E407A3D4E6F826780B75B23A45B26F /* Calendar.swift in Sources */,
-				CC856C1BE7907FE1C953D94F48A8BADE /* CalendarComponent.swift in Sources */,
-				1F812E1265DB714AC108B99585FD6B74 /* Date.swift in Sources */,
-				D5D8EC508DEFA3B55611BA34CB0A21F6 /* Event.swift in Sources */,
-				EF0DC8ACEEFD3CCF91CF43956A683516 /* iCal.swift in Sources */,
-				04639B64919BA7E14364F36F44C8A5F3 /* iCalError.swift in Sources */,
-				128CA60B7145CC1499ECF39625EC5C5D /* iCalKit-dummy.m in Sources */,
-				AE8F1002D3405604529CC0AEE1BB08D1 /* IcsElement.swift in Sources */,
-				90687435D040EDC3700AFEDA6FA4C237 /* Parser.swift in Sources */,
-				C077425D71C236005B9B0ED1DEA3CB24 /* String.swift in Sources */,
+				3B2B73401EDC0409D186BB35E8D14C7D /* Alarm.swift in Sources */,
+				8A311EC368E9C95989C1BCFAD53354B7 /* Calendar.swift in Sources */,
+				AD34B2B8CEB3E53344ABA4C446B552D4 /* CalendarComponent.swift in Sources */,
+				81546EA61855F30E597500778BDCD55E /* Date.swift in Sources */,
+				DDE2AACF6E48CDC60860EA06564C7CDC /* Event.swift in Sources */,
+				420281C15A17768A1489612DD8F642E7 /* iCal.swift in Sources */,
+				3FFB2A98715CEA177C7A1770D7464474 /* iCalError.swift in Sources */,
+				70537FC32FFC2E47EE1E2412D8E09674 /* iCalKit-dummy.m in Sources */,
+				B94702856E7484FA329239DCE995EEDC /* IcsElement.swift in Sources */,
+				9BE8F9EC39DC81D135000A3D96922369 /* Parser.swift in Sources */,
+				A075FCAE13E3F78A117406CB49225062 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFA8EF12F79548F69A83B6D64A78FBA9 /* Sources */ = {
+		8858F6F51B9AFDA3B9AC56BF536F8EA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4961FBF7C77C0B9345AE4123829FCC4 /* Archive+Reading.swift in Sources */,
-				356FDA8E24E4651B880F0F099EC4B323 /* Archive+Writing.swift in Sources */,
-				DEAA8C0C3259A0AF00A63E6BA1ECA20D /* Archive.swift in Sources */,
-				0D89051332B2E78382D1C3CB780F97C5 /* Data+Compression.swift in Sources */,
-				9294AAEBAD57DC7969284BD7E9046A38 /* Data+Serialization.swift in Sources */,
-				0300D65AEEDD12786EDB53276F6E20C9 /* Entry.swift in Sources */,
-				9F7253CC7C6BBFA1A88985A900BEFB1C /* FileManager+ZIP.swift in Sources */,
-				BA2A2DD7510469C6840F850371F98709 /* ZIPFoundation-dummy.m in Sources */,
+				740845C4ED071CD149B90B25B9F9E09D /* Archive+Reading.swift in Sources */,
+				152B32EFB89B90A08B145D102EC5E588 /* Archive+Writing.swift in Sources */,
+				AE086021912B0BFDDB88BDB0A48ACE41 /* Archive.swift in Sources */,
+				EB88779319C551F121CEA41C1F848B16 /* Data+Compression.swift in Sources */,
+				4C8A8D434B6225072E4DEA8B19C50CAC /* Data+Serialization.swift in Sources */,
+				C8DAAB9BEEDB3C4CC9C296775583A478 /* Entry.swift in Sources */,
+				4861C29DAB4DFB90D75464D8BFC8F7C2 /* FileManager+ZIP.swift in Sources */,
+				4EFBC7D8E8A4635DABD14BFB6EFF4494 /* ZIPFoundation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB0B150D984E47AFD6065BF3CB646883 /* Sources */ = {
+		F25FAC993463769E1504044D1608F04D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F11D5AE45EB16EC34890391B102143 /* BoolBox.swift in Sources */,
-				A0CD748C76ABDE8A943AAE90223DA14F /* Box.swift in Sources */,
-				4A5A30FAD3E457539B1EA7C8E5039704 /* DataBox.swift in Sources */,
-				C65AC29FF2A777945432275672647048 /* DateBox.swift in Sources */,
-				C904A3CB9BECFF97AAC5EB4507E52FAC /* DecimalBox.swift in Sources */,
-				B9217CD3CB9B4ECE79A6E8CC8217B035 /* DecodingErrorExtension.swift in Sources */,
-				9CDFA78978F2E85C65AF33DDA4FFA11B /* DynamicNodeDecoding.swift in Sources */,
-				FF264A7D6A824CE61C0000D751BD96D1 /* DynamicNodeEncoding.swift in Sources */,
-				26585F474584E007CA9ACDBC8C7D08F3 /* EncodingErrorExtension.swift in Sources */,
-				8E66902F9BB143998F58C30CD95DFAB4 /* FloatBox.swift in Sources */,
-				B8DF380779678C2B15058AF2A1D4C3D6 /* IntBox.swift in Sources */,
-				04DF22C4053D5E12FEEDB827C72F634C /* ISO8601DateFormatter.swift in Sources */,
-				11FC2303C6E3C8A92807D60693DD4B63 /* KeyedBox.swift in Sources */,
-				DA681793A43046C64A5294903B64879A /* KeyedStorage.swift in Sources */,
-				AFEF837A3ED2208ABE445FF994F43AFA /* Metatypes.swift in Sources */,
-				B6FA325F71F999B0B725FF7391A1EA99 /* NullBox.swift in Sources */,
-				B025D36740DD00A9331FB3F19DAA8D94 /* SharedBox.swift in Sources */,
-				F78F86276D4CE51887C6D94F917BDC66 /* SingleValueDecodingContainer.swift in Sources */,
-				CD48893890E455CA31E9629984A30797 /* SingleValueEncodingContainer.swift in Sources */,
-				E07275F9C570AC59D0B1CC9E943A490D /* String+Extensions.swift in Sources */,
-				E86BAD400552F4B8D2BA004F0C617C32 /* StringBox.swift in Sources */,
-				43A93EA502E12C5BA6AFD88E777A819E /* UIntBox.swift in Sources */,
-				F56A9772083C6BC6A28729CC010818DA /* UnkeyedBox.swift in Sources */,
-				01E15EBEE50996CD823E2CF4F35F13D4 /* URLBox.swift in Sources */,
-				9B1527E707C981ED8B4D8A81A2C90286 /* XMLCoder-dummy.m in Sources */,
-				778BFA96C1566F3B8D0C8723024B6A09 /* XMLCoderElement.swift in Sources */,
-				A4E157665C6D4A3AFCA9879761DEA035 /* XMLDecoder.swift in Sources */,
-				69C80E5EA4F806F2C15A86FB17DF04B8 /* XMLDecoderImplementation.swift in Sources */,
-				D03799BDBB32736ECBE750EA197A6BB1 /* XMLDecodingStorage.swift in Sources */,
-				D656D1D8420A90EE97172CE185DCFD09 /* XMLEncoder.swift in Sources */,
-				ECAA5D31264D0FEC53E203A9AF793A92 /* XMLEncoderImplementation.swift in Sources */,
-				31B06846D72039099DD4377975D88E72 /* XMLEncodingStorage.swift in Sources */,
-				81564C68B6E27E1F65E25EF8DE52B340 /* XMLHeader.swift in Sources */,
-				187E0F36505F62771F8A9B49CE24E45A /* XMLKey.swift in Sources */,
-				4AE297B0B5F6723F8DD459ED5D6E00AA /* XMLKeyedDecodingContainer.swift in Sources */,
-				632149BE0A9D12F2FAF7FDBB53F03542 /* XMLKeyedEncodingContainer.swift in Sources */,
-				034EA05C41670E40BAD1EBDFA7AA0F60 /* XMLReferencingEncoder.swift in Sources */,
-				537321E312C2F8C591842B3064300C8A /* XMLStackParser.swift in Sources */,
-				C3A4C441AD5C917C9B178EBB956A5062 /* XMLUnkeyedDecodingContainer.swift in Sources */,
-				4D23596D81D25974882F16CA644075F1 /* XMLUnkeyedEncodingContainer.swift in Sources */,
+				F034E7DC6D3A1DC9F6914AE60C7CA1BB /* BoolBox.swift in Sources */,
+				2196CDB9DDA460E94D17A7D6E8F2568F /* Box.swift in Sources */,
+				74C261122B504AFBDB303CF4239CD15C /* DataBox.swift in Sources */,
+				7786980AB491B0424D407DDC55783CE9 /* DateBox.swift in Sources */,
+				98F8AFA522273ECE3108F439C40FC411 /* DecimalBox.swift in Sources */,
+				0D1DF01ABB82078B580EDFDE751F6CBD /* DecodingErrorExtension.swift in Sources */,
+				E07937E7343878C20DAFC4C10771AFA1 /* DynamicNodeDecoding.swift in Sources */,
+				8020A168BF075E73A5963A4D62C301B3 /* DynamicNodeEncoding.swift in Sources */,
+				C5B1A86080D09050466943CE63682897 /* EncodingErrorExtension.swift in Sources */,
+				F03E0BCA46E27A6BBB37BD86EFBB193E /* FloatBox.swift in Sources */,
+				73667B693D8777AAD1262C93A1979D3A /* IntBox.swift in Sources */,
+				30C3B2B2908764043B29316365B49943 /* ISO8601DateFormatter.swift in Sources */,
+				830BC59DAFAC117C86CDDB5228FFE7DC /* KeyedBox.swift in Sources */,
+				4D8E21F158160A4DAAE305275A76A0CC /* KeyedStorage.swift in Sources */,
+				D1EDEB87A964C0F27E3E2696CEA3CCEB /* Metatypes.swift in Sources */,
+				A71CCD0DB32452CD52361832662FC32E /* NullBox.swift in Sources */,
+				579FCEFC45EF54E93DBE3A605236A62B /* SharedBox.swift in Sources */,
+				A6372EDD44F43E456586BD21769B291E /* SingleValueDecodingContainer.swift in Sources */,
+				488EF3B0F1470B31E35DBB537478D13C /* SingleValueEncodingContainer.swift in Sources */,
+				AC95489E4B065C3736D200E31E985086 /* String+Extensions.swift in Sources */,
+				AE2B13558A88AFC1EE286C0ACF882F45 /* StringBox.swift in Sources */,
+				62FB11D4FB9D046A67745D73DD3A6C34 /* UIntBox.swift in Sources */,
+				9F1C979D43FFBFAB5E96F659964BDFBC /* UnkeyedBox.swift in Sources */,
+				0FD4C17C8BA69F5E469FA284ECDF4298 /* URLBox.swift in Sources */,
+				46CC094A5B1717441505677EE0C182E9 /* XMLCoder-dummy.m in Sources */,
+				41BBA509403564E51451A2ED07187351 /* XMLCoderElement.swift in Sources */,
+				B92E262737811DF37DC77F703A11457E /* XMLDecoder.swift in Sources */,
+				B9B06D4C9FDF5724E40D4AA860E257F6 /* XMLDecoderImplementation.swift in Sources */,
+				6D011DC3DAD45515AD4EA84C279EA30E /* XMLDecodingStorage.swift in Sources */,
+				766D4638A83B41E01775D34CF49D761B /* XMLEncoder.swift in Sources */,
+				8F54AA2404F484751E74CD1311B585E0 /* XMLEncoderImplementation.swift in Sources */,
+				A2448592ABEE1201EE3F2AE1C4819662 /* XMLEncodingStorage.swift in Sources */,
+				03E5EBE84FC7AE7A77785782B5FE28FD /* XMLHeader.swift in Sources */,
+				11F1E4E619B54B2E2BB77820A8BB5AF8 /* XMLKey.swift in Sources */,
+				8B10C047CF31DF58F0AF39548A95E8C9 /* XMLKeyedDecodingContainer.swift in Sources */,
+				02804D0F6AA7A45175B3655322D6C8F0 /* XMLKeyedEncodingContainer.swift in Sources */,
+				D2DBD76DA3D8A95F20BBC429755393D0 /* XMLReferencingEncoder.swift in Sources */,
+				EC12D33FC497E8FFC070A559F272E907 /* XMLStackParser.swift in Sources */,
+				3BD1573E3FFD9796CF72098616BC1AA5 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				A939C722F9EB661E6224B15345E08912 /* XMLUnkeyedEncodingContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		24904AEF248383F3E5CE594210ED16AA /* PBXTargetDependency */ = {
+		5A2858C5CCAFD0D3420D4407570D917E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZIPFoundation;
+			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
+			targetProxy = EB5EBF234C2EC870034EEE4E1B107017 /* PBXContainerItemProxy */;
+		};
+		7160E97109EE653FAA9022F2D4964E98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = iCalKit;
-			target = 9F74E22579CA86374AD3303B2E632F5A /* iCalKit */;
-			targetProxy = 9BEDA1F2968FD53EB7CE386F81CCC42F /* PBXContainerItemProxy */;
+			target = C60EFC601A7827F36FF65E03E71B3126 /* iCalKit */;
+			targetProxy = DEC73F2ECD790EDA9A39F254A7EAF336 /* PBXContainerItemProxy */;
 		};
-		3B59A93A14C8244C2ABEA180ED3E092E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CoreXLSX;
-			target = 31834AB339EBD68E74CD2CD95DE9AE78 /* CoreXLSX */;
-			targetProxy = 2CD55C2ED21748ADBBBDC0363A8432A9 /* PBXContainerItemProxy */;
-		};
-		4EE11C72E0E5FDC6C90D99CD1EC1B612 /* PBXTargetDependency */ = {
+		AF0C0C7B1B8928157435241155F0DF38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XMLCoder;
-			target = 93079866FE59F84FBBD0784A84691718 /* XMLCoder */;
-			targetProxy = 0500D2EB987044003D8481C5870701F7 /* PBXContainerItemProxy */;
+			target = E1753B4FA19C5F745ADF56B844ACAB36 /* XMLCoder */;
+			targetProxy = 0DB3384372D3A92879AC097D422C6525 /* PBXContainerItemProxy */;
 		};
-		A480FE9E570E101A07451E98C34C67CE /* PBXTargetDependency */ = {
+		AF2D2F23556AF8D7682EF45EA0986FD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZIPFoundation;
-			target = DA4667863A43BF35617903617321E56C /* ZIPFoundation */;
-			targetProxy = 059E9A73AB744EC1592972B1D7A301FB /* PBXContainerItemProxy */;
+			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
+			targetProxy = 91E725C0F6DF4FA5C21AEA9A5126C1E4 /* PBXContainerItemProxy */;
 		};
-		B50F44B9BFF766502C448FE6BAED09EE /* PBXTargetDependency */ = {
+		BC5B5568C62D5ABA4A24C2E71D882AE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLCoder;
+			target = E1753B4FA19C5F745ADF56B844ACAB36 /* XMLCoder */;
+			targetProxy = 3C9DF9DD225863E27FB945CBD49488A2 /* PBXContainerItemProxy */;
+		};
+		C9E9AE8261D2F46583E4A619B0E54A99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CSV.swift;
-			target = 59D0A23DB65E60F61E5F2FE78575925F /* CSV.swift */;
-			targetProxy = 495FFF618E4E3C0CE1BAD8BB1FA997DA /* PBXContainerItemProxy */;
+			target = 9617FEF749C2A4DEB177789B70E08C51 /* CSV.swift */;
+			targetProxy = 1A2E8DB7D5BCAECEB473FC9FF8059435 /* PBXContainerItemProxy */;
 		};
-		BF23B5E071853ED5A1364D6C1759846A /* PBXTargetDependency */ = {
+		FC6E8E465AB10CBB90FBC7C6B667DF3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ZIPFoundation;
-			target = DA4667863A43BF35617903617321E56C /* ZIPFoundation */;
-			targetProxy = FE3C3A8414030B8494FA74D0D0E0002D /* PBXContainerItemProxy */;
-		};
-		E0B0DCF0857D37E73A2359FBB0460DA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XMLCoder;
-			target = 93079866FE59F84FBBD0784A84691718 /* XMLCoder */;
-			targetProxy = C579750491935EE4AAC03AD3942259A9 /* PBXContainerItemProxy */;
+			name = CoreXLSX;
+			target = 3B04C1F70F5EC647583FC131CED595D8 /* CoreXLSX */;
+			targetProxy = 8EB8786D8E9BC4F2F4A8938C138E87F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		276B0E06AB2B794EFA310E9BF079A097 /* Release */ = {
+		14532943E814447C97CFB6079ADEB7AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9740B9ABC4345AA60C6CF0713920083E /* CoreXLSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CoreXLSX/CoreXLSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CoreXLSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CoreXLSX/CoreXLSX.modulemap";
-				PRODUCT_MODULE_NAME = CoreXLSX;
-				PRODUCT_NAME = CoreXLSX;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		458C284096D9070FFB0F5102A192D638 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 501173430498C45CFED9FA8546CFFDB6 /* iCalKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/iCalKit/iCalKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/iCalKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/iCalKit/iCalKit.modulemap";
-				PRODUCT_MODULE_NAME = iCalKit;
-				PRODUCT_NAME = iCalKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		555E72E5A0CB09F36152A97733AFCD4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6E7F9137722FED45614E166D556234 /* XMLCoder.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XMLCoder/XMLCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XMLCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XMLCoder/XMLCoder.modulemap";
-				PRODUCT_MODULE_NAME = XMLCoder;
-				PRODUCT_NAME = XMLCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		580F7F5D6042F260BC993113DA9A9D56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2430A05A09007B494B5E5ED5EE424A4A /* Pods-PlanningToCalendarIOS.release.xcconfig */;
+			baseConfigurationReference = EC4503EC2D8127AE222EF6BFE4A370F0 /* Pods-PlanningToCalendarIOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1135,203 +1038,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		593EEC261A625A374638A39AA5D3CE3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9740B9ABC4345AA60C6CF0713920083E /* CoreXLSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CoreXLSX/CoreXLSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CoreXLSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CoreXLSX/CoreXLSX.modulemap";
-				PRODUCT_MODULE_NAME = CoreXLSX;
-				PRODUCT_NAME = CoreXLSX;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6FE14130481F5BB99BDCEA90BFCC9645 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6E7F9137722FED45614E166D556234 /* XMLCoder.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XMLCoder/XMLCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XMLCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XMLCoder/XMLCoder.modulemap";
-				PRODUCT_MODULE_NAME = XMLCoder;
-				PRODUCT_NAME = XMLCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8CAAD1F9FA71E1302B05D99F8FFB373F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		97C5B060C9AC6770BFEFF6BBADEE260A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C35BF46D8CF553E9ADD1249E0AFBCF98 /* CSV.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
-				PRODUCT_MODULE_NAME = CSV;
-				PRODUCT_NAME = CSV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D9DE970784493B611611F6CDA2575B0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73531D29243C9A93FE4C26307A6746FD /* Pods-PlanningToCalendarIOS.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1341,148 +1055,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DC51E91471A6D8447717A6DA00468E45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 501173430498C45CFED9FA8546CFFDB6 /* iCalKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/iCalKit/iCalKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/iCalKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/iCalKit/iCalKit.modulemap";
-				PRODUCT_MODULE_NAME = iCalKit;
-				PRODUCT_NAME = iCalKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DE3CF5E314B1A8AA477DA4754C69E119 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFDBEC1A7F574A60A4AF6F653BB6201F /* ZIPFoundation.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
-				PRODUCT_MODULE_NAME = ZIPFoundation;
-				PRODUCT_NAME = ZIPFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F82DA4A721EF5EDF5AD8D8D67539F26A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C35BF46D8CF553E9ADD1249E0AFBCF98 /* CSV.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
-				PRODUCT_MODULE_NAME = CSV;
-				PRODUCT_NAME = CSV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FD9573CD4185980C7FCC78D95780F356 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFDBEC1A7F574A60A4AF6F653BB6201F /* ZIPFoundation.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
-				PRODUCT_MODULE_NAME = ZIPFoundation;
-				PRODUCT_NAME = ZIPFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FFF583FA7420DC0AD49940362019A032 /* Debug */ = {
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1511,8 +1093,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1539,77 +1119,533 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		23572CCCBE23546827E7D8E2F6E9D508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B3DAE7C680C26F6A62C0163C7A3B8D /* CoreXLSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoreXLSX/CoreXLSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoreXLSX/CoreXLSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CoreXLSX/CoreXLSX.modulemap";
+				PRODUCT_MODULE_NAME = CoreXLSX;
+				PRODUCT_NAME = CoreXLSX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7A448ADC7360C8EE0C7E74C3E853494E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F13A3A6FFDC060D588B06A56741D9C5 /* Pods-PlanningToCalendarIOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PlanningToCalendarIOS/Pods-PlanningToCalendarIOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D327837A585BA98657051FE239E5F23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97081CB20E21F6BA1D1EC9FCD1450BF4 /* ZIPFoundation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
+				PRODUCT_MODULE_NAME = ZIPFoundation;
+				PRODUCT_NAME = ZIPFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5C099832714F6F33FD16411689B405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CD01C8E213B01B9884A6479C8F558D /* iCalKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iCalKit/iCalKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCalKit/iCalKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iCalKit/iCalKit.modulemap";
+				PRODUCT_MODULE_NAME = iCalKit;
+				PRODUCT_NAME = iCalKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		944D48BD87CC132AD6258FC49FCD176C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CD01C8E213B01B9884A6479C8F558D /* iCalKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iCalKit/iCalKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCalKit/iCalKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iCalKit/iCalKit.modulemap";
+				PRODUCT_MODULE_NAME = iCalKit;
+				PRODUCT_NAME = iCalKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94B24F3C070FBC5BFE5D82FE5B92E73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1316570C4F23A0028CD14822804E58F1 /* XMLCoder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMLCoder/XMLCoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMLCoder/XMLCoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XMLCoder/XMLCoder.modulemap";
+				PRODUCT_MODULE_NAME = XMLCoder;
+				PRODUCT_NAME = XMLCoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B740B02ECFBC5E4750E73F0B5C1284E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B3924992F99C7AA0220955613A7F2C /* CSV.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/CSV.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C92C1EE46437958E3C315BAA52C82C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B3924992F99C7AA0220955613A7F2C /* CSV.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/CSV.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA4A025753F77605483359B331DA998F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B3DAE7C680C26F6A62C0163C7A3B8D /* CoreXLSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoreXLSX/CoreXLSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoreXLSX/CoreXLSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CoreXLSX/CoreXLSX.modulemap";
+				PRODUCT_MODULE_NAME = CoreXLSX;
+				PRODUCT_NAME = CoreXLSX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1C310C14CEB9E52F26A601AF0B564A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1316570C4F23A0028CD14822804E58F1 /* XMLCoder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMLCoder/XMLCoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMLCoder/XMLCoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XMLCoder/XMLCoder.modulemap";
+				PRODUCT_MODULE_NAME = XMLCoder;
+				PRODUCT_NAME = XMLCoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDC4A5815D069809E4DB27260CB673D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97081CB20E21F6BA1D1EC9FCD1450BF4 /* ZIPFoundation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
+				PRODUCT_MODULE_NAME = ZIPFoundation;
+				PRODUCT_NAME = ZIPFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		288D9BC370A18ADF7BE7CCE7D766F0CE /* Build configuration list for PBXNativeTarget "Pods-PlanningToCalendarIOS" */ = {
+		333D52041D98CABA333A68CAD8C47E4E /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9DE970784493B611611F6CDA2575B0A /* Debug */,
-				580F7F5D6042F260BC993113DA9A9D56 /* Release */,
+				C92C1EE46437958E3C315BAA52C82C06 /* Debug */,
+				B740B02ECFBC5E4750E73F0B5C1284E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFF583FA7420DC0AD49940362019A032 /* Debug */,
-				8CAAD1F9FA71E1302B05D99F8FFB373F /* Release */,
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		544D5C52F96EEB99A7A5DE72E8633FA7 /* Build configuration list for PBXNativeTarget "ZIPFoundation" */ = {
+		71C3ED5291E0BBE8DF4B589AAE46E16C /* Build configuration list for PBXNativeTarget "CoreXLSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE3CF5E314B1A8AA477DA4754C69E119 /* Debug */,
-				FD9573CD4185980C7FCC78D95780F356 /* Release */,
+				23572CCCBE23546827E7D8E2F6E9D508 /* Debug */,
+				CA4A025753F77605483359B331DA998F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F867CBF799CC4293B7AA85959DB5186 /* Build configuration list for PBXNativeTarget "CoreXLSX" */ = {
+		9CB394AA1634C69D190FA52E697F3518 /* Build configuration list for PBXNativeTarget "XMLCoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				593EEC261A625A374638A39AA5D3CE3D /* Debug */,
-				276B0E06AB2B794EFA310E9BF079A097 /* Release */,
+				D1C310C14CEB9E52F26A601AF0B564A5 /* Debug */,
+				94B24F3C070FBC5BFE5D82FE5B92E73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FB2EE472508CF61F77B701555FFCC6C /* Build configuration list for PBXNativeTarget "iCalKit" */ = {
+		A880A6BEC5DD43B72F78E75ED8E579F3 /* Build configuration list for PBXNativeTarget "Pods-PlanningToCalendarIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC51E91471A6D8447717A6DA00468E45 /* Debug */,
-				458C284096D9070FFB0F5102A192D638 /* Release */,
+				14532943E814447C97CFB6079ADEB7AE /* Debug */,
+				7A448ADC7360C8EE0C7E74C3E853494E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2ABED334230AA9332E28454B7AA69F5 /* Build configuration list for PBXNativeTarget "XMLCoder" */ = {
+		AADFA8E529BBB57505B0E28AB79737B1 /* Build configuration list for PBXNativeTarget "iCalKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FE14130481F5BB99BDCEA90BFCC9645 /* Debug */,
-				555E72E5A0CB09F36152A97733AFCD4A /* Release */,
+				944D48BD87CC132AD6258FC49FCD176C /* Debug */,
+				8B5C099832714F6F33FD16411689B405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF04AB75E0BA05725233F82E8A820CB0 /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
+		BD8847081DFEF88935CB8957B3E9F541 /* Build configuration list for PBXNativeTarget "ZIPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F82DA4A721EF5EDF5AD8D8D67539F26A /* Debug */,
-				97C5B060C9AC6770BFEFF6BBADEE260A /* Release */,
+				EDC4A5815D069809E4DB27260CB673D0 /* Debug */,
+				7D327837A585BA98657051FE239E5F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

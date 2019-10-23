@@ -45,10 +45,10 @@ class Converter {
     
     var dept = ["SERVIZI", "SILK", "SHOES", "LRTW", "MRTW", "BAGS"]
     var deptServizi = ["WELCOMIST", "MAGAZZINIERI", "INCARTO", "RUNNER", "CASSIERI", "CASSA", "MAGAZZINO", "SERVIZI"]
-    var symbolsWithName1030 = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "MSILK10:30", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30", "HB  10:30", "SILK  10:30", "LRTW  10:30", "MRTW  10:30", "SHOES  10:30", "SILK  12:30", "LUG  10:30", "10:30", "\"10:30\"", "LRTW 10:30", "HB", "SILK", "LUG", "MRTW", "LRTW", ]
-    var symbolsWithName1230 = ["shoes12:30:00", "MSILK12:30:00", "SHOES  12:30", "12:30", "LUG  12:30",  "\"12:30\""]
-    var symbolsWithName1530 = ["MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00", "HB15:30:00", "MRTW  15:30", "HB  15:30", "SILK  15:30", "SHOES  15:30", "LUG  15:30", "LRTW  15:30", "15shoes", "15:30", "\"15:30\""]
-    var symbolsWithName1330 = ["MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00", "HB13:30:00", "HB  13:30", "LUG  13:30" , "MRTW  13:30", "SHOES  13:30", "SILK  13:30"]
+//    var symbolsWithName1030 = ["LSILK10:30:00", "LSILK10:30", "MSILK10:30:00", "MSILK10:30", "P(M)", "HB10:30:00", "SHOES", "shoes10:30:00", "LUG10:30:00", "LRTW10:30:00", "MRTW10:30:00", "MSILK110:30", "HB  10:30", "SILK  10:30", "LRTW  10:30", "MRTW  10:30", "SHOES  10:30", "SILK  12:30", "LUG  10:30", "10:30", "\"10:30\"", "LRTW 10:30", "HB", "SILK", "LUG", "MRTW", "LRTW", ]
+//    var symbolsWithName1230 = ["shoes12:30:00", "MSILK12:30:00", "SHOES  12:30", "12:30", "LUG  12:30",  "\"12:30\""]
+//    var symbolsWithName1530 = ["MRTW15:30:00", "shoes15:30:00", "LUG15:30:00", "LSILK15:30:00", "LRTW15:30:00", "HB15:30:00", "MRTW  15:30", "HB  15:30", "SILK  15:30", "SHOES  15:30", "LUG  15:30", "LRTW  15:30", "15shoes", "15:30", "\"15:30\""]
+//    var symbolsWithName1330 = ["MRTW13:30:00", "LUG13:30:00", "LSILK13:30:00", "shoes13:30:00", "HB13:30:00", "HB  13:30", "LUG  13:30" , "MRTW  13:30", "SHOES  13:30", "SILK  13:30"]
     
     init() {
     }
@@ -170,7 +170,7 @@ class Converter {
         var day = 0
         
         for symbol in NAH {
-            var time = Time(h: 0, min: 0, name: "")
+            var time = Time(h: 10, min: 0)
             day = day + 1
             
             let todayName = dayName[day-1].uppercased()
@@ -178,100 +178,13 @@ class Converter {
                 break
             }
             switch symbol {
-            case "a":
-                time = Time(h: 9, min: 0, name: "apertura")
-            case "A":
-                time = Time(h: 8, min: 0, name: "apertura negozio")
-            case "11", "11X", "11x":
-                time = Time(h: 11, min: 0, name: "11")
-            case "", " ":
-                if todayName != "D" {
-                    time = Time(h: 10, min: 0, name: "normale")
-                    if isSummer() {
-                        time = Time(h: 9, min: 30, name: "normale (MB 9:15)")
-                    }
-                }
-            case "P", "p", "10", "X":
-                time = Time(h: 10, min: 0, name: "normale")
-                if isSummer() {
-                    time = Time(h: 9, min: 30, name: "normale (MB 9:15)")
-                }
-            case "T  T":
-                time = Time(h: 10, min: 0, name: "trasferta")
-            case "$":
-                if isSummer() {
-                    time = Time(h: 10, min: 0, name: "$")
-                } else {
-                    time = Time(h: 10, min: 0, name: "$")
-                }
-            case "C", "Cx", "CX":
-                time = Time(h: 10, min: 0, name: "chiusura negozio")
-            case "12":
-                time = Time(h: 12, min: 0, name: "12")
-                if isSummer() {
-                    time = Time(h: 11, min: 30, name: "12 (11:30)")
-                }
-            case "13", "13X", "13x", "12:30", "0.52083333333333337":
-                time = Time(h: 13, min: 0, name: "13")
-                if isSummer() {
-                    time = Time(h: 12, min: 30, name: "12:30")
-                }
-            case "15", "15:00":
-                time = Time(h: 15, min: 0, name: "15")
-                if isSummer() {
-                    time = Time(h: 14, min: 30, name: "15 (14:30)")
-                }
-            case "16", "15:30", "0.64583333333333337":
-                time = Time(h: 16, min: 0, name: "16")
-                if isSummer() {
-                    time = Time(h: 15, min: 30, name: "15:30")
-                }
-            case "14", "13:30", "0.5625", "x14":
-                time = Time(h: 14, min: 0, name: "14")
-                if isSummer() {
-                    time = Time(h: 13, min: 30, name: "13:30")
-                }
-            case "13$":
-                time = Time(h: 13, min: 0, name: "13 $")
-            case "9.5", "9.5X":
-                time = Time(h: 9, min: 30, name: "9:30")
-            case "11:30", "0.47916666666666669":
-                time = Time(h: 11, min: 30, name: "11:30")
-            case "15$":
-                time = Time(h: 15, min: 0, name: "15 $")
-            case "11$":
-                time = Time(h: 11, min: 0, name: "$")
-            case "12$":
-                time = Time(h: 12, min: 0, name: "12 $")
-            case "inv":
-                time = Time(h: 10, min: 0, name: "inventario")
-            case "10:30", "10:30:00", "0.4375":
-                time = Time(h: 10, min: 30, name: "10:30 (MB 10:30)")
-            case _ where symbolsWithName1330.contains(symbol):
-                if isSummer() {
-                    time = Time(h: 13, min: 30, name: symbol)
-                }
-            case _ where symbolsWithName1530.contains(symbol):
-                if isSummer() {
-                    time = Time(h: 15, min: 30, name: symbol)
-                }
-            case _ where symbolsWithName1230.contains(symbol):
-                time = Time(h: 12, min: 30, name: symbol)
-            case _ where symbolsWithName1030.contains(symbol):
-                if isSummer() {
-                    time = Time(h: 10, min: 30, name: symbol)
-                } else {
-                    time = Time(h: 10, min: 0, name: symbol)
-                }
-            case "x17", "X17":
-                time = Time(h: 10, min: 30, name: symbol)
             case "L", "FR", "F", "R", "As", "ROL", "B.R", "LM", "BR", "-", "fr", "MAL", "_", "OFF":
                 // not working
-                time = Time(h: 0, min: 0, name: "")
+                time = Time(h: 0, min: 0)
             default:
-                print("symbol \(symbol)")
-                errorDelegate?.errorOccurred(error: "Symbol not handled: \(symbol)")
-                time = Time(h: 0, min: 0, name: "")
+//                print("symbol \(symbol)")
+//                errorDelegate?.errorOccurred(error: "Symbol not handled: \(symbol)")
+                time = Time(h: 10, min: 0)
             }
             if time.h != 0 {
                 var eh = time.h + 9
@@ -286,10 +199,10 @@ class Converter {
                     errorDelegate?.errorOccurred(error: "MonthInNumber NIL - Contact Daniel")    
                     break
                 }
-                let start = createDate(year: y, month: monthInNumber, day: day, hour: time.h, minute: time.min)
-                let end = createDate(year: y, month: monthInNumber, day: day, hour: eh, minute: time.min)
-                let event = createEvent(start: start, end: end, name: time.name)
-                events.append(event)
+                    let start = createDate(year: y, month: monthInNumber, day: day, hour: time.h, minute: time.min)
+                    let end = createDate(year: y, month: monthInNumber, day: day, hour: eh, minute: time.min)
+                    let event = createEvent(start: start, end: end, name: symbol)
+                    events.append(event)
             }
         }
         return events
@@ -340,7 +253,6 @@ class Converter {
     struct Time {
         var h: Int
         var min: Int
-        var name: String
     }
 }
 

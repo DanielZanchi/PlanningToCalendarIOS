@@ -13,7 +13,7 @@ DEPENDENCIES:
   - iCalKit (from `https://github.com/Danny182/iCalKit.git`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - CoreXLSX
     - XMLCoder
     - ZIPFoundation
@@ -41,4 +41,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 97992d0c02b53f7ccdb5afdbda8171a018a12cbb
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
